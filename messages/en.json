@@ -1,5 +1,81 @@
 {
   "home": {
-    "title": "Home"
+    "connectAndMoveForward": {
+      "title": "Let’s Connect & Move Forward",
+      "description": "Got a question? An idea? Or just want to talk things through? We’re here.",
+      "button": "Send Us a Message"
+    },
+    "consultings": {
+      "title": {
+        "0": "Business Consulting for Structure",
+        "1": "Marketing Consulting for Scale"
+      },
+      "business": {
+        "name": "Business Consulting",
+        "subtitle": "Build Your Business with Expert Support",
+        "excerpt": "We help you create a practical, profitable business around your ideas and abilities.",
+        "description": "Whether you're just starting or ready to level up, our business consulting gives you clarity, confidence, and traction.",
+        "label": "Ready to build a business that works for you?",
+        "buttonLabel": "Explore Business Consulting",
+        "includeLabel": "Services include:",
+        "includes": {
+          "0": "Business model design & scalable monetization strategy",
+          "1": "Sales strategy development with lead-generation systems",
+          "2": "High-converting offer architecture & pricing systems",
+          "3": "Operational workflows & automation for solo founders",
+          "4": "Personalized revenue roadmap with milestones & metrics",
+          "5": "Strategic decision-making support & business diagnostics"
+        }
+      },
+      "marketing": {
+        "name": "Marketing Consulting",
+        "subtitle": "Market Yourself Like a Brand. Sell Like a Pro.",
+        "excerpt": "Effective marketing doesn’t start with posting. It starts with positioning, strategy, and the right systems behind it.",
+        "description": "For creators, coaches, freelancers, and experts who are ready to go from “posting” to profiting.",
+        "label": "Tired of marketing that doesn’t work?",
+        "buttonLabel": "Discover Marketing Consulting",
+        "includeLabel": "We help with:",
+        "includes": {
+          "0": "Brand messaging strategy & visual identity alignment",
+          "1": "Campaign planning with performance analysis & refinement",
+          "2": "Content marketing ecosystems (email, social, video, funnels)",
+          "3": "Visibility growth strategies across owned & earned media",
+          "4": "Target audience profiling & niche dominance tactics",
+          "5": "Strategic funnel mapping & conversion optimization"
+        }
+      }
+    },
+    "hero": {
+      "title": "Marketing & Business Consulting",
+      "description": "You",
+      "consultation": {
+        "button": "Book a Free Consultation"
+      }
+    },
+    "latestFrom": {
+      "title": "Latest From the Growth Library",
+      "description": {
+        "0": "Our blog is packed with",
+        "1": "real strategies, no-fluff insights, and tools",
+        "2": "we use every day with real people — and now, they’re yours too."
+      },
+      "browseArticles": {
+        "title": "Looking for more insights that actually move the needle?",
+        "button": "Browse All Articles"
+      }
+    },
+    "ourMission": {
+      "title": "Curious how it all began?",
+      "description": {
+        "0": "We didn’t come into this by accident — we built, tested, and refined every strategy through real-world business experience.",
+        "1": "What started as solving our own challenges evolved into a strategic framework that helps others build high-performance businesses with clarity and control.",
+        "2": "Today, we partner with founders and experts who are ready to grow with intention — and with systems that work."
+      },
+      "button": "Book a Free Consultation",
+      "bookConsultation": {
+        "title": "Curious how it all began?",
+        "button": "Book a Free Consultation"
+      }
+    }
   }
 }

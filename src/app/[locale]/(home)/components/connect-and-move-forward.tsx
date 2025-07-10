@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
 import { Button } from '@/shared/ui/kit/button';
@@ -14,13 +15,19 @@ const getContacts = () => [
 ];
 
 export const ConnectAndMoveForward = () => {
+  const t = useTranslations('home.connectAndMoveForward');
+
   return (
     <section className="mx-4 flex flex-col gap-10 bg-white px-[60px] pt-10 pb-[100px] max-md:px-4 max-md:py-[60px]">
       <section className="flex flex-col gap-4">
-        <Title>Let’s Connect & Move Forward</Title>
+        <Title>
+          {t('title', { fallback: 'Let’s Connect & Move Forward' })}
+        </Title>
         <Text color="black">
-          Got a question? An idea? Or just want to talk things through? We’re
-          here.s
+          {t('description', {
+            fallback:
+              'Got a question? An idea? Or just want to talk things through? We’re here.',
+          })}
         </Text>
       </section>
       <section className="flex gap-6 max-lg:flex-col">
@@ -29,7 +36,8 @@ export const ConnectAndMoveForward = () => {
         ))}
         <Link href="/request-form">
           <Button>
-            Send Us a Message <ArrowRight color="black" />
+            {t('button', { fallback: 'Send Us a Message' })}
+            <ArrowRight color="black" />
           </Button>
         </Link>
       </section>

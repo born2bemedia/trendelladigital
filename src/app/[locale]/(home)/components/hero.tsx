@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
 import { Button } from '@/shared/ui/kit/button';
@@ -8,22 +9,25 @@ import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 export const Hero = () => {
+  const t = useTranslations('home.hero');
+
   return (
     <section className="relative h-[644px] overflow-hidden">
       <div className="relative h-full">
         <section className="relative z-20 mt-auto flex h-[644px] flex-col items-center justify-center gap-8 p-20 max-md:px-4">
           <section className="mt-auto flex w-[746px] flex-col items-center justify-center gap-4 text-center max-md:w-full">
             <Title color="white" as="h1" weight={700}>
-              Marketing & Business Consulting
+              {t('title', { fallback: 'Marketing & Business Consulting' })}
             </Title>
             <Text>
-              You&apos;ve spent years building skills, now let&apos;s turn them
-              into something you love waking up for. Trendella Digital will
-              craft a plan for you.
+              {t('description', {
+                fallback:
+                  "You've spent years building skills, now let's turn them into something you love waking up for. Trendella Digital will craft a plan for you.",
+              })}
             </Text>
           </section>
           <Button variant="secondary">
-            Book a Free Consultation
+            {t('consultation.button', { fallback: 'Book a Free Consultation' })}
             <ArrowRight />
           </Button>
         </section>
