@@ -1,0 +1,51 @@
+'use client';
+
+import type { ReactNode } from 'react';
+import { cva, type VariantProps } from 'class-variance-authority';
+
+import { cn } from '@/shared/lib/utils/styles';
+
+const textVariants = cva('transition duration-300 ease-in-out', {
+  variants: {
+    size: {
+      xs: 'text-xs',
+      sm: 'text-sm',
+      base: 'text-base',
+      md: 'text-md',
+      lg: 'text-lg',
+      xl: 'text-xl',
+      '2xl': 'text-2xl',
+      '3xl': 'text-3xl',
+      '4xl': 'text-4xl',
+      '5xl': 'text-5xl',
+    },
+    color: {
+      white: 'text-white',
+      gray: 'text-white/50',
+    },
+    weight: {
+      300: 'font-light',
+      400: 'font-normal',
+      500: 'font-medium',
+      700: 'font-bold',
+    },
+  },
+  defaultVariants: {
+    size: 'sm',
+    color: 'white',
+    weight: 400,
+  },
+});
+
+export type TextVariants = VariantProps<typeof textVariants>;
+
+export const Text = ({
+  children,
+  size,
+  color,
+  weight,
+}: { children: ReactNode } & TextVariants) => {
+  return (
+    <p className={cn(textVariants({ size, color, weight }))}>{children}</p>
+  );
+};
