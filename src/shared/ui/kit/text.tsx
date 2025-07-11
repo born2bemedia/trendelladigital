@@ -20,8 +20,12 @@ const textVariants = cva('transition duration-300 ease-in-out', {
       '5xl': 'text-5xl',
     },
     color: {
+      dark: 'text-dark',
+      black: 'text-black',
+      deepDark: 'text-deep-dark',
       white: 'text-white',
       gray: 'text-white/50',
+      ghost: 'text-[rgba(3,3,3,0.6)]',
     },
     weight: {
       300: 'font-light',

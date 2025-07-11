@@ -5,6 +5,7 @@ import { hasLocale, NextIntlClientProvider } from 'next-intl';
 
 import { cn } from '@/shared/lib/utils/styles';
 import { Footer } from '@/shared/ui/components/footer';
+import { Header } from '@/shared/ui/components/header';
 
 import './globals.css';
 import { routing } from '@/i18n/routing';
@@ -56,6 +57,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={cn(suisseIntl.className, 'antialiased')}>
         <NextIntlClientProvider>
+          <Header />
           {children}
           <Footer />
         </NextIntlClientProvider>
