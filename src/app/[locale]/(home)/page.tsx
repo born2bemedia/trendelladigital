@@ -7,7 +7,6 @@ import {
   JoinTrendella,
   LatestFrom,
   OurMission,
-  WhatYouDo,
 } from './components';
 
 export default function Home() {
@@ -15,7 +14,7 @@ export default function Home() {
     <main>
       <Hero />
       <OurMission />
-      <WhatYouDo />
+      {/* <WhatYouDo /> */}
       <Consultings />
       <JoinTrendella />
       <LatestFrom />
