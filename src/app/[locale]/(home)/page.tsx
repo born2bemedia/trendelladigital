@@ -4,8 +4,10 @@ import {
   ConnectAndMoveForward,
   Consultings,
   Hero,
+  JoinTrendella,
   LatestFrom,
   OurMission,
+  WhatYouDo,
 } from './components';
 
 export default function Home() {
@@ -13,7 +15,9 @@ export default function Home() {
     <main>
       <Hero />
       <OurMission />
+      <WhatYouDo />
       <Consultings />
+      <JoinTrendella />
       <LatestFrom />
       <ConnectAndMoveForward />
     </main>
