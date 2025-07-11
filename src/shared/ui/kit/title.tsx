@@ -22,6 +22,7 @@ const titleVariants = cva(
         dark: 'text-dark',
         white: 'text-white',
         deepDark: 'text-deep-dark',
+        black: 'text-black',
       },
       weight: {
         400: 'font-normal',
