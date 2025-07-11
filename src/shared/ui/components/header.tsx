@@ -1,7 +1,10 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useLocale } from 'next-intl';
 
+import { cn } from '@/shared/lib/utils/styles';
 import { Text } from '@/shared/ui/kit/text';
 
 const getNavigation = () => [
@@ -12,34 +15,58 @@ const getNavigation = () => [
 ];
 
 export const Header = () => {
+  const pathname = usePathname();
+  const locale = useLocale();
+  const isHomePage = pathname === `/${locale}`;
+
   return (
     <header className="absolute flex w-full items-center justify-between px-20 max-md:px-4">
-      <Text>Logo</Text>
+      <Text color={isHomePage ? 'white' : 'black'}>Logo</Text>
       <section className="flex items-center gap-10 max-[895px]:hidden">
         <div className="flex">
           {getNavigation().map(item => (
-            <NavItem key={item.href} {...item} />
+            <NavItem key={item.href} {...item} isHomePage={isHomePage} />
           ))}
         </div>
         <div className="flex">
-          <NavItem label="Phone number" href="/" />
-          <NavItem label="Email" href="/" />
+          <NavItem label="Phone number" href="/" isHomePage={isHomePage} />
+          <NavItem label="Email" href="/" isHomePage={isHomePage} />
         </div>
       </section>
       <section className="hidden max-[895px]:flex">
-        <button className="w-[100px] border-b-[0.5px] border-white pt-3.5 pr-4 pb-1 pl-2 text-left transition duration-300 ease-in-out hover:opacity-70">
-          <Text size="xs">Menu</Text>
+        <button
+          className={cn(
+            'w-[100px] border-b-[0.5px] pt-3.5 pr-4 pb-1 pl-2 text-left transition duration-300 ease-in-out hover:opacity-70',
+            isHomePage ? 'border-white' : 'border-black',
+          )}
+        >
+          <Text size="xs" color={isHomePage ? 'white' : 'black'}>
+            Menu
+          </Text>
         </button>
       </section>
     </header>
   );
 };
 
-const NavItem = ({ label, href }: { label: string; href: string }) => (
+const NavItem = ({
+  label,
+  href,
+  isHomePage,
+}: {
+  label: string;
+  href: string;
+  isHomePage: boolean;
+}) => (
   <Link
     href={href}
-    className="border-b-[0.5px] border-white pt-3.5 pr-4 pb-1 pl-2 transition duration-300 ease-in-out hover:opacity-70"
+    className={cn(
+      'border-b-[0.5px] pt-3.5 pr-4 pb-1 pl-2 transition duration-300 ease-in-out hover:opacity-70',
+      isHomePage ? 'border-white' : 'border-black',
+    )}
   >
-    <Text size="xs">{label}</Text>
+    <Text size="xs" color={isHomePage ? 'white' : 'black'}>
+      {label}
+    </Text>
   </Link>
 );
