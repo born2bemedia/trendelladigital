@@ -41,3 +41,15 @@ export const getMarketingConsulting = (
     }),
   ],
 });
+
+export const getMarketingConsultingDetailed = () => ({
+  description: 'Marketing systems that build demand, and deliver results.',
+  includes: [
+    'Sharpening brand messaging and visual identity for instant resonance',
+    'Building full-funnel ecosystems across content, email, and social media',
+    'Pinpointing your ideal audience and carving out niche authority',
+    'Mapping out funnel strategy — from lead generation to paid conversion',
+    'Planning campaigns with built-in performance optimization loops',
+    'Scaling visibility across owned, earned, and leveraged platforms',
+  ],
+});

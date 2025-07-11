@@ -8,3 +8,5 @@ export type Consulting = {
   buttonLabel: string;
   includes: string[];
 };
+
+export type ConsultingDetailed = Pick<Consulting, 'description' | 'includes'>;

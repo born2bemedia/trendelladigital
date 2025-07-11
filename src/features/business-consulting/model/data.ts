@@ -43,3 +43,16 @@ export const getBusinessConsulting = (
     }),
   ],
 });
+
+export const getBusinessConsultingDetailed = () => ({
+  description:
+    'Strategic business architecture for experts who are ready to scale.',
+  includes: [
+    'Structuring a business model that’s sustainable, lean, and scalable',
+    'Designing premium offers that are irresistible and deliver real value',
+    'Crafting a personalized revenue roadmap with clear milestones',
+    'Engineering monetization systems that support predictable incomes',
+    'Streamlining backend workflows and automations for solo operators',
+    'Running diagnostics to identify inefficiencies and strategic gaps',
+  ],
+});
