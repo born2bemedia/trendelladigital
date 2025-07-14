@@ -42,14 +42,36 @@ export const getMarketingConsulting = (
   ],
 });
 
-export const getMarketingConsultingDetailed = () => ({
-  description: 'Marketing systems that build demand, and deliver results.',
+export const getMarketingConsultingDetailed = (
+  t: ReturnType<typeof useTranslations>,
+) => ({
+  description: t('description', {
+    fallback: 'Marketing systems that build demand, and deliver results',
+  }),
   includes: [
-    'Sharpening brand messaging and visual identity for instant resonance',
-    'Building full-funnel ecosystems across content, email, and social media',
-    'Pinpointing your ideal audience and carving out niche authority',
-    'Mapping out funnel strategy — from lead generation to paid conversion',
-    'Planning campaigns with built-in performance optimization loops',
-    'Scaling visibility across owned, earned, and leveraged platforms',
+    t('includes.0', {
+      fallback:
+        'Sharpening brand messaging and visual identity for instant resonance',
+    }),
+    t('includes.1', {
+      fallback:
+        'Building full-funnel ecosystems across content, email, and social media',
+    }),
+    t('includes.2', {
+      fallback:
+        'Pinpointing your ideal audience and carving out niche authority',
+    }),
+    t('includes.3', {
+      fallback:
+        'Mapping out funnel strategy — from lead generation to paid conversion',
+    }),
+    t('includes.4', {
+      fallback:
+        'Planning campaigns with built-in performance optimization loops',
+    }),
+    t('includes.5', {
+      fallback:
+        'Scaling visibility across owned, earned, and leveraged platforms',
+    }),
   ],
 });
