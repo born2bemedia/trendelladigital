@@ -1,6 +1,7 @@
 'use client';
 
 import type { JSX } from 'react';
+import { useTranslations } from 'next-intl';
 
 import { DataTransferIcon } from '@/shared/icons/art/data-transfer';
 import { DocumentIcon } from '@/shared/icons/art/document';
@@ -10,42 +11,58 @@ import { WorkflowIcon } from '@/shared/icons/art/workflow';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
-const getItems = () => [
+const getItems = (t: ReturnType<typeof useTranslations>) => [
   {
     icon: DataTransferIcon,
-    title: 'Launching a new direction',
-    text: 'after a pivot, burnout, or corporate exit',
+    title: t('0.title', { fallback: 'Launching a new direction' }),
+    text: t('0.text', {
+      fallback: 'after a pivot, burnout, or corporate exit',
+    }),
   },
   {
     icon: MagicWandIcon,
-    title: 'Clarifying a cluttered project',
-    text: 'that’s generating noise but lacking real traction',
+    title: t('1.title', { fallback: 'Clarifying a cluttered project' }),
+    text: t('1.text', {
+      fallback: 'that’s generating noise but lacking real traction',
+    }),
   },
   {
     icon: WorkflowIcon,
-    title: 'Refining an existing structure',
-    text: 'so your project works, even when you’re not constantly working in it',
+    title: t('2.title', { fallback: 'Refining an existing structure' }),
+    text: t('2.text', {
+      fallback:
+        'that’s ready to scale but bottlenecked by systems or positioning',
+    }),
   },
   {
     icon: SupplierIcon,
-    title: 'Systemizing delivery',
-    text: 'so your project works, even when you’re not constantly working in it',
+    title: t('3.title', { fallback: 'Systemizing delivery' }),
+    text: t('3.text', {
+      fallback:
+        'so your project works, even when you’re not constantly working in it',
+    }),
   },
   {
     icon: DocumentIcon,
-    title: 'Optimizing marketing efforts',
-    text: 'to reduce wasted motion and increase qualified leads',
+    title: t('4.title', { fallback: 'Optimizing marketing efforts' }),
+    text: t('4.text', {
+      fallback: 'to reduce wasted motion and increase qualified leads',
+    }),
   },
 ];
 
 export const StrategyImpact = () => {
+  const t = useTranslations('howWeCanHelpYou.strategyImpact');
+  const ti = useTranslations('howWeCanHelpYou.strategyImpact.items');
+
   return (
     <section className="mx-4 flex gap-10 bg-white px-[60px] py-[100px] max-md:flex-col-reverse max-md:gap-10 max-md:px-4 max-md:py-[60px]">
       <section className="flex w-1/2 flex-col gap-2 max-md:w-full">
         <Text color="black">
-          We Partner With Clients <br /> Across Multiple Inflection Points
+          {t('text.0', { fallback: 'We Partner With Clients' })} <br />
+          {t('text.1', { fallback: 'Across Multiple Inflection Points' })}
         </Text>
-        {getItems().map(item => (
+        {getItems(ti).map(item => (
           <Card key={item.title} {...item} />
         ))}
       </section>
@@ -55,13 +72,18 @@ export const StrategyImpact = () => {
 };
 
 const StrategyTitle = () => {
+  const t = useTranslations('howWeCanHelpYou.strategyImpact');
+
   return (
     <section className="flex w-1/2 flex-col gap-2.5 max-md:w-full">
-      <Title>The Right Strategy Changes Everything</Title>
+      <Title>
+        {t('title', { fallback: 'The Right Strategy Changes Everything' })}
+      </Title>
       <Text color="black">
-        We help you design strategy, systems, and structure that reflect your
-        value and drive real growth — with clarity, control, and purpose built
-        in.
+        {t('description', {
+          fallback:
+            'We help you design strategy, systems, and structure that reflect your value and drive real growth — with clarity, control, and purpose built in.',
+        })}
       </Text>
     </section>
   );

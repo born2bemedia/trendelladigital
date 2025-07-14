@@ -10,6 +10,23 @@
         "0": "Business Consulting for Structure",
         "1": "Marketing Consulting for Scale"
       },
+      "marketing": {
+        "name": "Marketing Consulting",
+        "subtitle": "Market Yourself Like a Brand. Sell Like a Pro.",
+        "excerpt": "Effective marketing doesn't start with posting. It starts with positioning, strategy, and the right systems behind it.",
+        "description": "For creators, coaches, freelancers, and experts who are ready to go from \"posting\" to profiting.",
+        "label": "Tired of marketing that doesn't work?",
+        "buttonLabel": "Discover Marketing Consulting",
+        "includeLabel": "We help with:",
+        "includes": {
+          "0": "Brand messaging strategy & visual identity alignment",
+          "1": "Campaign planning with performance analysis & refinement",
+          "2": "Content marketing ecosystems (email, social, video, funnels)",
+          "3": "Visibility growth strategies across owned & earned media",
+          "4": "Target audience profiling & niche dominance tactics",
+          "5": "Strategic funnel mapping & conversion optimization"
+        }
+      },
       "business": {
         "name": "Business Consulting",
         "subtitle": "Build Your Business with Expert Support",
@@ -25,23 +42,6 @@
           "3": "Operational workflows & automation for solo founders",
           "4": "Personalized revenue roadmap with milestones & metrics",
           "5": "Strategic decision-making support & business diagnostics"
-        }
-      },
-      "marketing": {
-        "name": "Marketing Consulting",
-        "subtitle": "Market Yourself Like a Brand. Sell Like a Pro.",
-        "excerpt": "Effective marketing doesn’t start with posting. It starts with positioning, strategy, and the right systems behind it.",
-        "description": "For creators, coaches, freelancers, and experts who are ready to go from “posting” to profiting.",
-        "label": "Tired of marketing that doesn’t work?",
-        "buttonLabel": "Discover Marketing Consulting",
-        "includeLabel": "We help with:",
-        "includes": {
-          "0": "Brand messaging strategy & visual identity alignment",
-          "1": "Campaign planning with performance analysis & refinement",
-          "2": "Content marketing ecosystems (email, social, video, funnels)",
-          "3": "Visibility growth strategies across owned & earned media",
-          "4": "Target audience profiling & niche dominance tactics",
-          "5": "Strategic funnel mapping & conversion optimization"
         }
       }
     },
@@ -76,6 +76,185 @@
         "title": "Curious how it all began?",
         "button": "Book a Free Consultation"
       }
+    }
+  },
+  "detailedConsultings": {
+    "business": {
+      "description": "Strategic business architecture for experts who are ready to scale.",
+      "includes": {
+        "0": "Structuring a business model that's sustainable, lean, and scalable",
+        "1": "Designing premium offers that are irresistible and deliver real value",
+        "2": "Crafting a personalized revenue roadmap with clear milestones",
+        "3": "Engineering monetization systems that support predictable incomes",
+        "4": "Streamlining backend workflows and automations for solo operators",
+        "5": "Running diagnostics to identify inefficiencies and strategic gaps"
+      }
+    },
+    "marketing": {
+      "description": "Marketing systems that build demand, and deliver results",
+      "includes": {
+        "0": "Sharpening brand messaging and visual identity for instant resonance",
+        "1": "Building full-funnel ecosystems across content, email, and social media",
+        "2": "Pinpointing your ideal audience and carving out niche authority",
+        "3": "Mapping out funnel strategy — from lead generation to paid conversion",
+        "4": "Planning campaigns with built-in performance optimization loops",
+        "5": "Scaling visibility across owned, earned, and leveraged platforms"
+      }
+    }
+  },
+  "ourStory": {
+    "bring-vision": {
+      "title": "You Bring the Vision. We Bring the Framework.",
+      "description": "Together, we build something that lasts.",
+      "card": {
+        "0": "See How We Can Help You",
+        "1": "Jump to What to Expect"
+      },
+      "lookingFor": {
+        "title": "Looking for more insights that actually move the needle?",
+        "button": "Browse All Articles"
+      }
+    },
+    "hero": {
+      "title": "The Journey Behind the Framework",
+      "description": {
+        "0": "We stepped into consulting with a purpose, not by chance",
+        "1": "Our work began with a personal challenge: building a business that felt aligned, sustainable, and true to our values. Like many of the individuals we now support, we had the skills, the ambition, and a long list of ideas — but no clear structure to turn them into something that worked. We set out to create that structure for ourselves: something that didn’t lead to burnout, dilute our identity, or rely on generic blueprints.",
+        "2": "The more we tested, built, and refined, the more we realized the value of what we were creating — not just for us, but for others navigating the same complexity. That’s when Trendella Digital was born: not as a pivot, but as a deliberate response to a need we deeply understood. We didn’t follow someone else’s model. We created one — and now, we help others do the same."
+      },
+      "infoBlock": {
+        "title": "Tested, Refined, Rebuilt",
+        "description": {
+          "0": "What started as solving our roadblocks — pricing, messaging, systems, and growth — eventually turned into a repeatable framework.",
+          "1": "It worked for us. Then it worked for others. And eventually, it became Trendella Digital.",
+          "2": "Today, we partner with individuals who are ready to grow with intention — creators, service providers, freelancers, educators, strategists, and everyone in between."
+        },
+        "value": {
+          "0": "People who want their work to mean something.",
+          "1": "People who are done guessing.",
+          "2": "People who want their business to feel as good as it looks on paper."
+        }
+      }
+    },
+    "progress-you-can": {
+      "title": "Progress You Can Measure",
+      "desc": {
+        "0": "We’re not about vanity metrics. But we are about meaningful progress.",
+        "1": "Here’s what we’ve helped our clients achieve — and what we’re proud to stand behind:"
+      },
+      "statistic": {
+        "0": {
+          "subtitle": "of clients doubled their revenue within 6 months",
+          "text": "From freelancers to solo founders — clarity and structure pay off"
+        },
+        "1": {
+          "subtitle": "high-converting offers launched",
+          "text": "Irresistible, aligned, and built around what you do best."
+        },
+        "2": {
+          "subtitle": "systems mapped, automated, and simplified",
+          "text": "As time is a resource, and yours should be respected."
+        },
+        "3": {
+          "subtitle": "client retention",
+          "text": "We don’t do “one and done.” We build long-term wins with long-term people."
+        }
+      }
+    },
+    "scale": {
+      "title": "We’re Not in This to Scale for Scale’s Sake",
+      "description": {
+        "0": "We don’t believe success means building the biggest, loudest brand in the room.",
+        "1": "We believe it means building a business that aligns with your life, values, and your unique concept of freedom.",
+        "2": "At Trendella Digital, growth isn’t about shouting louder.",
+        "3": "It’s about thinking, executing better, and showing up with confidence — even on the messy days."
+      },
+      "table": {
+        "item": {
+          "0": "Clear strategy without the complexity",
+          "1": "Business systems that serve you, not the other way around",
+          "2": "Messaging that sounds like you — and actually works",
+          "3": "Support that sees you, not just your revenue goals"
+        },
+        "title": {
+          "0": "If You’re Craving…",
+          "1": "...you’re in the right place."
+        }
+      }
+    }
+  },
+  "howWeCanHelpYou": {
+    "hero": {
+      "title": {
+        "0": "How",
+        "1": "We Can Help You"
+      },
+      "description": "You're great at what you do. Let's make sure your project reflects that",
+      "button": "Book a Free Consultation"
+    },
+    "strategyImpact": {
+      "text": {
+        "0": "We Partner With Clients",
+        "1": "Across Multiple Inflection Points"
+      },
+      "title": "The Right Strategy Changes Everything",
+      "description": "We help you design strategy, systems, and structure that reflect your value and drive real growth — with clarity, control, and purpose built in.",
+      "items": {
+        "0": {
+          "title": "Launching a new direction",
+          "text": "after a pivot, burnout, or corporate exit"
+        },
+        "1": {
+          "title": "Clarifying a cluttered project",
+          "text": "that’s generating noise but lacking real traction"
+        },
+        "2": {
+          "title": "Refining an existing structure",
+          "text": "that’s ready to scale but bottlenecked by systems or positioning"
+        },
+        "3": {
+          "title": "Systemizing delivery",
+          "text": "so your project works, even when you’re not constantly working in it"
+        },
+        "4": {
+          "title": "Optimizing marketing efforts",
+          "text": "to reduce wasted motion and increase qualified leads"
+        }
+      }
+    },
+    "specificImpact": {
+      "title": "Specific, High-Impact Areas of Support",
+      "description": "Advisory without implementation is incomplete. We co-create with you, combining strategic planning with operational precision."
+    },
+    "partnership": {
+      "title": "One-On-One Partnership With Tactical Intelligences",
+      "description": "We believe collaboration beats delegation. Our consulting is structured around deep partnership, combining high-level thinking with tactical precision.",
+      "items": {
+        "0": "Private 1:1 strategy sessions, customized to your goals",
+        "1": "Support that evolves as your business does — responsive, adaptive, and clear",
+        "2": "Strategic input paired with hands-on co-creation — from messaging to monetization",
+        "3": "A clear execution framework with weekly or biweekly momentum check-ins",
+        "4": "Real-time feedback and expert guidance on offers, funnels, messaging, and systems"
+      },
+      "heading": "You’ll receive:"
+    },
+    "outcomes": {
+      "title": "Outcomes That Prove the Process",
+      "description": "Our clients experience transformation through clarity, structure, and accountability:",
+      "button": "Check Out Before & After",
+      "items": {
+        "0": "Streamlined business models that run without chaos",
+        "1": "Messaging that captures the right audience with precision",
+        "2": "Offers that convert consistently and deliver real value",
+        "3": "Marketing that feels aligned — and performs on multiple fronts",
+        "4": "Systems that replace guesswork with structure",
+        "5": "Confidence to lead decisively, and grow intentionally"
+      }
+    },
+    "weHelp": {
+      "title": "We'll Help You See the Whole Picture",
+      "description": "Every growth journey starts with a meaningful conversation. We’ll help you assess where you are, where you’re headed, and what’s needed to close the gap.",
+      "button": "Contact Us"
     }
   }
 }

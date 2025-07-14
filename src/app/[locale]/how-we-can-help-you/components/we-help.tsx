@@ -1,20 +1,26 @@
 'use client';
 
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 export const WeHelp = () => {
+  const t = useTranslations('howWeCanHelpYou.weHelp');
+
   return (
     <section className="flex gap-10 px-[60px] py-[100px] max-md:flex-col max-md:px-4 max-md:py-[60px]">
       <section className="flex w-1/2 flex-col gap-4 max-md:w-full">
-        <Title color="white">We’ll Help You See the Whole Picture</Title>
+        <Title color="white">
+          {t('title', { fallback: "We'll Help You See the Whole Picture" })}
+        </Title>
         <Text color="white">
-          Every growth journey starts with a meaningful conversation. We’ll help
-          you assess where you are, where you’re headed, and what’s needed to
-          close the gap.s
+          {t('description', {
+            fallback:
+              'Every growth journey starts with a meaningful conversation. We’ll help you assess where you are, where you’re headed, and what’s needed to close the gap.',
+          })}
         </Text>
       </section>
       <Link
@@ -23,7 +29,7 @@ export const WeHelp = () => {
       >
         <div className="mt-auto flex flex-col gap-2">
           <Title size="2xl" as="h3" color="white">
-            Contact Us
+            {t('button', { fallback: 'Contact Us' })}
           </Title>
           <span className="ml-auto">
             <ArrowRight />

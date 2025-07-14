@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
 import { Button } from '@/shared/ui/kit/button';
@@ -25,16 +26,23 @@ export const Hero = () => {
 };
 
 const HeroContent = () => {
+  const t = useTranslations('howWeCanHelpYou.hero');
+
   return (
     <div className="relative z-10 m-1 mt-auto flex w-max flex-col gap-4 rounded-sm bg-white p-4">
       <Title as="h1">
-        <span className="opacity-50">How</span> We Can Help You
+        <span className="opacity-50">{t('title.0', { fallback: 'How' })}</span>{' '}
+        {t('title.1', { fallback: 'We Can Help You' })}
       </Title>
       <Text color="black">
-        You’re great at what you do. Let’s make sure your project reflects that.
+        {t('description', {
+          fallback:
+            "You're great at what you do. Let's make sure your project reflects that.",
+        })}
       </Text>
       <Button>
-        Book a Free Consultation <ArrowRight color="black" />
+        {t('button', { fallback: 'Book a Free Consultation' })}{' '}
+        <ArrowRight color="black" />
       </Button>
     </div>
   );

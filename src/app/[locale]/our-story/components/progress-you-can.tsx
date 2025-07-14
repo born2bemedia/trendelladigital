@@ -1,22 +1,30 @@
 'use client';
 
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 export const ProgressYouCan = () => {
+  const t = useTranslations('ourStory.progress-you-can');
+
   return (
     <section className="mx-4 flex flex-col gap-10 bg-white px-[60px] py-[100px] max-md:px-4 max-md:py-[60px]">
       <section className="flex flex-col gap-10">
-        <Title>Progress You Can Measure</Title>
+        <Title>{t('title', { fallback: 'Progress You Can Measure' })}</Title>
         <Text color="dark">
-          Progress You Can Measure
+          {t('title', { fallback: 'Progress You Can Measure' })}
           <br />
-          We’re not about vanity metrics. But we are about meaningful progress.
+          {t('desc.0', {
+            fallback:
+              'We’re not about vanity metrics. But we are about meaningful progress.',
+          })}
           <br />
-          Here’s what we’ve helped our clients achieve — and what we’re proud to
-          stand behind:
+          {t('desc.1', {
+            fallback:
+              'Here’s what we’ve helped our clients achieve — and what we’re proud to stand behind:',
+          })}
         </Text>
       </section>
       <StatisticBoard />
@@ -25,26 +33,46 @@ export const ProgressYouCan = () => {
 };
 
 const StatisticBoard = () => {
+  const t = useTranslations('ourStory.progress-you-can');
+
   const stats = [
     {
       title: '87%',
-      subtitle: 'of clients doubled their revenue within 6 months',
-      text: 'From freelancers to solo founders — clarity and structure pay off',
+      subtitle: t('statistic.0.subtitle', {
+        fallback: 'of clients doubled their revenue within 6 months',
+      }),
+      text: t('statistic.0.text', {
+        fallback:
+          'From freelancers to solo founders — clarity and structure pay off',
+      }),
     },
     {
       title: '200+',
-      subtitle: 'high-converting offers launched',
-      text: 'Irresistible, aligned, and built around what you do best.',
+      subtitle: t('statistic.1.subtitle', {
+        fallback: 'high-converting offers launched',
+      }),
+      text: t('statistic.1.text', {
+        fallback: 'Irresistible, aligned, and built around what you do best.',
+      }),
     },
     {
       title: '1,000+',
-      subtitle: 'systems mapped, automated, and simplified',
-      text: 'As time is a resource, and yours should be respected.',
+      subtitle: t('statistic.2.subtitle', {
+        fallback: 'systems mapped, automated, and simplified',
+      }),
+      text: t('statistic.2.text', {
+        fallback: 'As time is a resource, and yours should be respected.',
+      }),
     },
     {
       title: '94%',
-      subtitle: 'client retention',
-      text: 'We don’t do “one and done.” We build long-term wins with long-term people.',
+      subtitle: t('statistic.3.subtitle', {
+        fallback: 'client retention',
+      }),
+      text: t('statistic.3.text', {
+        fallback:
+          'We don’t do “one and done.” We build long-term wins with long-term people.',
+      }),
     },
   ];
 
