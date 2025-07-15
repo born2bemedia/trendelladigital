@@ -41,6 +41,11 @@ export const HowItHappens = () => {
 
 const slides = [
   {
+    imgUrl: '/images/home/how-it-happens/5.jpg',
+    name: 'Review. Refine. Repeat.',
+    text: 'We check progress, make smart adjustments, celebrate wins, and scale what works. Strategy isn’t static — we evolve as you do.',
+  },
+  {
     imgUrl: '/images/home/how-it-happens/1.jpg',
     name: 'The Discovery Spark',
     text: 'We hop on a free strategy call to uncover where you are, where you want to go, and what’s been holding you back. Clarity starts here.',
@@ -59,11 +64,6 @@ const slides = [
     imgUrl: '/images/home/how-it-happens/4.jpg',
     name: 'Let’s Build It Together',
     text: 'We don’t just advise — we help you do the thing: map funnels, shape offers, review sales pages, tweak your messaging, optimize your flow.',
-  },
-  {
-    imgUrl: '/images/home/how-it-happens/5.jpg',
-    name: 'Review. Refine. Repeat.',
-    text: 'We check progress, make smart adjustments, celebrate wins, and scale what works. Strategy isn’t static — we evolve as you do.',
   },
 ];
 
