@@ -61,7 +61,7 @@ const NavItem = ({
   <Link
     href={href}
     className={cn(
-      'border-b-[0.5px] pt-3.5 pr-4 pb-1 pl-2 transition duration-300 ease-in-out hover:opacity-70',
+      'z-50 border-b-[0.5px] pt-3.5 pr-4 pb-1 pl-2 transition duration-300 ease-in-out hover:opacity-70',
       isHomePage ? 'border-white' : 'border-black',
     )}
   >
