@@ -5,27 +5,48 @@
       "description": "Got a question? An idea? Or just want to talk things through? We’re here.",
       "button": "Send Us a Message"
     },
+    "whatYouDo": {
+      "title": "From What You Do to What You’re Known For",
+      "description": "We don’t do generic advice. We offer hands-on, personalized consulting that aligns with your vision, pace, and potential — and moves you forward with purpose. Here’s what we’ll work on together:",
+      "slides": {
+        "0": {
+          "title": "Turning your expertise into high-value offers",
+          "description": "people actually want to buy"
+        },
+        "1": {
+          "title": "Positioning your brand",
+          "description": "people actually want to buy"
+        },
+        "2": {
+          "title": "Designing a business model",
+          "description": "that’s sustainable, scalable, and yours"
+        },
+        "3": {
+          "title": "Building strategic systems",
+          "description": "that support consistent income"
+        },
+        "4": {
+          "title": "Setting clear, trackable revenue goals",
+          "description": "and hitting them"
+        },
+        "5": {
+          "title": "Creating messaging that converts",
+          "description": "without sounding like everyone else"
+        },
+        "6": {
+          "title": "Removing the noise and decision fatigue",
+          "description": "that slow you down"
+        },
+        "7": {
+          "title": "Developing the mindset and habits",
+          "description": "of a focused, self-led founder"
+        }
+      }
+    },
     "consultings": {
       "title": {
         "0": "Business Consulting for Structure",
         "1": "Marketing Consulting for Scale"
-      },
-      "marketing": {
-        "name": "Marketing Consulting",
-        "subtitle": "Market Yourself Like a Brand. Sell Like a Pro.",
-        "excerpt": "Effective marketing doesn't start with posting. It starts with positioning, strategy, and the right systems behind it.",
-        "description": "For creators, coaches, freelancers, and experts who are ready to go from \"posting\" to profiting.",
-        "label": "Tired of marketing that doesn't work?",
-        "buttonLabel": "Discover Marketing Consulting",
-        "includeLabel": "We help with:",
-        "includes": {
-          "0": "Brand messaging strategy & visual identity alignment",
-          "1": "Campaign planning with performance analysis & refinement",
-          "2": "Content marketing ecosystems (email, social, video, funnels)",
-          "3": "Visibility growth strategies across owned & earned media",
-          "4": "Target audience profiling & niche dominance tactics",
-          "5": "Strategic funnel mapping & conversion optimization"
-        }
       },
       "marketing": {
         "name": "Marketing Consulting",
