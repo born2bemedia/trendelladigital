@@ -27,6 +27,23 @@
           "5": "Strategic funnel mapping & conversion optimization"
         }
       },
+      "marketing": {
+        "name": "Marketing Consulting",
+        "subtitle": "Market Yourself Like a Brand. Sell Like a Pro.",
+        "excerpt": "Effective marketing doesn't start with posting. It starts with positioning, strategy, and the right systems behind it.",
+        "description": "For creators, coaches, freelancers, and experts who are ready to go from \"posting\" to profiting.",
+        "label": "Tired of marketing that doesn't work?",
+        "buttonLabel": "Discover Marketing Consulting",
+        "includeLabel": "We help with:",
+        "includes": {
+          "0": "Brand messaging strategy & visual identity alignment",
+          "1": "Campaign planning with performance analysis & refinement",
+          "2": "Content marketing ecosystems (email, social, video, funnels)",
+          "3": "Visibility growth strategies across owned & earned media",
+          "4": "Target audience profiling & niche dominance tactics",
+          "5": "Strategic funnel mapping & conversion optimization"
+        }
+      },
       "business": {
         "name": "Business Consulting",
         "subtitle": "Build Your Business with Expert Support",
