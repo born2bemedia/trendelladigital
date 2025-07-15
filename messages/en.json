@@ -27,6 +27,23 @@
           "5": "Strategic funnel mapping & conversion optimization"
         }
       },
+      "marketing": {
+        "name": "Marketing Consulting",
+        "subtitle": "Market Yourself Like a Brand. Sell Like a Pro.",
+        "excerpt": "Effective marketing doesn't start with posting. It starts with positioning, strategy, and the right systems behind it.",
+        "description": "For creators, coaches, freelancers, and experts who are ready to go from \"posting\" to profiting.",
+        "label": "Tired of marketing that doesn't work?",
+        "buttonLabel": "Discover Marketing Consulting",
+        "includeLabel": "We help with:",
+        "includes": {
+          "0": "Brand messaging strategy & visual identity alignment",
+          "1": "Campaign planning with performance analysis & refinement",
+          "2": "Content marketing ecosystems (email, social, video, funnels)",
+          "3": "Visibility growth strategies across owned & earned media",
+          "4": "Target audience profiling & niche dominance tactics",
+          "5": "Strategic funnel mapping & conversion optimization"
+        }
+      },
       "business": {
         "name": "Business Consulting",
         "subtitle": "Build Your Business with Expert Support",
@@ -47,7 +64,7 @@
     },
     "hero": {
       "title": "Marketing & Business Consulting",
-      "description": "You",
+      "description": "You’ve spent years building skills, now let’s turn them into something you love waking up for. Trendella Digital will craft a plan for you.",
       "consultation": {
         "button": "Book a Free Consultation"
       }
@@ -255,6 +272,636 @@
       "title": "We'll Help You See the Whole Picture",
       "description": "Every growth journey starts with a meaningful conversation. We’ll help you assess where you are, where you’re headed, and what’s needed to close the gap.",
       "button": "Contact Us"
+    }
+  },
+  "businessConsulting": {
+    "hero": {
+      "title": "Business Consulting Services",
+      "description": "Let’s design, refine, and elevate your business — together.",
+      "button": "Talk to an Expert"
+    },
+    "info": {
+      "title": "Structure That Works Harder Than You Do",
+      "subtitle": "Wondering what comes",
+      "description": {
+        "0": "You didn’t build your expertise to stay stuck in burnout. Most business challenges are structural, not personal.",
+        "1": "We help you design systems that reduce friction, sharpen focus, and scale what already works — from business models to pricing and operations. Clarity isn’t just a feeling — it drives results."
+      },
+      "list": {
+        "title": "We Build the Business Behind the Expertise",
+        "description": "Strategy only matters if it changes what happens Monday morning. We work hands-on to design a business foundation that performs — not just looks polished on paper.",
+        "items": {
+          "0": "A business model you can explain — and scale with confidence",
+          "1": "Offers that convert by solving real problems",
+          "2": "Revenue streams that are sustainable and strategic",
+          "3": "Pricing that reflects your value and supports growth",
+          "4": "Operations that save time, not drain it",
+          "5": "Systems that grow with you — not around you"
+        }
+      }
+    },
+    "quote": {
+      "value": "We’ve seen too many brilliant people burn out inside messy, overcomplicated businesses. Our job is to change that — with systems that support how you lead, not how others say you should. We treat every client’s business like our own — no fluff, no filler, just strategy that performs. Your time is valuable, and your growth deserves more than recycled advice.",
+      "who": "CEO, Trendella Digital"
+    }
+  },
+  "marketingConsulting": {
+    "hero": {
+      "title": "Marketing Consulting Services",
+      "description": "Let’s make your brand unignorable.",
+      "button": "Talk to an Expert"
+    },
+    "info": {
+      "title": "Visibility Is Only Half The Story, Conversion Is the Rest",
+      "description": {
+        "0": "You’re already doing the work — now let’s make sure the right people see it, value it, and act. We help you build a strategy-first marketing system that drives attention and action.",
+        "1": "When your message is clear, your audience knows exactly why they need you — and what to do next.",
+        "2": "Together, we create the clarity and structure to deliver that message consistently, without relying on constant posting or burnout.",
+        "3": "No noise. No guesswork. Just marketing that performs — and compounds over time."
+      },
+      "subtitle": "Interested in how we turn strategy into action?",
+      "list": {
+        "title": "We Build the Marketing Engine Behind the Brand",
+        "description": "Effective marketing starts with purpose. We partner with you to build a strategy-led foundation that drives visibility, qualifies leads, and builds trust that converts.",
+        "items": {
+          "0": "Messaging that resonates — and stands out",
+          "1": "A funnel that moves people from interest to action",
+          "2": "Positioning that highlights your strengths and attracts the right clients",
+          "3": "Content frameworks that save time and create demand",
+          "4": "Campaigns built to convert, not just fill a calendar",
+          "5": "A lead-gen system that runs without chasing trends"
+        }
+      }
+    },
+    "quote": {
+      "value": "We’ve seen too many brilliant people burn out inside messy, overcomplicated businesses. Our job is to change that — with systems that support how you lead, not how others say you should. We treat every client’s business like our own — no fluff, no filler, just strategy that performs. Because your time is valuable, and your growth deserves more than recycled advice.",
+      "who": "CEO, Trendella Digital"
+    }
+  },
+  "consultingInfoBlock": {
+    "button": "What to Expect",
+    "walkAway": "You’ll walk away with:"
+  },
+  "consultingProduct": {
+    "title": "What We Cover Inside Business Consulting",
+    "description": "We focus on building businesses that perform with clarity, efficiency, and strategic depth — not just survive on hustle.",
+    "subtitle": "Browse all services, packages, and pricing details",
+    "button": "Explore Pricing Options",
+    "business": {
+      "0": {
+        "name": "Business Model Design & Scalable Monetization Strategy",
+        "description": "We help you design a lean, profitable business model that reflects your expertise and growth goals. Together, we map scalable revenue channels built for long-term traction — not short-term spikes.",
+        "includes": {
+          "0": "Business model audit & refinement",
+          "1": "Offer suite mapping (core, upsell, downsell)",
+          "2": "Income stream planning (active + passive)",
+          "3": "Service-to-product evolution strategy",
+          "4": "Market positioning & gap analysis",
+          "5": "Monetization path by business stage"
+        }
+      },
+      "1": {
+        "name": "Sales Strategy Development with Lead-Generation Systems",
+        "description": "We build a proactive sales structure that generates and qualifies leads systematically. No more chasing — just a reliable path from first contact to close.",
+        "includes": {
+          "0": "Lead capture & qualification flows",
+          "1": "High-converting sales page strategy",
+          "2": "Discovery call scripts & booking funnel",
+          "3": "Sales pipeline setup (simple CRM)",
+          "4": "Follow-up workflows & email sequences",
+          "5": "Warm lead reactivation campaigns"
+        }
+      },
+      "2": {
+        "name": "High-Converting Offer Architecture & Pricing Systems",
+        "description": "We refine or build offers that solve real problems, speak directly to your market, and drive consistent sales. Pricing strategies are built to reflect both your value and your business capacity.",
+        "includes": {
+          "0": "Signature offer development",
+          "1": "Tiered offer ladder creation",
+          "2": "Pricing recalibration with margin strategy",
+          "3": "Offer promise clarity & value framing",
+          "4": "Naming, structure, and inclusions optimization",
+          "5": "Offer-market fit validation process"
+        }
+      },
+      "3": {
+        "name": "Operational Workflows & Automation for Solo Founders",
+        "description": "We streamline backend processes to reduce friction and reclaim your time. Automations are tailored to fit your business model — not generic tools that create more work.",
+        "includes": {
+          "0": "Client onboarding automation",
+          "1": "Delivery & fulfillment workflows",
+          "2": "Scheduling + email automation setup",
+          "3": "Internal SOP documentation",
+          "4": "Lead and sales tracking system",
+          "5": "Admin task streamlining & delegation"
+        }
+      },
+      "4": {
+        "name": "Personalized Revenue Roadmap with Milestones & Metrics",
+        "description": "You get a data-informed roadmap that connects your goals to practical, trackable execution. Every milestone is tied to specific outcomes, timelines, and performance metrics.",
+        "includes": {
+          "0": "90-day strategic growth plans",
+          "1": "KPI selection & dashboard setup",
+          "2": "Revenue forecasting by offer + traffic",
+          "3": "Weekly milestone checklists",
+          "4": "Progress tracking & review system",
+          "5": "Launch and revenue pacing framework"
+        }
+      },
+      "5": {
+        "name": "Strategic Decision-Making Support & Business Diagnostics",
+        "description": "You'll gain visibility into what's working, what's draining you, and where to double down. Every decision is grounded in real business analysis — not assumption or guesswork.",
+        "includes": {
+          "0": "Full business health diagnostics",
+          "1": "Performance audit (offers, content, traffic)",
+          "2": "Workflow + system inefficiency mapping",
+          "3": "Decision-making prioritization frameworks",
+          "4": "Monthly/quarterly strategy reviews",
+          "5": "Bottleneck + leverage point analysis"
+        }
+      },
+      "6": {
+        "name": "Founder Positioning & Personal Brand Strategy",
+        "description": "We help you clarify your voice, message, and visibility as a founder — so your personal brand becomes a growth asset, not an afterthought. This work aligns your presence with your business goals and audience expectations.",
+        "includes": {
+          "0": "Personal brand audit & positioning",
+          "1": "Bio, tagline, and founder story refinement",
+          "2": "Visibility strategy (podcasts, interviews, features)",
+          "3": "Authority-building content strategy",
+          "4": "Founder page structure & narrative",
+          "5": "Messaging guide for speaking, media & outreach"
+        }
+      },
+      "7": {
+        "name": "Client Experience & Retention Systems",
+        "description": "Client success isn't just a deliverable — it's a growth engine. We help you create experiences that generate repeat business, referrals, and meaningful transformation.",
+        "includes": {
+          "0": "Client onboarding + offboarding flows",
+          "1": "Feedback collection & testimonial prompts",
+          "2": "Retention tracking & re-engagement strategy",
+          "3": "Internal delivery quality standards",
+          "4": "Milestone-based delivery roadmap",
+          "5": "Client portal or central communication setup"
+        }
+      },
+      "8": {
+        "name": "Capacity Planning & Team Structure Design",
+        "description": "Scaling isn't about doing more — it's about building right. We map the people, tools, and roles that support your growth while protecting your time and energy.",
+        "includes": {
+          "0": "Current bandwidth & time audit",
+          "1": "Scalable delivery structure planning",
+          "2": "Role design for part-time or freelance help",
+          "3": "Hiring plan for support roles",
+          "4": "SOP handoff systems & delegation workflows",
+          "5": "Capacity forecasting models"
+        }
+      },
+      "9": {
+        "name": "Offer Launch Strategy & Execution Support",
+        "description": "Whether it's your first or fifth offer, we guide the launch with precision. From pre-launch prep to post-launch optimization, we make sure nothing falls through the cracks.",
+        "includes": {
+          "0": "Launch plan with key dates & deliverables",
+          "1": "Pre-launch runway content + list warming",
+          "2": "Email & content sequence mapping",
+          "3": "Sales page + conversion asset checklist",
+          "4": "Debrief and KPI analysis template",
+          "5": "Post-launch refinement & retention plan"
+        }
+      }
+    },
+    "marketing": {
+      "1": {
+        "name": "Brand Messaging Strategy & Visual Identity Alignment",
+        "description": "We clarify what your brand says, how it sounds, and why it stands out — across every touchpoint.",
+        "includes": {
+          "0": "Brand voice & tone guide",
+          "1": "Core messaging pillars",
+          "2": "Tagline, elevator pitch & \"about\" rewrites",
+          "3": "Visual direction alignment audit",
+          "4": "Website copy & brand story refinement",
+          "5": "Brand positioning in competitive landscape"
+        }
+      },
+      "2": {
+        "name": "Strategic Funnel Mapping & Conversion Optimization",
+        "description": "We design and refine your funnel for clarity, ease, and consistent conversion — from first click to paying client.",
+        "includes": {
+          "0": "Funnel blueprint creation (opt-in to sale)",
+          "1": "Entry point strategy (lead magnets, quizzes, etc.)",
+          "2": "Conversion page audit + recommendations",
+          "3": "Email sequence planning (nurture, sales, retention)",
+          "4": "Performance tracking setup (click-through, open, CVR)",
+          "5": "A/B testing plan and iteration schedule"
+        }
+      },
+      "3": {
+        "name": "Content Marketing Ecosystems",
+        "description": "We help you build a cohesive content system that creates demand and supports your funnel — with less effort.",
+        "includes": {
+          "0": "Multi-channel content strategy",
+          "1": "Evergreen vs. timely content planning",
+          "2": "Repurposing & batching frameworks",
+          "3": "Visual content brief for designers or video editors",
+          "4": "Branded content templates & copy frameworks",
+          "5": "Promotion workflows and publishing cadence"
+        }
+      },
+      "4": {
+        "name": "Campaign Planning with Performance Analysis & Refinement",
+        "description": "We map marketing campaigns that are built to convert — not just post for visibility.",
+        "includes": {
+          "0": "30–90 day campaign planning sessions",
+          "1": "Launch & promotion calendars",
+          "2": "KPI tracking dashboard setup",
+          "3": "Post-campaign performance debrief",
+          "4": "Optimization process with key levers",
+          "5": "Cross-channel alignment checklist"
+        }
+      },
+      "5": {
+        "name": "Target Audience Profiling & Niche Dominance Tactics",
+        "description": "We help you define, segment, and lead your niche with confidence.",
+        "includes": {
+          "0": "Customer research surveys & interviews",
+          "1": "Audience segmentation map",
+          "2": "Buyer journey design",
+          "3": "Offer-audience fit evaluation",
+          "4": "Market positioning analysis",
+          "5": "Competitor messaging gap map"
+        }
+      },
+      "6": {
+        "name": "Visibility Growth Strategies Across Owned & Earned Media",
+        "description": "We expand your reach through organic and earned channels — sustainably and strategically.",
+        "includes": {
+          "0": "Owned media channel strategy (blog, podcast, etc.)",
+          "1": "Guest features & PR strategy outline",
+          "2": "SEO-ready content plans",
+          "3": "Social proof & authority asset planning",
+          "4": "Referral and affiliate program planning",
+          "5": "Strategic partnership pitch scripts"
+        }
+      },
+      "7": {
+        "name": "Email Marketing Strategy & Automation Flows",
+        "description": "Email remains one of the most powerful tools for nurturing, converting, and retaining clients — when done right.",
+        "includes": {
+          "0": "List segmentation + audience tagging",
+          "1": "Welcome & onboarding sequences",
+          "2": "Sales & re-engagement sequences",
+          "3": "Behavior-based automation triggers",
+          "4": "Promotional broadcast templates",
+          "5": "Deliverability audit and optimization"
+        }
+      },
+      "8": {
+        "name": "Marketing Metrics & Analytics Setup",
+        "description": "We ensure you track what matters and make decisions based on real data — not intuition.",
+        "includes": {
+          "0": "KPI dashboard setup (GA, CRM, social)",
+          "1": "Conversion tracking implementation",
+          "2": "Lead source attribution mapping",
+          "3": "Campaign-level reporting templates",
+          "4": "Analytics training for non-tech teams",
+          "5": "UTM strategy and naming conventions"
+        }
+      },
+      "9": {
+        "name": "Value-Driven Social Media Strategy",
+        "description": "We help you build a smart presence on social media that serves your goals — without chasing trends.",
+        "includes": {
+          "0": "Platform-specific strategy by audience intent",
+          "1": "Content buckets & post types",
+          "2": "Engagement & DM flow frameworks",
+          "3": "Hashtag and SEO strategy for reach",
+          "4": "Post and story CTAs that convert",
+          "5": "Analytics & performance review rhythm"
+        }
+      },
+      "10": {
+        "name": "Lead Magnet & Opt-In Asset Creation",
+        "description": "Your lead magnet is the first impression — we make it count.",
+        "includes": {
+          "0": "Offer-aligned lead magnet concepting",
+          "1": "Downloadable asset copy + design outline",
+          "2": "Delivery system setup (landing page + email)",
+          "3": "Thank-you page optimization",
+          "4": "Traffic source matching",
+          "5": "Follow-up sequence planning"
+        }
+      }
+    }
+  },
+  "consultingComplexSolution": {
+    "title": {
+      "0": "Need A Complex Solution?",
+      "1": "Check Our {type} Consulting Packages"
+    },
+    "types": {
+      "marketing": "Marketing",
+      "business": "Business"
+    },
+    "description": "Support that matches your stage, capacity, and ambition.",
+    "button": "Book a Free Call",
+    "footer": {
+      "0": "Not Sure Which One",
+      "1": "Fits Your Current Needs?",
+      "2": "Let’s walk through it together."
+    },
+    "bestFor": "Best for:",
+    "price": "Price:",
+    "includes": "Services include:",
+    "request": "Request",
+    "from": "from",
+    "business": {
+      "cheap": {
+        "name": "Essentials",
+        "description": "Clarity and structure to get you unstuck and into motion.",
+        "bestFor": {
+          "0": "early-stage founders",
+          "1": "solo service providers",
+          "2": "post-pivot rebuilds."
+        },
+        "includes": {
+          "0": "1:1 diagnostic strategy session (90 mins)",
+          "1": "Tools & templates to support execution",
+          "2": "Offer & pricing architecture review",
+          "3": "1 follow-up support session (60 mins)",
+          "4": "30-day personalized action plan",
+          "5": "Private feedback channel (Slack/email)"
+        },
+        "price": "950"
+      },
+      "moderate": {
+        "name": "Growth Partner",
+        "description": "A hands-on consulting track with structure, strategy, and momentum.",
+        "bestFor": {
+          "0": "consultants",
+          "1": "coaches",
+          "2": "and creators refining or relaunching."
+        },
+        "includes": {
+          "0": "Strategy blueprint & business model redesign",
+          "1": "Revenue roadmap with custom KPI tracking",
+          "2": "Offer suite + pricing strategy implementation",
+          "3": "Funnel and sales audit + optimization guidance",
+          "4": "4 biweekly 1:1 consulting calls (60 mins)",
+          "5": "Email + Slack access for support between sessions"
+        },
+        "price": "2400"
+      },
+      "expensive": {
+        "name": "Founder Lab (Full Build)",
+        "description": "Bespoke, end-to-end consulting designed to transform your business from the inside out.",
+        "bestFor": {
+          "0": "founders scaling operations",
+          "1": "teams",
+          "2": "or programs — and ready for custom infrastructure."
+        },
+        "includes": {
+          "0": "Full business diagnostic & founder profile assessment",
+          "1": "Operational systems, automation, and SOP builds",
+          "2": "Custom strategy & monetization blueprint",
+          "3": "Team/capacity plan + hiring roadmap",
+          "4": "8 x 1:1 working sessions (weekly or biweekly)",
+          "5": "Client experience and retention system design",
+          "6": "Offer development + launch support",
+          "7": "Full KPI dashboard + review cadence"
+        },
+        "price": "5200"
+      }
+    },
+    "marketing": {
+      "cheap": {
+        "name": "Clarity Intensive",
+        "description": "Get your positioning, messaging, and marketing structure in sync.",
+        "bestFor": {
+          "0": "personal brands",
+          "1": "freelancers",
+          "2": "or creators looking to align and simplify."
+        },
+        "includes": {
+          "0": "90-min messaging & positioning strategy session",
+          "1": "1 follow-up support session (60 mins)",
+          "2": "Brand & funnel audit with action summary",
+          "3": "Content & CTA framework templates",
+          "4": "30-day marketing plan tailored to one core offer",
+          "5": "Email access for 7 days post-session"
+        },
+        "price": "950"
+      },
+      "moderate": {
+        "name": "Growth Engine",
+        "description": "A hands-on engagement to build (or rebuild) your marketing system for traction.",
+        "bestFor": {
+          "0": "coaches",
+          "1": "service providers",
+          "2": "consultants ready for full-funnel strategy."
+        },
+        "includes": {
+          "0": "Funnel mapping & conversion optimization",
+          "1": "Campaign planning & KPI dashboard setup",
+          "2": "Core messaging + content ecosystem setup",
+          "3": "Email + Slack support between calls",
+          "4": "4 x 1:1 implementation sessions (biweekly)",
+          "5": "90-day funnel content & campaign roadmap"
+        },
+        "price": "2400"
+      },
+      "expensive": {
+        "name": "Full Visibility Accelerator",
+        "description": "A fully tailored system for marketing that scales with you — and works while you sleep.",
+        "bestFor": {
+          "0": "experts launching a signature offer",
+          "1": "growing teams",
+          "2": "or scaling visibility."
+        },
+        "includes": {
+          "0": "Full marketing audit (messaging, content, funnels, data)",
+          "1": "Content calendar, channel strategy & SEO plan",
+          "2": "Strategic campaign design & lead magnet optimization",
+          "3": "Visibility & PR strategy roadmap",
+          "4": "8 x consulting sessions over 8–10 weeks",
+          "5": "Email automation build + evergreen funnel blueprint",
+          "6": "Performance dashboards & testing frameworks"
+        },
+        "price": "5200"
+      }
+    }
+  },
+  "consultingSteps": {
+    "business": {
+      "title": "From First “Let’s Talk” to “This Is Working” — Here's How It Happens",
+      "values": {
+        "0": {
+          "title": "Diagnostic Call",
+          "description": "We dive into your current model, challenges, and goals to uncover the high-impact opportunities you may be overlooking."
+        },
+        "1": {
+          "title": "Strategy Blueprint",
+          "description": "Together, we map out your custom business architecture — from offers and pricing to revenue pathways and operational workflows."
+        },
+        "2": {
+          "title": "Implementation Sessions",
+          "description": "In focused, hands-on meetings, we bring your blueprint to life — building systems, refining processes, and aligning execution."
+        },
+        "3": {
+          "title": "Ongoing Optimization",
+          "description": "With real-time data and feedback loops, we continuously fine-tune your infrastructure to ensure steady growth and resilience."
+        }
+      }
+    },
+    "marketing": {
+      "title": "Marketing Consulting: Our Collaborative Process in Four Steps",
+      "values": {
+        "0": {
+          "title": "Brand Audit Call",
+          "description": "We assess your current messaging, positioning, and audience engagement to pinpoint the levers that drive real demand."
+        },
+        "1": {
+          "title": "Marketing Blueprint",
+          "description": "We co-create a tailored framework—defining your core message, funnel architecture, content cadence, and channel mix."
+        },
+        "2": {
+          "title": "Campaign Activation Sessions",
+          "description": "Together, we launch and calibrate campaigns, build lead-nurturing workflows, and ensure every touchpoint converts."
+        },
+        "3": {
+          "title": "Performance Optimization",
+          "description": "With real-time data and feedback loops, we continuously fine-tune your infrastructure to ensure steady growth and resilience."
+        }
+      }
+    }
+  },
+  "consultingReasons": {
+    "title": "Why Trendella Digital?",
+    "text": "See how founders like you leveled up with structure:",
+    "button": "Before & After Results",
+    "business": {
+      "0": {
+        "title": "Strategy You Can Trust",
+        "description": "Our frameworks are battle-tested by founders and operators — not lifted from templates or theory."
+      },
+      "1": {
+        "title": "Founder-First Approach",
+        "description": "We tailor strategy to your strengths, vision, and bandwidth — so growth feels aligned, not overwhelming."
+      },
+      "2": {
+        "title": "Hands-On Co-Creation",
+        "description": "We don’t hand you a deck and walk away. From offer design to system implementation, we’re in it with you."
+      },
+      "3": {
+        "title": "Clarity Backed by Data",
+        "description": "Our recommendations are driven by metrics, not opinions — and every decision maps to outcomes that matter."
+      }
+    },
+    "marketing": {
+      "0": {
+        "title": "Founder-Led Marketing",
+        "description": "Your voice, your vision, amplified — without losing authenticity or control."
+      },
+      "1": {
+        "title": "Positioning with Purpose",
+        "description": "We tailor strategy to your strengths, vision, and bandwidth — so growth feels aligned, not overwhelming."
+      },
+      "2": {
+        "title": "Hands-On, Not High-Level",
+        "description": "From strategy to execution, we collaborate at every stage to ensure your message moves the needle — not just fills content calendars."
+      },
+      "3": {
+        "title": "Systems That Scale",
+        "description": "We design repeatable, data-informed systems that grow alongside your business — without demanding more from you."
+      }
+    }
+  },
+  "consultingReviews": {
+    "title": "What Our Clients Say",
+    "business": {
+      "0": {
+        "review": "I finally feel in control of my business — not buried by it.",
+        "description": "Working with Trendella Digital gave me the structure, clarity, and momentum I didn’t know I was missing.",
+        "name": "Ana Ruiz",
+        "position": "Founder"
+      },
+      "1": {
+        "review": "From scattered ideas to a real, profitable offer — in 6 weeks.",
+        "description": "Their process is sharp, personalized, and actually works. It’s consulting that gets results, not confusion.",
+        "name": "Marcus Dean",
+        "position": "Consultant & Strategist"
+      },
+      "2": {
+        "review": "They helped me build systems I didn’t even know I needed.",
+        "description": "Everything now runs smoother — and I finally have time to lead, not just react.",
+        "name": "Leila K.",
+        "position": "CEO"
+      },
+      "3": {
+        "review": "They didn’t just give me advice — they helped me build.",
+        "description": "From backend automation to refining my client journey, every part of my business now runs cleaner and more profitably.",
+        "name": "Ravi Mehta",
+        "position": "Solo Founder, Tech Consult Co."
+      },
+      "4": {
+        "review": "I knew I had potential — but no idea how to scale it.",
+        "description": "Trendella Digital helped me turn what I do into a real business model, with offers, pricing, and systems that finally make sense.",
+        "name": "James Carter",
+        "position": "Founder"
+      },
+      "5": {
+        "review": "The clarity was almost immediate.",
+        "description": "I came in overwhelmed and second-guessing everything. Within weeks, I had a roadmap, momentum, and decisions I could stand behind.",
+        "name": "Danielle Moore",
+        "position": "Coach & Educator"
+      }
+    },
+    "marketing": {
+      "0": {
+        "review": "I stopped guessing — and started growing.",
+        "description": "Trendella Digital helped me clarify my message, streamline my funnel, and finally connect with the clients I actually wanted.",
+        "name": "Jordan Price",
+        "position": "Creator & Copy Strategist"
+      },
+      "1": {
+        "review": "They helped me find my voice — and turn it into sales.",
+        "description": "My audience used to scroll past. Now they stop, read, and convert. The difference in clarity and confidence is unreal.",
+        "name": "Eli Navarro",
+        "position": "Creative Copywriter"
+      },
+      "2": {
+        "review": "Every campaign feels like it has a purpose now.",
+        "description": "They didn’t just help with strategy — they taught me how to think about marketing like a business owner.",
+        "name": "Devon Hale",
+        "position": "UX Consultant"
+      },
+      "3": {
+        "review": "I finally feel like my brand has a direction — and a system that backs it up.",
+        "description": "Their team brought structure to my chaos and turned sporadic content into consistent growth.",
+        "name": "Alina Mercer",
+        "position": "Coach & Founder"
+      },
+      "4": {
+        "review": "Our marketing finally has structure — not just ideas.",
+        "description": "From funnel design to campaign rollout, everything we do now has purpose. We’re seeing better engagement and qualified leads every week.",
+        "name": "Nina Park",
+        "position": "Co-Founder"
+      },
+      "5": {
+        "review": "Before Trendella Digital, I was posting constantly with zero traction.",
+        "description": "Now, I have a real system that brings in leads without burnout. My messaging finally clicks — and so do my results.",
+        "name": "Sasha Kim",
+        "position": "Personal Brand Strategist"
+      }
+    }
+  },
+  "consultingBookStrategy": {
+    "book": "Book Your Strategy Call",
+    "business": {
+      "title": "Ready to Build with Confidence?",
+      "description": "Let’s co-design the systems that move your business forward — clearly, efficiently, and on your terms."
+    },
+    "marketing": {
+      "title": "Ready to Market With Clarity and Confidence?",
+      "description": "Let’s build a marketing engine that speaks clearly, sells naturally, and scales sustainably — all without sacrificing your voice."
     }
   }
 }

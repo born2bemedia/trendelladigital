@@ -9,4 +9,13 @@ export type Consulting = {
   includes: string[];
 };
 
+export type ComplexSolution = {
+  name: string;
+  description: string;
+  bestFor: string[];
+  includes: string[];
+  price: number;
+};
+
+export type SolutionType = 'cheap' | 'moderate' | 'expensive';
 export type ConsultingDetailed = Pick<Consulting, 'description' | 'includes'>;
