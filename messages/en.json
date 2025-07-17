@@ -1063,5 +1063,24 @@
       "title": "Systems That Save Time (and Sanity)",
       "description": "The behind-the-scenes tools we use to help founders get hours back each week."
     }
+  },
+  "beforeAndAfter": {
+    "hero": {
+      "title": "From “I Hope” to “I Know.” From “Someday” to “Now.”",
+      "description": {
+        "0": "We don’t just offer advice — we build transformation alongside you.",
+        "1": "From uncertain freelancers to confident business owners, our clients don’t just level up — they evolve. Here’s a look at the kind of change that happens when clarity meets action."
+      }
+    },
+    "bookStrategyCall": {
+      "title": "This Isn’t Overnight Hype.",
+      "description": {
+        "0": "It’s innovative, structured, personalized growth.",
+        "1": "We work with ready people, not necessarily “ready-made.”",
+        "2": "If you bring the drive, we’ll bring the strategy."
+      },
+      "button": "Book Your Free Strategy Call",
+      "buttonDescription": "Want to become your own Before & After story?"
+    }
   }
 }
