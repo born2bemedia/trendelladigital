@@ -1,0 +1,21 @@
+.bgPastel {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 15.71%, #fff 100%), #f0dbdf;
+  box-shadow:
+    -206px 123px 67px 0px rgba(0, 0, 0, 0),
+    -132px 78px 61px 0px rgba(0, 0, 0, 0.03),
+    -74px 44px 52px 0px rgba(0, 0, 0, 0.09),
+    -33px 20px 38px 0px rgba(0, 0, 0, 0.16),
+    -8px 5px 21px 0px rgba(0, 0, 0, 0.18);
+}
+
+.bgPurple {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 15.71%, #fff 100%), #aea5f5;
+  box-shadow:
+    -206px 123px 67px 0px rgba(0, 0, 0, 0),
+    -132px 78px 61px 0px rgba(0, 0, 0, 0.03),
+    -74px 44px 52px 0px rgba(0, 0, 0, 0.09),
+    -33px 20px 38px 0px rgba(0, 0, 0, 0.16),
+    -8px 5px 21px 0px rgba(0, 0, 0, 0.18);
+}

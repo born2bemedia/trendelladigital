@@ -924,5 +924,93 @@
       "title": "Ready to Market With Clarity and Confidence?",
       "description": "Let’s build a marketing engine that speaks clearly, sells naturally, and scales sustainably — all without sacrificing your voice."
     }
+  },
+  "whatToExpect": {
+    "hero": {
+      "title": {
+        "0": "A Collaborative Process,",
+        "1": "Built Around You"
+      },
+      "description": {
+        "0": "This isn’t a one-size-fits-all playbook.",
+        "1": "Our process is personal, hands-on, and designed to move you from “uncertain” to unstoppable — with strategy, systems, and support at every stage."
+      }
+    },
+    "map": {
+      "whatYouGet": "What You Get",
+      "phase": "Phase",
+      "0": {
+        "title": "Let’s Unpack the Vision",
+        "description": "We begin with a no-strings-attached strategy session — a genuine conversation, not a sales pitch.",
+        "listLabel": "Together, we explore:",
+        "list": {
+          "0": "What you’ve built so far",
+          "1": "What’s slowing you down",
+          "2": "What success looks like for you"
+        },
+        "whatYouGet": "A sharper view of your business and your most significant opportunities — whether we work together or not."
+      },
+      "1": {
+        "title": "The Plan You Didn’t Know You Needed",
+        "description": "You’ll receive a personalized roadmap tailored to your current business, capacity, and goals — not a recycled checklist.",
+        "listLabel": "Included:",
+        "list": {
+          "0": "A streamlined strategy for growth",
+          "1": "Your following 90-day priorities",
+          "2": "The tools, methods, and mindset you’ll need"
+        },
+        "whatYouGet": "Direction, clarity, and a step-by-step game plan that feels doable and exciting."
+      },
+      "2": {
+        "title": "Momentum Meets Method",
+        "description": "If we’re aligned, we kick off structured 1:1 sessions — either weekly or biweekly — to bring your strategy to life.",
+        "listLabel": "What happens inside?",
+        "list": {
+          "0": "We co-create high-converting offers",
+          "1": "Clean up messaging that’s missing the mark",
+          "2": "Build out lead systems and conversion pathways"
+        },
+        "whatYouGet": "Tangible progress. Clear feedback. And decisions you don’t second-guess."
+      },
+      "3": {
+        "title": "In the Trenches, Together",
+        "description": "This isn’t surface-level support — it’s roll-up-our-sleeves work. We review, adjust, create, and problem-solve together as your business takes shape.",
+        "listLabel": "Ongoing support includes:",
+        "list": {
+          "0": "On-demand reviews (copy, funnels, offers)",
+          "1": "Strategic tweaks and quick pivots",
+          "2": "Messaging audits and optimization",
+          "3": "Guidance exactly when you need it"
+        },
+        "whatYouGet": "Real-time partnership. Less friction. More flow."
+      },
+      "4": {
+        "title": "Growth on Your Terms",
+        "description": "As your business evolves, so does our strategy. We don’t set it and forget it — we check, test, refine, and scale what works.",
+        "listLabel": "Together, we’ll:",
+        "list": {
+          "0": "Monitor key metrics",
+          "1": "Adjust your systems to meet demand",
+          "2": "Double down on high-impact activities",
+          "3": "Prepare for the next level"
+        },
+        "whatYouGet": "A dynamic business that grows with you, not one that outpaces or limits you."
+      }
+    },
+    "ourPromise": {
+      "title": "Our Promise?",
+      "items": {
+        "1": "We’ll never overcomplicate what can be simple",
+        "2": "We’ll never hand you a strategy without support",
+        "3": "We’ll never let you get lost in the noise"
+      }
+    },
+    "workWithUs": {
+      "title": "Still wondering what it’s like to work with us?",
+      "cards": {
+        "0": "Check Out Our Before & After Transformations",
+        "1": "Book Your Free Strategy Call"
+      }
+    }
   }
 }
