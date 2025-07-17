@@ -48,15 +48,23 @@ export const Title = ({
   weight,
   size,
   as = 'h2',
+  capitalize = false,
 }: {
   children: ReactNode;
   className?: string;
   as?: ElementType;
+  capitalize?: boolean;
 } & TitleVariants) => {
   const Tag = as as keyof JSX.IntrinsicElements;
 
   return (
-    <Tag className={cn(titleVariants({ color, weight, size }), className)}>
+    <Tag
+      className={cn(
+        titleVariants({ color, weight, size }),
+        capitalize && 'capitalize',
+        className,
+      )}
+    >
       {children}
     </Tag>
   );

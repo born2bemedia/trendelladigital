@@ -1012,5 +1012,56 @@
         "1": "Book Your Free Strategy Call"
       }
     }
+  },
+  "yourGrowthLibrary": {
+    "hero": {
+      "title": "Your Growth Library",
+      "description": "Explore practical insights, proven strategies, and honest lessons from the field, designed to help you build with clarity."
+    }
+  },
+  "topics": {
+    "title": {
+      "0": "Insights That Make Sense",
+      "1": "and Strategies that Move You Forward"
+    },
+    "description": {
+      "0": "Got 10 minutes and a business to grow? You’re in the right place. Here, you’ll find posts designed for quick wins, meaningful insights, and clear next steps.",
+      "1": "Tired of vague advice that leaves you stuck? Consider this your shortcut to clarity: plain-English, actionable guidance that keeps pace with your ambitions."
+    },
+    "browse": {
+      "title": "Browse by Topic",
+      "description": "Find content that fits what you&apos;re working on right now:",
+      "0": {
+        "title": "Funnels & Marketing",
+        "description": "Build systems that attract, nurture, and convert."
+      },
+      "1": {
+        "title": "Mindset & Growth Habits",
+        "description": "Lead with clarity — and stay focused as you scale."
+      },
+      "2": {
+        "title": "Business & Offers",
+        "description": "Turn ideas into income with the right structure."
+      },
+      "3": {
+        "title": "Messaging & Content",
+        "description": "Say what matters. Stand out without the noise."
+      }
+    }
+  },
+  "popularPosts": {
+    "title": "Most Popular Posts",
+    "0": {
+      "title": "3 Offers That Convert (Even If You’re Just Starting)",
+      "description": "Why people buy — and how to package what you do in a way that clicks."
+    },
+    "1": {
+      "title": "Marketing Without a Massive Following",
+      "description": "You don’t need to post every day to get clients. Here’s what to focus on instead."
+    },
+    "2": {
+      "title": "Systems That Save Time (and Sanity)",
+      "description": "The behind-the-scenes tools we use to help founders get hours back each week."
+    }
   }
 }
