@@ -1081,6 +1081,74 @@
       },
       "button": "Book Your Free Strategy Call",
       "buttonDescription": "Want to become your own Before & After story?"
+    },
+    "reviews": {
+      "client": "Client:",
+      "challenge": "Challenge:",
+      "whatWeDid": "What we did:",
+      "result": "Result:",
+      "before": "Before:",
+      "after": "After:",
+      "0": {
+        "before": "I had too many ideas and no direction.",
+        "after": "Now I know exactly what I offer — and how to sell it.",
+        "client": "Ana, wellness coach & former full-time employee",
+        "challenge": "Drowning in content ideas but struggling to package anything into a paid offer",
+        "whatWeDid": {
+          "0": "Narrowed her focus to 1 signature offer",
+          "1": "Built a clear transformation promise & value-based pricing",
+          "2": "Created a simple, high-converting sales page"
+        },
+        "result": "I finally feel like I have a business, not just a side hustle."
+      },
+      "1": {
+        "before": "I was posting daily and still had no clients.",
+        "after": "Now my marketing leads to conversations — and sales.",
+        "client": "James, freelance designer",
+        "challenge": "Inconsistent income, stuck in the content grind",
+        "whatWeDid": {
+          "0": "Repositioned his services around client outcomes",
+          "1": "Set up an email funnel & inquiry process",
+          "2": "Audited content to speak to a defined audience"
+        },
+        "result": "I stopped guessing. Now every post has a purpose — and it shows."
+      },
+      "2": {
+        "before": "I knew what I wanted to offer, but didn’t know how to price it.",
+        "after": "I have a roadmap, milestones, and I finally hit my first 5K month.",
+        "client": "Leila, language tutor turned business owner",
+        "challenge": "Undercharging and overdelivering without structure",
+        "whatWeDid": {
+          "0": "Designed tiered packages with aligned pricing",
+          "1": "Created a personal revenue map tied to capacity",
+          "2": "Automated lead tracking and offer delivery"
+        },
+        "result": "It doesn’t feel random anymore — I know where I’m going."
+      },
+      "3": {
+        "before": "I was overwhelmed and doing everything manually.",
+        "after": "Now my business runs smoother — and I feel 10x lighter.",
+        "client": "Marcus, solo tech consultant",
+        "challenge": "Burnt out from managing client work, leads, and admin",
+        "whatWeDid": {
+          "0": "Set up a lead qualification system",
+          "1": "Streamlined client onboarding",
+          "2": "Integrated automations for scheduling, emails, and invoices"
+        },
+        "result": "I have time to think again — not just react."
+      },
+      "4": {
+        "before": "I kept comparing myself to everyone else.",
+        "after": "Now I lead with my strengths — and it resonates.",
+        "client": "Tanya, social media manager",
+        "challenge": "Struggling to position herself in a saturated market",
+        "whatWeDid": {
+          "0": "Clarified her niche & core transformation",
+          "1": "Rewrote her messaging to reflect confidence and personality",
+          "2": "Built a ‘voice-first’ brand identity"
+        },
+        "result": "Clients now say, ‘I want to work with you, not just any social media manager.’ That’s everything."
+      }
     }
   }
 }
