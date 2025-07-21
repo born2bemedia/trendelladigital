@@ -32,6 +32,7 @@ const textVariants = cva('transition duration-300 ease-in-out', {
       300: 'font-light',
       400: 'font-normal',
       500: 'font-medium',
+      600: 'font-semibold',
       700: 'font-bold',
     },
   },

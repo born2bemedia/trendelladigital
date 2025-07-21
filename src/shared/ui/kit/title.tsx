@@ -17,6 +17,7 @@ const titleVariants = cva(
         '4xl': 'text-[40px] leading-[100%] max-md:text-[32px]',
         '5xl': 'text-5xl',
         '6xl': 'text-6xl max-md:text-[40px] leading-[100%]',
+        '7xl': 'text-7xl max-md:text-[40px]',
       },
       color: {
         dark: 'text-dark',
