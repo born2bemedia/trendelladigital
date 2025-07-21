@@ -1150,5 +1150,31 @@
         "result": "Clients now say, ‘I want to work with you, not just any social media manager.’ That’s everything."
       }
     }
+  },
+  "plansAndPricing": {
+    "hero": {
+      "title": "Plans & Pricing",
+      "description": "Explore detailed packages, services, and investment levels, all designed to meet you where you are and move you where you want to go. We break down every offer so you know exactly what you’re getting, how it works, and what outcomes to expect. Still not sure what’s the right fit?",
+      "button": "Contact Us"
+    },
+    "requestQuote": {
+      "title": {
+        "0": "Every project is unique, and so are you.",
+        "1": "Let’s clarify your next best move together!"
+      },
+      "button": "Request a Custom Quote"
+    },
+    "packages": {
+      "marketingTitle": "Marketing Consulting Packages",
+      "businessTitle": "Business Consulting Packages",
+      "order": "Order",
+      "buy": "Buy",
+      "from": "From",
+      "price": "Price:"
+    },
+    "groups": {
+      "marketingTitle": "Marketing Consulting Pricing",
+      "businessTitle": "Business Consulting Pricing"
+    }
   }
 }
