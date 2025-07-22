@@ -1176,5 +1176,225 @@
       "marketingTitle": "Marketing Consulting Pricing",
       "businessTitle": "Business Consulting Pricing"
     }
+  },
+  "careers": {
+    "hero": {
+      "title": "Build Better With Us",
+      "description": {
+        "0": "We’re not here to clock hours or follow trends.",
+        "1": "At Trendella Digital, we’re building a lean, brilliant, and thoughtful team that does work that matters — with clarity, ownership, and a shared commitment to helping real people create sustainable, purpose-driven businesses. We don’t believe in “just doing the job.” We believe in building something meaningful for our clients and ourselves.",
+        "2": "We don’t believe in “just doing the job.” We believe in building something meaningful for our clients and ourselves.",
+        "3": "We believe in building something meaningful for our clients and ourselves."
+      }
+    },
+    "jobCard": {
+      "responsibilities": "Responsibilities include:"
+    },
+    "howApply": {
+      "title": "How to Apply",
+      "description": "We care more about how you think and work than where you’ve worked before.",
+      "sendEmail": "Send an email to E-mail with:",
+      "weReview": "We review every application personally. Even if we don’t have an immediate opening, we may keep your information on file for future collaborations.",
+      "steps": {
+        "0": "A short note about who you are and why you’re a fit",
+        "1": "Examples of your work or links (portfolio, website, case studies, etc.)",
+        "2": "The role you’re applying for in the subject line"
+      }
+    },
+    "whatToExpect": {
+      "title": "What You Can Expect From Us",
+      "steps": {
+        "0": "A lean, thoughtful team that values autonomy and respect",
+        "1": "Flexible working hours — results over constant availability",
+        "2": "Clear documentation, no guesswork",
+        "3": "Async collaboration with regular touchpoints",
+        "4": "Room to grow with a brand that’s growing fast"
+      }
+    },
+    "openRoles": {
+      "title": "Open Roles",
+      "positions": {
+        "marketingStrategist": {
+          "title": "Marketing Strategist",
+          "subtitle": "(Part-Time or Contract)",
+          "description": {
+            "0": "This role is ideal for someone who thrives on both creative storytelling and strategic systems. As a Marketing Strategist, you’ll collaborate directly with our founder and clients to design marketing frameworks that drive visibility, demand, and results, without resorting to burnout tactics or noise.",
+            "1": "You’ll be responsible for building full-funnel strategies, positioning offers, and creating content plans that support long-term growth, not just short-term clicks. You’ll also support in refining client messaging, auditing marketing assets, and occasionally jumping into client sessions or Loom feedback rounds to help guide execution."
+          },
+          "fitSkills": {
+            "0": "Love helping people simplify their message and amplify their reach",
+            "1": "Have experience with service-based businesses or creator brands",
+            "2": "Understand how content, email, and funnels work together",
+            "3": "Can speak both strategy and execution, and know when each is needed",
+            "4": "Know how to guide, not just tell",
+            "5": "Enjoy contributing to something that’s growing — and growing fast"
+          },
+          "niceToHave": {
+            "0": "Experience with tools like ConvertKit, Notion, and Airtable",
+            "1": "Past work with small brands, coaches, or freelancers",
+            "2": "Familiarity with storytelling frameworks or digital copywriting"
+          },
+          "estimatedTime": "8–15 hours/week",
+          "compensation": "Project-based or retainer, depending on fit",
+          "location": "Remote",
+          "responsibilities": {
+            "0": "Auditing and refining existing brand messaging",
+            "1": "Mapping full-funnel content strategies (organic & email)",
+            "2": "Developing audience profiles and content themes",
+            "3": "Advising on conversion-optimized offers and CTAs",
+            "4": "Collaborating with the founder on positioning pivots or launches",
+            "5": "Providing insights and analysis based on campaign performance",
+            "6": "Translating business goals into actionable marketing workflows"
+          },
+          "quote": "Hold the thread.  Keep the flow.  Deliver the experience."
+        },
+        "operationsSystemsConsultant": {
+          "title": "Operations & Systems Consultant",
+          "subtitle": "(Part-Time or Contract)",
+          "description": {
+            "0": "This role is ideal for someone who thrives on both creative storytelling and strategic systems. As a Marketing Strategist, you’ll collaborate directly with our founder and clients to design marketing frameworks that drive visibility, demand, and results, without resorting to burnout tactics or noise.",
+            "1": "You’ll be responsible for building full-funnel strategies, positioning offers, and creating content plans that support long-term growth, not just short-term clicks. You’ll also support in refining client messaging, auditing marketing assets, and occasionally jumping into client sessions or Loom feedback rounds to help guide execution."
+          },
+          "quote": "Turn chaos into clarity for growing personal brands.",
+          "fitSkills": {
+            "0": "Think in systems and enjoy turning complexity into order",
+            "1": "Can translate messy notes into structured workflows",
+            "2": "Have experience working with solo founders, creators, or consultants",
+            "3": "Are tech-comfortable and quick to learn new tools",
+            "4": "Enjoy helping others move faster, with less friction"
+          },
+          "niceToHave": {
+            "0": "Experience with automation tools (Zapier, Make, etc.)",
+            "1": "Familiarity with service-based business models",
+            "2": "Ability to create simple Loom walkthroughs for clients"
+          },
+          "estimatedTime": "10–20 hours/months",
+          "compensation": "Retainer or hourly",
+          "location": "Remote (Flexible hours)",
+          "responsibilities": {
+            "0": "Auditing and optimizing internal client workflows",
+            "1": "Mapping out scalable SOPs, automations, and CRM processes",
+            "2": "Recommending and implementing tools (e.g., Airtable, Notion, Zapier)",
+            "3": "Assisting clients with backend setup (booking systems, pipelines, forms)",
+            "4": "Creating dashboards and visibility tools for progress tracking",
+            "5": "Collaborating with the team to ensure systems align with the strategy"
+          }
+        },
+        "clientSuccessLead": {
+          "title": "Client Success Lead",
+          "subtitle": "(Part-Time or Contract)",
+          "description": {
+            "0": "This role is ideal for someone who thrives on both creative storytelling and strategic systems. As a Marketing Strategist, you’ll collaborate directly with our founder and clients to design marketing frameworks that drive visibility, demand, and results, without resorting to burnout tactics or noise.",
+            "1": "You’ll be responsible for building full-funnel strategies, positioning offers, and creating content plans that support long-term growth, not just short-term clicks. You’ll also support in refining client messaging, auditing marketing assets, and occasionally jumping into client sessions or Loom feedback rounds to help guide execution."
+          },
+          "quote": "Hold the thread. Keep the flow. Deliver the experience.",
+          "fitSkills": {
+            "0": "Love creating structure and clarity in moving environments",
+            "1": "Are highly organized and proactive with follow-through",
+            "2": "Communicate with warmth, precision, and professionalism",
+            "3": "Enjoy being in a hybrid role between people, processes, and problem-solving",
+            "4": "Can manage multiple client journeys without dropping the thread"
+          },
+          "niceToHave": {
+            "0": "Experience with CRMs, Notion, or task management tools",
+            "1": "Familiarity with coaching, consulting, or service-based businesses",
+            "2": "A knack for writing clear, friendly emails and updates"
+          },
+          "estimatedTime": "10–12 hours/week",
+          "compensation": "Retainer",
+          "location": "Remote",
+          "responsibilities": {
+            "0": "Ensuring client needs are met and deadlines are met",
+            "1": "Managing project timelines, session schedules, and deliverables",
+            "2": "Acting as the first point of contact for client communication",
+            "3": "Gathering session notes, resources, and client inputs",
+            "4": "Tracking progress and surfacing any red flags",
+            "5": "Supporting the founder with light admin and project coordination",
+            "6": "Ensuring a smooth and professional experience from onboarding to offboarding"
+          }
+        }
+      }
+    }
+  },
+  "contactUs": {
+    "hero": {
+      "title": "Contact Us",
+      "description": {
+        "0": "We’d love to hear from you.",
+        "1": "Fill out the form and we’ll be in touch to explore how we can help."
+      }
+    },
+    "info": {
+      "title": "Where We Work",
+      "elements": {
+        "0": "Main Office",
+        "1": "Registered HQ"
+      },
+      "title2": "Reach Out Directly",
+      "elements2": {
+        "0": "Email",
+        "1": "Phone"
+      }
+    },
+    "sendUsMessage": {
+      "title": "Send Us a Message",
+      "description": {
+        "0": "Got 10 minutes and a business to grow? You’re in the right place. Here, you’ll find posts designed for quick wins, meaningful insights, and clear next steps.",
+        "1": "Tired of vague advice that leaves you stuck? Consider this your shortcut to clarity: plain-English, actionable guidance that keeps pace with your ambitions."
+      },
+      "form": {
+        "fields": {
+          "fullName": {
+            "label": "Full Name"
+          },
+          "phoneNumber": {
+            "label": "Phone Number"
+          },
+          "email": {
+            "label": "Email"
+          },
+          "industryOrNiche": {
+            "label": "Your Industry or Niche"
+          },
+          "currentBusinessStage": {
+            "label": "Current Business Stage"
+          },
+          "companyName": {
+            "label": "Company Name",
+            "placeholder": "Company Name (optional)"
+          },
+          "companyWebsite": {
+            "label": "Your Website",
+            "placeholder": "Company Website (optional)"
+          },
+          "message": {
+            "label": "Your Message",
+            "placeholder": "Your Message (optional)"
+          },
+          "budgetRange": {
+            "label": "Budget Range"
+          },
+          "service": {
+            "label": "Select a Service"
+          },
+          "submit": {
+            "label": "Submit",
+            "loading": "Sending..."
+          }
+        },
+        "variants": {
+          "currentBusinessStage": {
+            "0": "Startup",
+            "1": "Growing",
+            "2": "Scaling",
+            "3": "Established"
+          },
+          "service": {
+            "0": "Business Consulting",
+            "1": "Marketing Consulting"
+          }
+        }
+      }
+    }
   }
 }
