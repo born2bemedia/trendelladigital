@@ -12,7 +12,9 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
         height={200}
         unoptimized
       />
-      {children}
+      <section className="relatve flex gap-6 max-md:flex-col">
+        {children}
+      </section>
     </main>
   );
 }

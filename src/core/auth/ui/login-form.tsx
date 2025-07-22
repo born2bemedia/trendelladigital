@@ -11,7 +11,7 @@ import { Text } from '@/shared/ui/kit/text';
 import { TextField } from '@/shared/ui/kit/text-field';
 
 import { login } from '../api/login';
-import { loginSchema } from '../model/schemas/login.schema';
+import { loginSchema } from '../model/schemas/login';
 
 export const LoginForm = () => {
   const t = useTranslations('login.form');
