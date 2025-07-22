@@ -1,5 +1,7 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import { List } from '@/shared/ui/kit/list';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
@@ -18,6 +20,8 @@ export const JobCard = ({
   title,
   subtitle,
 }: Position) => {
+  const t = useTranslations('careers.jobCard');
+
   return (
     <article className="flex flex-col gap-6 rounded-b-lg bg-[#E1DFF6]/40 p-6 max-md:p-4">
       <section className="flex items-start justify-between max-md:flex-col max-md:gap-6">
@@ -64,7 +68,9 @@ export const JobCard = ({
         </section>
         <section className="flex w-1/2 flex-col gap-2 max-md:w-full">
           <Text weight={700} color="dark">
-            Responsibilities include:
+            {t('responsibilities', {
+              fallback: 'Responsibilities include:',
+            })}
           </Text>
           <ul className="flex flex-col gap-1">
             {responsibilities.map(r => (

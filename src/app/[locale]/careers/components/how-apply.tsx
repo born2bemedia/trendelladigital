@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { cn } from '@/shared/lib/utils/styles';
 import { Text } from '@/shared/ui/kit/text';
@@ -9,10 +10,19 @@ import { Title } from '@/shared/ui/kit/title';
 import st from './how-apply.module.css';
 
 export const HowApply = () => {
+  const t = useTranslations('careers.howApply');
+
   const steps = [
-    'A short note about who you are and why you’re a fit',
-    'Examples of your work or links (portfolio, website, case studies, etc.)',
-    'The role you’re applying for in the subject line',
+    t('steps.0', {
+      fallback: 'A short note about who you are and why you’re a fit',
+    }),
+    t('steps.1', {
+      fallback:
+        'Examples of your work or links (portfolio, website, case studies, etc.)',
+    }),
+    t('steps.2', {
+      fallback: 'The role you’re applying for in the subject line',
+    }),
   ];
 
   return (
@@ -21,20 +31,27 @@ export const HowApply = () => {
       <section className="flex gap-10 pt-[80px] max-md:flex-col max-md:pt-10">
         <section className="flex w-1/2 flex-col justify-between max-md:w-full">
           <div className="flex flex-col gap-2.5">
-            <Title color="white">How to Apply </Title>
+            <Title color="white">
+              {t('title', { fallback: 'How to Apply' })}
+            </Title>
             <Text color="white">
-              We care more about how you think and work than where you’ve worked
-              before.
+              {t('description', {
+                fallback:
+                  'We care more about how you think and work than where you’ve worked before.',
+              })}
             </Text>
           </div>
           <Text size="2xl" color="white" weight={600} className="max-md:hidden">
-            We review every application personally. Even if we don’t have an
-            immediate opening, we may keep your information on file for future
-            collaborations.
+            {t('weReview', {
+              fallback:
+                'We review every application personally. Even if we don’t have an immediate opening, we may keep your information on file for future collaborations.',
+            })}
           </Text>
         </section>
         <section className="flex flex-col gap-2">
-          <Text color="white">Send an email to E-mail with:</Text>
+          <Text color="white">
+            {t('sendEmail', { fallback: 'Send an email to E-mail with:' })}
+          </Text>
           <section className="flex flex-col gap-1">
             {steps.map(item => (
               <div key={item} className="border border-white px-10 py-6">
@@ -51,9 +68,10 @@ export const HowApply = () => {
           weight={600}
           className="hidden max-md:flex"
         >
-          We review every application personally. Even if we don’t have an
-          immediate opening, we may keep your information on file for future
-          collaborations.
+          {t('weReview', {
+            fallback:
+              'We review every application personally. Even if we don’t have an immediate opening, we may keep your information on file for future collaborations.',
+          })}
         </Text>
       </section>
     </section>
@@ -61,33 +79,45 @@ export const HowApply = () => {
 };
 
 const WhatYouCanExpect = () => {
+  const t = useTranslations('careers.whatToExpect');
+
   const items = [
     {
       imgUrl: '/images/careers/br-stars.svg',
-      text: 'A lean, thoughtful team that values autonomy and respect',
+      text: t('steps.0', {
+        fallback: 'A lean, thoughtful team that values autonomy and respect',
+      }),
     },
     {
       imgUrl: '/images/careers/star-ring.svg',
-      text: 'Flexible working hours — results over constant availability',
+      text: t('steps.1', {
+        fallback: 'Flexible working hours — results over constant availability',
+      }),
     },
     {
       imgUrl: '/images/careers/asteroid.svg',
-      text: 'Clear documentation, no guesswork',
+      text: t('steps.2', {
+        fallback: 'Clear documentation, no guesswork',
+      }),
     },
     {
       imgUrl: '/images/careers/sun.svg',
-      text: 'Async collaboration with regular touchpoints',
+      text: t('steps.3', {
+        fallback: 'Async collaboration with regular touchpoints',
+      }),
     },
     {
       imgUrl: '/images/careers/star-fall.svg',
-      text: 'Room to grow with a brand that’s growing fast',
+      text: t('steps.4', {
+        fallback: 'Room to grow with a brand that’s growing fast',
+      }),
     },
   ];
 
   return (
     <section className="flex flex-col gap-10 pb-[80px] max-md:pb-10">
       <Title className="text-center" color="white">
-        What You Can Expect From Us
+        {t('title', { fallback: 'What You Can Expect From Us' })}
       </Title>
       <section className="flex gap-2 max-xl:flex-wrap max-md:flex-col max-md:flex-nowrap">
         {items.map((item, index) => (

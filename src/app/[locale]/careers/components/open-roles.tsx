@@ -1,9 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { memo, useMemo, useState } from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
-import { openPositions } from '@/features/careers/model/data';
+import { getOpenPositions } from '@/features/careers/model/data';
 import { JobCard } from '@/features/careers/ui/job-card';
 
 import { ArrowBottomRight } from '@/shared/icons/fill/arrow-bottom-right';
@@ -11,38 +12,23 @@ import { cn } from '@/shared/lib/utils/styles';
 import { Title } from '@/shared/ui/kit/title';
 
 export const OpenRoles = () => {
+  const tp = useTranslations('careers.openRoles.positions');
+
   const [activePosition, setActivePosition] = useState<string>(
     'marketing-strategist',
   );
 
-  const activeJob =
-    openPositions.find(item => item.id === activePosition) ?? openPositions[0];
+  const jobs = useMemo(() => getOpenPositions(tp), [tp]);
+
+  const activeJob = jobs.find(item => item.id === activePosition) ?? jobs[0];
 
   return (
     <section className="mx-4 bg-white px-[60px] pb-[60px] max-md:px-4 max-md:pb-4">
       <section className="flex flex-col gap-10 rounded-lg bg-[#F5F4FD] p-6">
-        <header className="flex gap-[80px] max-md:flex-col max-md:gap-4">
-          <Title
-            as="h1"
-            size="7xl"
-            color="dark"
-            weight={400}
-            className="shrink-0 max-xl:shrink"
-          >
-            Open Roles
-          </Title>
-          <Image
-            className="h-[292px] w-full rounded-lg object-cover max-md:h-[232px]"
-            src="/images/careers/banner.jpg"
-            alt="banner"
-            width={700}
-            height={292}
-            unoptimized
-          />
-        </header>
+        <Header />
         <section className="flex flex-col max-md:hidden">
           <section className="flex gap-1">
-            {openPositions.map(item => (
+            {jobs.map(item => (
               <JobTabButton
                 key={item.id}
                 id={item.id}
@@ -55,7 +41,7 @@ export const OpenRoles = () => {
           <JobCard {...activeJob} />
         </section>
         <section className="hidden flex-col max-md:flex">
-          {openPositions.map(item => (
+          {jobs.map(item => (
             <section key={item.id} className="flex flex-col">
               <JobTabButton
                 id={item.id}
@@ -71,6 +57,34 @@ export const OpenRoles = () => {
     </section>
   );
 };
+
+const Header = memo(() => {
+  const t = useTranslations('careers.openRoles');
+
+  return (
+    <header className="flex gap-[80px] max-md:flex-col max-md:gap-4">
+      <Title
+        as="h1"
+        size="7xl"
+        color="dark"
+        weight={400}
+        className="shrink-0 max-xl:shrink"
+      >
+        {t('title', { fallback: 'Open Roles' })}
+      </Title>
+      <Image
+        className="h-[292px] w-full rounded-lg object-cover max-md:h-[232px]"
+        src="/images/careers/banner.jpg"
+        alt="banner"
+        width={700}
+        height={292}
+        unoptimized
+      />
+    </header>
+  );
+});
+
+Header.displayName = 'JobHeader';
 
 const JobTabButton = ({
   id,
