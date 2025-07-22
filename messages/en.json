@@ -1411,5 +1411,51 @@
       "3": "Forgot password?",
       "loading": "Loading..."
     }
+  },
+  "signUp": {
+    "greeting": {
+      "title": "Create Account",
+      "description": {
+        "0": "Join Trendella Digital  to unlock your dashboard, ",
+        "1": "book sessions, and start building with intention."
+      }
+    },
+    "form": {
+      "success": "Account created successfully",
+      "create": "Create Account",
+      "creating": "Creating...",
+      "error": "Something went wrong — please refresh and try again, or email us directly at info@trendelladigital.com.",
+      "fields": {
+        "firstName": {
+          "label": "First Name"
+        },
+        "lastName": {
+          "label": "Last Name"
+        },
+        "username": {
+          "label": "Username"
+        },
+        "email": {
+          "label": "Email Address"
+        },
+        "phone": {
+          "label": "Phone Number"
+        },
+        "password": {
+          "label": "Password"
+        },
+        "confirmPassword": {
+          "label": "Confirm Password"
+        },
+        "isAgree": {
+          "label": {
+            "0": "I’m over 18 and agree to Trendella Digital’s",
+            "1": "Terms of Service",
+            "2": "and",
+            "3": "Privacy Policy."
+          }
+        }
+      }
+    }
   }
 }
