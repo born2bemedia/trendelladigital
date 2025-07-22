@@ -1396,5 +1396,20 @@
         }
       }
     }
+  },
+  "login": {
+    "greeting": {
+      "title": "Welcome Back!",
+      "description": "Log in to pick up where you left off and keep building your business with intention."
+    },
+    "form": {
+      "success": "Login successful",
+      "error": "Something went wrong — please refresh and try again, or email us directly at info@trendelladigital.com.",
+      "0": "Username or email",
+      "1": "Password",
+      "2": "Login",
+      "3": "Forgot password?",
+      "loading": "Loading..."
+    }
   }
 }

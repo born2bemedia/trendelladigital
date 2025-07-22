@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import { notFound } from 'next/navigation';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
+import { Toaster } from 'sonner';
 
 import { cn } from '@/shared/lib/utils/styles';
 import { Footer } from '@/shared/ui/components/footer';
@@ -60,6 +61,7 @@ export default async function LocaleLayout({
           <Header />
           {children}
           <Footer />
+          <Toaster />
         </NextIntlClientProvider>
       </body>
     </html>

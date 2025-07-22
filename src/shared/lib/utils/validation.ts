@@ -9,3 +9,6 @@ export const isPhoneValid = (phone: string) => {
     return false;
   }
 };
+
+export const isEmail = (value: string) =>
+  /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);

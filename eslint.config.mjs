@@ -22,6 +22,7 @@ const eslintConfig = [
         {
           groups: [
             ['^react', '^next', '^@?\\w'],
+            ['^@/core'],
             ['^@/features'],
             ['^$'],
             ['^@/shared'],
