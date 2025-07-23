@@ -1468,5 +1468,23 @@
       "1": "Reset Your Password",
       "2": "Loading..."
     }
+  },
+  "account": {
+    "orderHistory": {
+      "title": "My Order History",
+      "description": "Track your past service requests, check payment status, and download invoices for your consulting packages.",
+      "orderId": "Order ID",
+      "service": "Service",
+      "date": "Date",
+      "total": "Total",
+      "payment": "Payment",
+      "status": "Status",
+      "invoice": "Invoice",
+      "download": "Download",
+      "bankTransfer": {
+        "0": "Bank",
+        "1": "Transfer"
+      }
+    }
   }
 }

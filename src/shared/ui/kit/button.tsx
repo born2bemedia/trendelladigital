@@ -18,6 +18,7 @@ const btnVariants = cva(
           'text-black border border-white/40 bg-gradient-to-r from-white from-3% to-[#999] to-[61%] hover:opacity-70',
         ghost:
           'border border-white bg-white/10 backdrop-blur-lg hover:opacity-70 text-white',
+        outline: 'bg-transparent text-black hover:opacity-70',
       },
     },
     defaultVariants: {

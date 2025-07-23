@@ -20,7 +20,7 @@ export const Header = () => {
   const isHomePage = pathname === `/${locale}`;
 
   return (
-    <header className="absolute flex w-full items-center justify-between px-20 max-md:px-6">
+    <header className="absolute z-10 flex w-full items-center justify-between px-20 max-md:px-6">
       <Text color={isHomePage ? 'white' : 'black'}>Logo</Text>
       <section className="flex items-center gap-10 max-[895px]:hidden">
         <div className="flex">
