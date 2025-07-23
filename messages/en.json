@@ -1457,5 +1457,16 @@
         }
       }
     }
+  },
+  "resetPassword": {
+    "greeting": {
+      "title": "Lost Access? No worries.",
+      "description": "Share your email or username and we’ll send you a reset link."
+    },
+    "form": {
+      "0": "Username or email",
+      "1": "Reset Your Password",
+      "2": "Loading..."
+    }
   }
 }
