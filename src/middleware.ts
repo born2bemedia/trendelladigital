@@ -8,7 +8,7 @@ const intlMiddleware = createMiddleware(routing);
 
 export async function middleware(request: NextRequest) {
   const token = request.cookies.get('token')?.value;
-  const restrictedRoutes = ['/account'];
+  const restrictedRoutes = routing.locales.map(locale => `/${locale}/account`);
 
   if (
     restrictedRoutes.some(route =>

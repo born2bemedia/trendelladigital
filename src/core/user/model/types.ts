@@ -12,7 +12,7 @@ export type User = {
   loginAttempts: number;
   phone: string;
   role: string;
-  state: string;
+  apartment: string;
   street: string;
   updatedAt: string;
   zip: string;
