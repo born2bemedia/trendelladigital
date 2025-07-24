@@ -1,7 +1,10 @@
 'use client';
 
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
+
+import { useUserStore } from '@/core/user/model/user.store';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
 import { useForm } from '@/shared/lib/forms';
@@ -14,6 +17,9 @@ import { login } from '../api/login';
 import { loginSchema } from '../model/schemas/login';
 
 export const LoginForm = () => {
+  const router = useRouter();
+
+  const { setUser } = useUserStore();
   const t = useTranslations('login.form');
 
   const { Field, Subscribe, handleSubmit } = useForm({
@@ -25,7 +31,7 @@ export const LoginForm = () => {
       onChange: loginSchema,
     },
     onSubmit: async data => {
-      const { success } = await login(data.value);
+      const { success, user, message } = await login(data.value);
 
       if (success) {
         notifySuccess(
@@ -33,12 +39,15 @@ export const LoginForm = () => {
             fallback: 'Login successful',
           }),
         );
+        setUser(user);
+        router.push('/account');
       } else {
         notifyWarning(
-          t('error', {
-            fallback:
-              'Something went wrong — please refresh and try again, or email us directly at info@trendelladigital.com.',
-          }),
+          message ??
+            t('error', {
+              fallback:
+                'Something went wrong — please refresh and try again, or email us directly at info@trendelladigital.com.',
+            }),
         );
       }
     },
