@@ -1,11 +1,17 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
-
-import { ContactForm } from '@/features/contact-form/ui/form';
 
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
+
+const ContactForm = dynamic(
+  () => import('@/features/contact-form/ui/form').then(mod => mod.ContactForm),
+  {
+    ssr: false,
+  },
+);
 
 export const SendUsMessage = () => {
   const t = useTranslations('contactUs.sendUsMessage');

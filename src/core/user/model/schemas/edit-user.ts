@@ -13,7 +13,9 @@ export const editUserSchema = v.pipe(
     country: v.pipe(
       v.string(),
       v.custom(
-        value => allowedCountriesOptions.some(opt => opt.label === value),
+        value =>
+          value === '' ||
+          allowedCountriesOptions.some(opt => opt.label === value),
         'Please select a valid country',
       ),
     ),
