@@ -1,6 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 
 import { logout } from '@/core/auth/api/logout';
 
@@ -12,8 +13,10 @@ import { Button } from '@/shared/ui/kit/button';
 import { Greeting } from './greeting';
 
 export const Tabs = () => {
-  const { activeTab, setActiveTab } = useTabsStore();
   const router = useRouter();
+
+  const t = useTranslations('auth.tabs');
+  const { activeTab, setActiveTab } = useTabsStore();
 
   const logoutHandle = async () => {
     const res = await logout();
@@ -21,7 +24,11 @@ export const Tabs = () => {
     if (res.success) {
       router.push('/');
     } else {
-      notifyWarning('Something went wrong — please refresh and try again.');
+      notifyWarning(
+        t('warning', {
+          fallback: 'Something went wrong — please refresh and try again.',
+        }),
+      );
     }
   };
 
@@ -34,21 +41,27 @@ export const Tabs = () => {
           className="max-md:shrink-0"
           onClick={() => setActiveTab('orderHistory')}
         >
-          My Order History
+          {t('history', {
+            fallback: 'My Order History',
+          })}
         </Button>
         <Button
           variant={activeTab === 'accountSettings' ? 'primary' : 'outline'}
           className="max-md:shrink-0"
           onClick={() => setActiveTab('accountSettings')}
         >
-          Account Settings
+          {t('settings', {
+            fallback: 'Account Settings',
+          })}
         </Button>
         <Button
           variant="outline"
           className="max-md:shrink-0"
           onClick={logoutHandle}
         >
-          Log Out
+          {t('logout', {
+            fallback: 'Log Out',
+          })}
         </Button>
       </div>
     </section>

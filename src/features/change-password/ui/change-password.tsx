@@ -1,5 +1,7 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
 import { useForm } from '@/shared/lib/forms';
 import { Button } from '@/shared/ui/kit/button';
@@ -8,6 +10,8 @@ import { TextField } from '@/shared/ui/kit/text-field';
 import { changePasswordSchema } from '../model/schema';
 
 export const ChangePasswordForm = () => {
+  const t = useTranslations('changePassword');
+
   const { Field, Subscribe, handleSubmit } = useForm({
     defaultValues: {
       oldPassword: '',
@@ -35,8 +39,12 @@ export const ChangePasswordForm = () => {
         {field => (
           <TextField
             name={field.name}
-            label="Current password"
-            placeholder="Enter your current password"
+            label={t('fields.oldPassword.label', {
+              fallback: 'Current password',
+            })}
+            placeholder={t('fields.oldPassword.placeholder', {
+              fallback: 'Enter your current password',
+            })}
             type="password"
             value={String(field.state.value)}
             onBlur={field.handleBlur}
@@ -49,8 +57,12 @@ export const ChangePasswordForm = () => {
         {field => (
           <TextField
             name={field.name}
-            label="New password"
-            placeholder="Enter your new password"
+            label={t('fields.newPassword.label', {
+              fallback: 'New password',
+            })}
+            placeholder={t('fields.newPassword.placeholder', {
+              fallback: 'Enter your new password',
+            })}
             type="password"
             value={String(field.state.value)}
             onBlur={field.handleBlur}
@@ -63,8 +75,12 @@ export const ChangePasswordForm = () => {
         {field => (
           <TextField
             name={field.name}
-            label="Confirm new password"
-            placeholder="Enter your new password again"
+            label={t('fields.confirmNewPassword.label', {
+              fallback: 'Confirm new password',
+            })}
+            placeholder={t('fields.confirmNewPassword.placeholder', {
+              fallback: 'Enter your new password again',
+            })}
             type="password"
             value={String(field.state.value)}
             onBlur={field.handleBlur}
@@ -82,10 +98,14 @@ export const ChangePasswordForm = () => {
             fullWidth
           >
             {isSubmitting ? (
-              'Saving...'
+              t('saving', {
+                fallback: 'Saving...',
+              })
             ) : (
               <>
-                Save Changes
+                {t('saveChanges', {
+                  fallback: 'Save Changes',
+                })}
                 <ArrowRight color="black" />
               </>
             )}

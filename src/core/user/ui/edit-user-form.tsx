@@ -1,8 +1,12 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
+import { allowedCountries } from '@/shared/lib/countries';
 import { useForm } from '@/shared/lib/forms';
 import { notifySuccess, notifyWarning } from '@/shared/lib/toast';
+import { Autocomplete } from '@/shared/ui/kit/autocomplete';
 import { Button } from '@/shared/ui/kit/button';
 import { TextField } from '@/shared/ui/kit/text-field';
 
@@ -11,6 +15,7 @@ import { editUserSchema } from '../model/schemas/edit-user';
 import { useUserStore } from '../model/user.store';
 
 export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
+  const t = useTranslations('user.editUserForm');
   const { user, setUser } = useUserStore();
 
   const { Field, Subscribe, handleSubmit } = useForm({
@@ -33,11 +38,18 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
       setUser(res.doc);
 
       if (res.message) {
-        notifySuccess('User updated successfully');
+        notifySuccess(
+          t('success', {
+            fallback: 'User updated successfully',
+          }),
+        );
         onSuccess?.();
       } else {
         notifyWarning(
-          'Something went wrong — please refresh and try again, or email us directly at info@trendelladigital.com.',
+          t('error', {
+            fallback:
+              'Something went wrong — please refresh and try again, or email us directly at info@trendelladigital.com.',
+          }),
         );
       }
     },
@@ -56,8 +68,12 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
         {field => (
           <TextField
             name={field.name}
-            label="First Name"
-            placeholder="Enter your first name"
+            label={t('fields.firstName.label', {
+              fallback: 'First Name',
+            })}
+            placeholder={t('fields.firstName.placeholder', {
+              fallback: 'Enter your first name',
+            })}
             value={String(field.state.value)}
             onBlur={field.handleBlur}
             onChange={e => field.handleChange(e.target.value)}
@@ -69,8 +85,12 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
         {field => (
           <TextField
             name={field.name}
-            label="Last Name"
-            placeholder="Enter your last name"
+            label={t('fields.lastName.label', {
+              fallback: 'Last Name',
+            })}
+            placeholder={t('fields.lastName.placeholder', {
+              fallback: 'Enter your last name',
+            })}
             value={String(field.state.value)}
             onBlur={field.handleBlur}
             onChange={e => field.handleChange(e.target.value)}
@@ -82,8 +102,12 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
         {field => (
           <TextField
             name={field.name}
-            label="Email"
-            placeholder="Enter your email"
+            label={t('fields.email.label', {
+              fallback: 'Email',
+            })}
+            placeholder={t('fields.email.placeholder', {
+              fallback: 'Enter your email',
+            })}
             value={String(field.state.value)}
             onBlur={field.handleBlur}
             onChange={e => field.handleChange(e.target.value)}
@@ -95,8 +119,12 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
         {field => (
           <TextField
             name={field.name}
-            label="Phone"
-            placeholder="Enter your phone number"
+            label={t('fields.phone.label', {
+              fallback: 'Phone',
+            })}
+            placeholder={t('fields.phone.placeholder', {
+              fallback: 'Enter your phone number',
+            })}
             value={String(field.state.value)}
             onBlur={field.handleBlur}
             onChange={e => field.handleChange(e.target.value)}
@@ -108,8 +136,12 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
         {field => (
           <TextField
             name={field.name}
-            label="Address"
-            placeholder="Enter your address"
+            label={t('fields.address.label', {
+              fallback: 'Address',
+            })}
+            placeholder={t('fields.address.placeholder', {
+              fallback: 'Enter your address',
+            })}
             value={String(field.state.value)}
             onBlur={field.handleBlur}
             onChange={e => field.handleChange(e.target.value)}
@@ -121,8 +153,12 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
         {field => (
           <TextField
             name={field.name}
-            label="Apartment / Suite (optional)"
-            placeholder="Enter your apartment / suite"
+            label={t('fields.apartment.label', {
+              fallback: 'Apartment / Suite (optional)',
+            })}
+            placeholder={t('fields.apartment.placeholder', {
+              fallback: 'Enter your apartment / suite',
+            })}
             value={String(field.state.value)}
             onBlur={field.handleBlur}
             onChange={e => field.handleChange(e.target.value)}
@@ -134,8 +170,12 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
         {field => (
           <TextField
             name={field.name}
-            label="City"
-            placeholder="Enter your city"
+            label={t('fields.city.label', {
+              fallback: 'City',
+            })}
+            placeholder={t('fields.city.placeholder', {
+              fallback: 'Enter your city',
+            })}
             value={String(field.state.value)}
             onBlur={field.handleBlur}
             onChange={e => field.handleChange(e.target.value)}
@@ -145,13 +185,19 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
       </Field>
       <Field name="country">
         {field => (
-          <TextField
-            name={field.name}
-            label="Country"
-            placeholder="Enter your country"
-            value={String(field.state.value)}
-            onBlur={field.handleBlur}
-            onChange={e => field.handleChange(e.target.value)}
+          <Autocomplete
+            items={Object.entries(allowedCountries).map(([value, label]) => ({
+              value,
+              label: label.name,
+            }))}
+            label={t('fields.country.label', {
+              fallback: 'Country',
+            })}
+            placeholder={t('fields.country.placeholder', {
+              fallback: 'Select your country',
+            })}
+            initialValue={String(field.state.value)}
+            onChange={value => field.handleChange(value)}
             intent={field.state.meta.errors.length ? 'danger' : 'primary'}
           />
         )}
@@ -160,8 +206,12 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
         {field => (
           <TextField
             name={field.name}
-            label="Postal Code"
-            placeholder="Enter your postal code"
+            label={t('fields.zip.label', {
+              fallback: 'Postal Code',
+            })}
+            placeholder={t('fields.zip.placeholder', {
+              fallback: 'Enter your postal code',
+            })}
             value={String(field.state.value)}
             onBlur={field.handleBlur}
             onChange={e => field.handleChange(e.target.value)}
@@ -178,10 +228,14 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
             fullWidth
           >
             {isSubmitting ? (
-              'Saving...'
+              t('saving', {
+                fallback: 'Saving...',
+              })
             ) : (
               <>
-                Save Changes
+                {t('saveChanges', {
+                  fallback: 'Save Changes',
+                })}
                 <ArrowRight color="black" />
               </>
             )}

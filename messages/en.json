@@ -1486,5 +1486,115 @@
         "1": "Transfer"
       }
     }
+  },
+  "auth": {
+    "tabs": {
+      "warning": "Something went wrong — please refresh and try again.",
+      "history": "My Order History",
+      "settings": "Account Settings",
+      "logout": "Log Out",
+      "welcome": "Welcome"
+    },
+    "personalInfo": {
+      "title": "Account Access",
+      "edit": "Edit",
+      "return": "Return"
+    },
+    "accountAccess": {
+      "title": "Account Access"
+    }
+  },
+  "changePassword": {
+    "fields": {
+      "oldPassword": {
+        "label": "Current password",
+        "placeholder": "Enter your current password"
+      },
+      "newPassword": {
+        "label": "New password",
+        "placeholder": "Enter your new password"
+      },
+      "confirmNewPassword": {
+        "label": "Confirm new password",
+        "placeholder": "Confirm your new password"
+      }
+    },
+    "saveChanges": "Save Changes",
+    "saving": "Saving..."
+  },
+  "user": {
+    "userInfo": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": {
+        "0": "000-000-0000",
+        "1": "Phone Number"
+      },
+      "address": {
+        "0": "Street Address",
+        "1": "Street Address"
+      },
+      "apartment": {
+        "0": "Leave blank if not applicable.",
+        "1": "Apartment"
+      },
+      "city": {
+        "0": "Where you're building from.",
+        "1": "City"
+      },
+      "country": {
+        "0": "We work globally, but we like to know where you're based.",
+        "1": "Country"
+      },
+      "zip": {
+        "0": "For accurate billing, receipts, and logistics if needed.",
+        "1": "Postal Code"
+      }
+    },
+    "editUserForm": {
+      "success": "User updated successfully",
+      "error": "Something went wrong — please refresh and try again, or email us directly at info@trendelladigital.com.",
+      "fields": {
+        "firstName": {
+          "label": "First Name",
+          "placeholder": "Enter your first name"
+        },
+        "lastName": {
+          "label": "Last Name",
+          "placeholder": "Enter your last name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Enter your email"
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "Enter your phone number"
+        },
+        "address": {
+          "label": "Address",
+          "placeholder": "Enter your address"
+        },
+        "apartment": {
+          "label": "Apartment",
+          "placeholder": "Enter your apartment"
+        },
+        "city": {
+          "label": "City",
+          "placeholder": "Enter your city"
+        },
+        "country": {
+          "label": "Country",
+          "placeholder": "Enter your country"
+        },
+        "zip": {
+          "label": "Postal Code",
+          "placeholder": "Enter your postal code"
+        }
+      },
+      "saveChanges": "Save Changes",
+      "saving": "Saving..."
+    }
   }
 }

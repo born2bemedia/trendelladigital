@@ -14,7 +14,7 @@ import { ExpandIcon } from '@/shared/icons/fill/expand';
 
 export type DropdownOptions = { value: string; label: React.ReactNode };
 
-export function Dropdown({
+export const Dropdown = ({
   options,
   value,
   onChange,
@@ -22,7 +22,7 @@ export function Dropdown({
   options: DropdownOptions[];
   value: ReactNode;
   onChange?: (value: string) => void;
-}) {
+}) => {
   const [open, setOpen] = useState(false);
 
   return (
