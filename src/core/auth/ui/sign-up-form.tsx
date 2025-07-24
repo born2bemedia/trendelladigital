@@ -8,6 +8,7 @@ import { useForm } from '@/shared/lib/forms';
 import { notifySuccess, notifyWarning } from '@/shared/lib/toast';
 import { Button } from '@/shared/ui/kit/button';
 import { Checkbox } from '@/shared/ui/kit/checkbox';
+import { PhoneField } from '@/shared/ui/kit/phone-field';
 import { TextField } from '@/shared/ui/kit/text-field';
 
 import { signUp } from '../api/sign-up';
@@ -28,7 +29,7 @@ export const SignUpForm = () => {
       username: '',
     },
     validators: {
-      onChange: signUpSchema,
+      onBlur: signUpSchema,
     },
     onSubmit: async data => {
       const { success } = await signUp({
@@ -135,7 +136,7 @@ export const SignUpForm = () => {
       </Field>
       <Field name="phone">
         {field => (
-          <TextField
+          <PhoneField
             name={field.name}
             label={t('fields.phone.label', {
               fallback: 'Phone Number',
@@ -145,8 +146,9 @@ export const SignUpForm = () => {
             })}
             value={String(field.state.value)}
             onBlur={field.handleBlur}
-            onChange={e => field.handleChange(e.target.value)}
+            onChange={value => field.handleChange(value)}
             intent={field.state.meta.errors.length ? 'danger' : 'primary'}
+            variant="primary"
           />
         )}
       </Field>

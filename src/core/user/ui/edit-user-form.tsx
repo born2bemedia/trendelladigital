@@ -8,6 +8,7 @@ import { useForm } from '@/shared/lib/forms';
 import { notifySuccess, notifyWarning } from '@/shared/lib/toast';
 import { Autocomplete } from '@/shared/ui/kit/autocomplete';
 import { Button } from '@/shared/ui/kit/button';
+import { PhoneField } from '@/shared/ui/kit/phone-field';
 import { TextField } from '@/shared/ui/kit/text-field';
 
 import { editUser } from '../api/edit-user';
@@ -78,6 +79,7 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
             onBlur={field.handleBlur}
             onChange={e => field.handleChange(e.target.value)}
             intent={field.state.meta.errors.length ? 'danger' : 'primary'}
+            variant="secondary"
           />
         )}
       </Field>
@@ -95,6 +97,7 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
             onBlur={field.handleBlur}
             onChange={e => field.handleChange(e.target.value)}
             intent={field.state.meta.errors.length ? 'danger' : 'primary'}
+            variant="secondary"
           />
         )}
       </Field>
@@ -112,13 +115,15 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
             onBlur={field.handleBlur}
             onChange={e => field.handleChange(e.target.value)}
             intent={field.state.meta.errors.length ? 'danger' : 'primary'}
+            variant="secondary"
           />
         )}
       </Field>
       <Field name="phone">
         {field => (
-          <TextField
+          <PhoneField
             name={field.name}
+            variant="secondary"
             label={t('fields.phone.label', {
               fallback: 'Phone',
             })}
@@ -127,7 +132,7 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
             })}
             value={String(field.state.value)}
             onBlur={field.handleBlur}
-            onChange={e => field.handleChange(e.target.value)}
+            onChange={value => field.handleChange(value)}
             intent={field.state.meta.errors.length ? 'danger' : 'primary'}
           />
         )}
@@ -146,6 +151,7 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
             onBlur={field.handleBlur}
             onChange={e => field.handleChange(e.target.value)}
             intent={field.state.meta.errors.length ? 'danger' : 'primary'}
+            variant="secondary"
           />
         )}
       </Field>
@@ -163,6 +169,7 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
             onBlur={field.handleBlur}
             onChange={e => field.handleChange(e.target.value)}
             intent={field.state.meta.errors.length ? 'danger' : 'primary'}
+            variant="secondary"
           />
         )}
       </Field>
@@ -180,6 +187,7 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
             onBlur={field.handleBlur}
             onChange={e => field.handleChange(e.target.value)}
             intent={field.state.meta.errors.length ? 'danger' : 'primary'}
+            variant="secondary"
           />
         )}
       </Field>
@@ -199,6 +207,7 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
             initialValue={String(field.state.value)}
             onChange={value => field.handleChange(value)}
             intent={field.state.meta.errors.length ? 'danger' : 'primary'}
+            variant="secondary"
           />
         )}
       </Field>
@@ -216,6 +225,7 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
             onBlur={field.handleBlur}
             onChange={e => field.handleChange(e.target.value)}
             intent={field.state.meta.errors.length ? 'danger' : 'primary'}
+            variant="secondary"
           />
         )}
       </Field>

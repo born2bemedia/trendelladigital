@@ -47,6 +47,7 @@ export const ResetPasswordForm = () => {
             onBlur={field.handleBlur}
             onChange={e => field.handleChange(e.target.value)}
             intent={field.state.meta.errors.length ? 'danger' : 'primary'}
+            variant="secondary"
           />
         )}
       </Field>
