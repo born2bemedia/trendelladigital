@@ -1,9 +1,29 @@
+import type { Metadata } from 'next';
+
 import { getGroup } from '@/features/groups/api/get-group';
 import { GroupList } from '@/features/groups/ui/list';
 import { getPackages } from '@/features/packages/api/get-packages';
 import { PackageList } from '@/features/packages/ui/list';
 
 import { Hero, RequestQuote } from './components';
+
+export const metadata: Metadata = {
+  title: 'Consulting Packages & Pricing | Trendella Digital',
+  description:
+    'Explore transparent pricing for business and marketing consulting services — designed to meet you where you are.',
+  openGraph: {
+    title: 'Consulting Packages & Pricing | Trendella Digital',
+    description:
+      'Explore transparent pricing for business and marketing consulting services — designed to meet you where you are.',
+    images: ['https://trendelladigital.com/meta.jpg'],
+  },
+  twitter: {
+    title: 'Consulting Packages & Pricing | Trendella Digital',
+    description:
+      'Explore transparent pricing for business and marketing consulting services — designed to meet you where you are.',
+    images: ['https://trendelladigital.com/meta.jpg'],
+  },
+};
 
 export default async function PlansAndPricing() {
   const marketingGroups = await getGroup<'marketing'>('marketing');
