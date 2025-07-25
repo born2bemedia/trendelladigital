@@ -1,49 +1,89 @@
 'use client';
 
+import { useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 
+import { useUserStore } from '@/core/user/model/user.store';
+
+import { cookies } from '@/shared/lib/utils/cookies';
 import { cn } from '@/shared/lib/utils/styles';
 import { Text } from '@/shared/ui/kit/text';
 
-const getNavigation = () => [
-  { label: 'Business Consulting', href: '/business-consulting' },
-  { label: 'Marketing Consulting', href: '/marketing-consulting' },
-  { label: 'Before & After', href: '/before-after' },
-  { label: 'Plans & Pricing', href: '/plans-and-pricing' },
+import { BurgerMenu } from './burger-menu';
+
+const getNavigation = (t: ReturnType<typeof useTranslations>) => [
+  {
+    label: t('businessConsulting', { fallback: 'Business Consulting' }),
+    href: '/business-consulting',
+  },
+  {
+    label: t('marketingConsulting', { fallback: 'Marketing Consulting' }),
+    href: '/marketing-consulting',
+  },
+  {
+    label: t('beforeAfter', { fallback: 'Before & After' }),
+    href: '/before-after',
+  },
+  {
+    label: t('plansAndPricing', { fallback: 'Plans & Pricing' }),
+    href: '/plans-and-pricing',
+  },
 ];
 
 export const Header = () => {
+  const t = useTranslations('header');
   const pathname = usePathname();
-  const locale = useLocale();
-  const isHomePage = pathname === `/${locale}`;
+  const isHomePage = pathname === `/`;
+
+  const { user, setUser } = useUserStore();
+
+  useEffect(() => {
+    const storedUser = cookies.get('user');
+    const parsedUser = storedUser ? JSON.parse(storedUser) : null;
+    setUser(parsedUser);
+  }, [setUser]);
 
   return (
-    <header className="absolute z-50 flex w-full items-center justify-between px-20 max-md:px-6">
+    <header className="absolute top-16 z-50 flex w-full items-center justify-between px-20 max-md:top-8 max-md:px-6">
       <Text color={isHomePage ? 'white' : 'black'}>Logo</Text>
       <section className="flex items-center gap-10 max-[895px]:hidden">
         <div className="flex">
-          {getNavigation().map(item => (
+          {getNavigation(t).map(item => (
             <NavItem key={item.href} {...item} isHomePage={isHomePage} />
           ))}
         </div>
         <div className="flex">
-          <NavItem label="Phone number" href="/" isHomePage={isHomePage} />
-          <NavItem label="Email" href="/" isHomePage={isHomePage} />
+          {user ? (
+            <NavItem
+              label={user?.username ?? user?.firstName}
+              href="/account"
+              isHomePage={isHomePage}
+            />
+          ) : (
+            <>
+              <NavItem
+                label={t('login', { fallback: 'Login' })}
+                href="/login"
+                isHomePage={isHomePage}
+              />
+              <NavItem
+                label={t('signUp', { fallback: 'Sign Up' })}
+                href="/sign-up"
+                isHomePage={isHomePage}
+              />
+            </>
+          )}
+          <NavItem
+            label={t('cart', { fallback: 'Cart' })}
+            href="/cart"
+            isHomePage={isHomePage}
+          />
         </div>
       </section>
       <section className="hidden max-[895px]:flex">
-        <button
-          className={cn(
-            'w-[100px] border-b-[0.5px] pt-3.5 pr-4 pb-1 pl-2 text-left transition duration-300 ease-in-out hover:opacity-70',
-            isHomePage ? 'border-white' : 'border-black',
-          )}
-        >
-          <Text size="xs" color={isHomePage ? 'white' : 'black'}>
-            Menu
-          </Text>
-        </button>
+        <BurgerMenu />
       </section>
     </header>
   );
