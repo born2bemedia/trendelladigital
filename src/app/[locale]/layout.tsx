@@ -8,6 +8,7 @@ import { Toaster } from 'sonner';
 import { cn } from '@/shared/lib/utils/styles';
 import { Footer } from '@/shared/ui/components/footer';
 import { Header } from '@/shared/ui/components/header';
+import { TopBar } from '@/shared/ui/components/top-bar';
 
 import './globals.css';
 import { routing } from '@/i18n/routing';
@@ -57,9 +58,10 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
+      <GoogleAnalytics gaId="G-B2ZZ1FQF7K" />
       <body className={cn(suisseIntl.className, 'antialiased')}>
         <NextIntlClientProvider>
-          <GoogleAnalytics gaId="G-B2ZZ1FQF7K" />
+          <TopBar />
           <Header />
           {children}
           <Footer />

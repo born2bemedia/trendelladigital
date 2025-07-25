@@ -1667,5 +1667,10 @@
       "1": "Privacy Policy."
     },
     "price": "Price"
+  },
+  "langSwitcher": {
+    "en": "English",
+    "de": "German",
+    "it": "Italian"
   }
 }
