@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import { notFound } from 'next/navigation';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { Toaster } from 'sonner';
 
 import { cn } from '@/shared/lib/utils/styles';
@@ -58,6 +59,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={cn(suisseIntl.className, 'antialiased')}>
         <NextIntlClientProvider>
+          <GoogleAnalytics gaId="G-B2ZZ1FQF7K" />
           <Header />
           {children}
           <Footer />
