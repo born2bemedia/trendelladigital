@@ -1,30 +1,29 @@
 'use client';
 
-import { ArrowRight } from '@/shared/icons/fill/arrow-right';
+import { useIsHomePage } from '@/shared/lib/hooks/use-is-home';
+import { cn } from '@/shared/lib/utils/styles';
 import { Text } from '@/shared/ui/kit/text';
 
 import { LangSwitcher } from './lang-switcher';
+import { SocialNetworks } from './social-networks';
 
 export const TopBar = () => {
+  const isHomePage = useIsHomePage();
+
   return (
-    <section className="flex items-center justify-between bg-white px-[80px] py-2 max-md:hidden">
+    <section
+      className={cn(
+        'flex items-center justify-between px-[80px] py-2 max-md:hidden',
+        isHomePage ? 'bg-white' : 'bg-black pb-0',
+      )}
+    >
       <div className="flex items-center gap-[60px]">
-        <Text size="xs" color="black">
+        <Text size="xs" color={isHomePage ? 'black' : 'white'}>
           info@trendelladigital.com
         </Text>
       </div>
       <section className="flex items-center gap-[60px]">
-        <div className="flex items-center gap-5">
-          <Text size="xs" color="black" className="flex items-center">
-            Instagram <ArrowRight color="black" />
-          </Text>
-          <Text size="xs" color="black" className="flex items-center">
-            Twitter <ArrowRight color="black" />
-          </Text>
-          <Text size="xs" color="black" className="flex items-center">
-            Facebook <ArrowRight color="black" />
-          </Text>
-        </div>
+        <SocialNetworks />
         <LangSwitcher />
       </section>
     </section>

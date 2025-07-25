@@ -22,6 +22,8 @@ export const LangSwitcher = () => {
   const router = useRouter();
   const pathname = usePathname();
 
+  const isHomePage = pathname === '/';
+
   const switchLanguage = useCallback(
     (value: string) => {
       const segments = pathname.split('/');
@@ -41,7 +43,12 @@ export const LangSwitcher = () => {
   return (
     <Root open={open} onOpenChange={setOpen}>
       <DropdownMenuTrigger className="cursor-pointer outline-0">
-        <Text size="xs" color="black" className="px-2 py-1" underline>
+        <Text
+          size="xs"
+          color={isHomePage ? 'black' : 'white'}
+          className="px-2 py-1"
+          underline
+        >
           {languages.find(language => language.value === locale)?.label}
         </Text>
       </DropdownMenuTrigger>

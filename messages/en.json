@@ -1672,5 +1672,26 @@
     "en": "English",
     "de": "German",
     "it": "Italian"
+  },
+  "header": {
+    "businessConsulting": "Business Consulting",
+    "marketingConsulting": "Marketing Consulting",
+    "beforeAfter": "Before & After",
+    "plansAndPricing": "Plans & Pricing",
+    "login": "Login",
+    "signUp": "Sign Up",
+    "cart": "Cart"
+  },
+  "burgerMenu": {
+    "menu": "Menu",
+    "close": "Close",
+    "home": "Home",
+    "businessConsulting": "Business Consulting",
+    "marketingConsulting": "Marketing Consulting",
+    "beforeAfter": "Before & After",
+    "plansAndPricing": "Plans & Pricing",
+    "login": "Login",
+    "signUp": "Sign Up",
+    "cart": "Cart"
   }
 }
