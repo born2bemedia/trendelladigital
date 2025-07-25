@@ -11,7 +11,7 @@ const getNavigation = () => [
   { label: 'Business Consulting', href: '/business-consulting' },
   { label: 'Marketing Consulting', href: '/marketing-consulting' },
   { label: 'Before & After', href: '/before-after' },
-  { label: 'Plans & Pricing', href: '/plans-pricing' },
+  { label: 'Plans & Pricing', href: '/plans-and-pricing' },
 ];
 
 export const Header = () => {
@@ -20,7 +20,7 @@ export const Header = () => {
   const isHomePage = pathname === `/${locale}`;
 
   return (
-    <header className="absolute z-10 flex w-full items-center justify-between px-20 max-md:px-6">
+    <header className="absolute z-50 flex w-full items-center justify-between px-20 max-md:px-6">
       <Text color={isHomePage ? 'white' : 'black'}>Logo</Text>
       <section className="flex items-center gap-10 max-[895px]:hidden">
         <div className="flex">
