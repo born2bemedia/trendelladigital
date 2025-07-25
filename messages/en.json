@@ -1596,5 +1596,76 @@
       "saveChanges": "Save Changes",
       "saving": "Saving..."
     }
+  },
+  "checkout": {
+    "success": "Your order has been created successfully.",
+    "error": "Something went wrong — please refresh and try again, or email us directly at info@trendelladigital.com.",
+    "title": "Billing Details",
+    "additionalInfo": "Additional Information",
+    "fields": {
+      "firstName": {
+        "label": "First Name",
+        "placeholder": "Enter your first name"
+      },
+      "lastName": {
+        "label": "Last Name",
+        "placeholder": "Enter your last name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "Enter your phone number"
+      },
+      "address1": {
+        "label": "Address Line 1",
+        "placeholder": "Enter your address"
+      },
+      "address2": {
+        "label": "Address Line 2",
+        "placeholder": "Enter your address"
+      },
+      "city": {
+        "label": "City",
+        "placeholder": "Enter your city"
+      },
+      "country": {
+        "label": "Country",
+        "placeholder": "Enter your country"
+      },
+      "zip": {
+        "label": "Postal Code",
+        "placeholder": "Enter your postal code"
+      },
+      "additionalInfo": {
+        "label": "Additional Information",
+        "placeholder": "Add Special Notes"
+      },
+      "isAgreeWithTerms": {
+        "0": "I agree to the",
+        "1": "Terms and Conditions",
+        "2": "and",
+        "3": "Refund Policy."
+      },
+      "isAgreeWithPrivacy": {
+        "0": "My data will be processed as described in the",
+        "1": "Privacy Policy."
+      }
+    },
+    "summary": {
+      "title": "Your Order Summary",
+      "total": "Total"
+    },
+    "submit": {
+      "label": "Submit",
+      "loading": "Submitting..."
+    },
+    "appendix": {
+      "0": "We only use your information to deliver your service and enhance your experience — see how in our",
+      "1": "Privacy Policy."
+    },
+    "price": "Price"
   }
 }

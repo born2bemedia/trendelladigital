@@ -24,8 +24,7 @@ const phoneFieldVariants = cva(
       },
       intent: {
         primary: '',
-        danger:
-          '!shadow-[0_0_0_1px_#FFE6E6] !border-[#FF3939] !bg-[#FFE6E6] !text-[rgba(255,57,57,0.5)]',
+        danger: '',
       },
     },
     defaultVariants: {
@@ -60,11 +59,17 @@ export const PhoneField = ({
             ? country
             : 'us'
         }
-        className="!h-[74px]"
-        inputClassName={phoneFieldVariants({
-          variant,
-          intent,
-        })}
+        className={cn(
+          '!h-[74px] rounded-lg',
+          intent === 'danger' && '!border !border-[#FF3939] !bg-[#FFE6E6]',
+        )}
+        inputClassName={cn(
+          phoneFieldVariants({
+            variant,
+            intent,
+          }),
+          intent === 'danger' && '!bg-[#FFE6E6]',
+        )}
         countries={defaultCountries.filter(
           ([, iso2]) => !excludedCountries.includes(iso2),
         )}
@@ -73,7 +78,8 @@ export const PhoneField = ({
             '!h-full bg-white !border-none !pr-3 !pl-2.5',
             variant === 'primary'
               ? '!bg-[#E1DFF6]/20 !border-[#E1DFF6]/20'
-              : '!bg-white !border-white',
+              : '!bg-white !border-white border',
+            intent === 'danger' && '!bg-[#FFE6E6]',
           ),
           dropdownStyleProps: {
             className: '!outline-none',
