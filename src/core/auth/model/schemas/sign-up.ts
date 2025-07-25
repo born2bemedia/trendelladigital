@@ -1,5 +1,4 @@
 import { v } from '@/shared/lib/forms';
-import { isPhoneValid } from '@/shared/lib/utils/validation';
 
 export const signUpSchema = v.pipe(
   v.object({
@@ -9,11 +8,7 @@ export const signUpSchema = v.pipe(
     email: v.pipe(v.string(), v.email()),
     phone: v.pipe(
       v.string(),
-      v.minLength(1, 'Please provide your phone number'),
-      v.custom(
-        value => isPhoneValid(String(value)),
-        'Looks like you missed a required field. Please double-check and try again.',
-      ),
+      v.minLength(5, 'Please provide your phone number'),
     ),
     password: v.pipe(v.string(), v.minLength(6)),
     confirmPassword: v.pipe(v.string(), v.minLength(6)),

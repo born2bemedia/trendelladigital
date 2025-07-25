@@ -1,5 +1,4 @@
 import { v } from '@/shared/lib/forms';
-import { isPhoneValid } from '@/shared/lib/utils/validation';
 
 export const contactSchema = v.object({
   fullName: v.pipe(
@@ -13,14 +12,7 @@ export const contactSchema = v.object({
     v.string(),
     v.email('Hmm… that email format doesn’t look quite right.'),
   ),
-  phone: v.pipe(
-    v.string(),
-    v.minLength(1, 'Please provide your phone number'),
-    v.custom(
-      value => isPhoneValid(String(value)),
-      'Looks like you missed a required field. Please double-check and try again.',
-    ),
-  ),
+  phone: v.pipe(v.string(), v.minLength(5, 'Please provide your phone number')),
   industryOrNiche: v.pipe(
     v.string(),
     v.minLength(

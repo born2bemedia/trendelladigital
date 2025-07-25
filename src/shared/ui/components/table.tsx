@@ -6,12 +6,18 @@ import {
   useReactTable,
 } from '@tanstack/react-table';
 
+import { cn } from '@/shared/lib/utils/styles';
+
 export const Table = <TData,>({
   data,
   columns,
+  className,
+  viewVariant = 'list',
 }: {
   data: TData[];
   columns: ColumnDef<TData>[];
+  className?: string;
+  viewVariant?: 'list' | 'grid';
 }) => {
   const table = useReactTable({
     data,
@@ -20,7 +26,12 @@ export const Table = <TData,>({
   });
 
   return (
-    <div className="w-full overflow-x-scroll rounded-lg bg-white/40 p-6">
+    <div
+      className={cn(
+        'w-full overflow-x-scroll rounded-lg bg-white/40 p-6',
+        className,
+      )}
+    >
       <table className="w-full table-fixed border-collapse">
         <thead className="text-left">
           {table.getHeaderGroups().map(headerGroup => (
@@ -42,7 +53,14 @@ export const Table = <TData,>({
               <React.Fragment key={row.id}>
                 <tr>
                   {row.getVisibleCells().map(cell => (
-                    <td key={cell.id} className="p-2">
+                    <td
+                      key={cell.id}
+                      className={cn(
+                        'p-2',
+                        viewVariant === 'grid' &&
+                          'border-r border-black/30 last:border-r-0',
+                      )}
+                    >
                       {flexRender(
                         cell.column.columnDef.cell,
                         cell.getContext(),
@@ -54,7 +72,12 @@ export const Table = <TData,>({
                   <tr>
                     <td
                       colSpan={columns.length}
-                      className="border-b border-black/30"
+                      className={cn(
+                        'border-b',
+                        viewVariant === 'list'
+                          ? 'border-black/30'
+                          : 'border-black',
+                      )}
                     />
                   </tr>
                 )}

@@ -3,11 +3,13 @@
 import { useTranslations } from 'next-intl';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
+import { notifySuccess } from '@/shared/lib/toast';
 import { cn } from '@/shared/lib/utils/styles';
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
+import buyPackage from '../api/buy-package';
 import type { Package } from '../model/types';
 
 export const PackageCard = ({
@@ -16,8 +18,15 @@ export const PackageCard = ({
   name,
   price,
   type,
+  id,
+  slug,
 }: Package) => {
   const t = useTranslations('plansAndPricing.packages');
+
+  const buyHandle = (pkg: Package) => {
+    buyPackage(pkg);
+    notifySuccess(`Package ${name} added to cart`);
+  };
 
   return (
     <article
@@ -39,7 +48,12 @@ export const PackageCard = ({
             {t('from', { fallback: 'From' })} €{price.toLocaleString()}
           </Text>
         </div>
-        <Button className="w-full justify-center">
+        <Button
+          className="w-full justify-center"
+          onClick={() =>
+            buyHandle({ description, fromPrice, name, price, type, id, slug })
+          }
+        >
           {fromPrice
             ? t('order', { fallback: 'Order' })
             : t('buy', { fallback: 'Buy' })}{' '}
