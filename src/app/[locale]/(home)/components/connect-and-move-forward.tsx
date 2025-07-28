@@ -34,7 +34,7 @@ export const ConnectAndMoveForward = () => {
         {getContacts().map(item => (
           <ContactCard key={item.label} {...item} />
         ))}
-        <Link href="/request-form">
+        <Link href="/contact-us">
           <Button>
             {t('button', { fallback: 'Send Us a Message' })}
             <ArrowRight color="black" />

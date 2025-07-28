@@ -25,7 +25,7 @@ const getNavigation = (t: ReturnType<typeof useTranslations>) => [
   },
   {
     label: t('beforeAfter', { fallback: 'Before & After' }),
-    href: '/before-after',
+    href: '/before-and-after',
   },
   {
     label: t('plansAndPricing', { fallback: 'Plans & Pricing' }),
@@ -54,12 +54,14 @@ export const Header = () => {
         isHomePage ? 'top-12' : 'top-16',
       )}
     >
-      <Image
-        src={isHomePage ? '/logo-white.svg' : '/logo-black.svg'}
-        alt="trendella-digital"
-        width={100}
-        height={30}
-      />
+      <Link href="/">
+        <Image
+          src={isHomePage ? '/logo-white.svg' : '/logo-black.svg'}
+          alt="trendella-digital"
+          width={100}
+          height={30}
+        />
+      </Link>
       <section className="flex items-center gap-10 max-[895px]:hidden">
         <div className="flex">
           {getNavigation(t).map(item => (

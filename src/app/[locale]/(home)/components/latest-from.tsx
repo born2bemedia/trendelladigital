@@ -99,7 +99,7 @@ const BrowseArticles = ({ className }: { className?: string }) => {
           fallback: 'Looking for more insights that actually move the needle?',
         })}
       </Title>
-      <Link href="/">
+      <Link href="/your-growth-library">
         <Button variant="metal">
           {t('browseArticles.button', {
             fallback: 'Browse All Articles',

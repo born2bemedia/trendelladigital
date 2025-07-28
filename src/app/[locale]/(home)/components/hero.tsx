@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
@@ -26,10 +27,14 @@ export const Hero = () => {
               })}
             </Text>
           </section>
-          <Button variant="secondary">
-            {t('consultation.button', { fallback: 'Book a Free Consultation' })}
-            <ArrowRight />
-          </Button>
+          <Link href="/contact-us">
+            <Button variant="secondary">
+              {t('consultation.button', {
+                fallback: 'Book a Free Consultation',
+              })}
+              <ArrowRight />
+            </Button>
+          </Link>
         </section>
         <Image
           src="/images/home/hero-hole.png"

@@ -1,6 +1,7 @@
 'use client';
 
 import type { ReactNode } from 'react';
+import Link from 'next/link';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
 import { cn } from '@/shared/lib/utils/styles';
@@ -43,9 +44,17 @@ export const ConsultingPreview = ({
             {label}
           </Text>
           <Text color="ghost">{description}</Text>
-          <Button>
-            {buttonLabel} <ArrowRight color="black" />
-          </Button>
+          <Link
+            href={
+              type === 'business'
+                ? '/business-consulting'
+                : '/marketing-consulting'
+            }
+          >
+            <Button>
+              {buttonLabel} <ArrowRight color="black" />
+            </Button>
+          </Link>
         </div>
       </section>
       <section className="flex flex-col gap-2">

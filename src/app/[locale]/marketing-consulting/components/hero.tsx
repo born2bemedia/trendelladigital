@@ -17,7 +17,7 @@ export const Hero = () => {
       })}
       btnMeta={{
         label: t('button', { fallback: 'Talk to an Expert' }),
-        url: '/contact',
+        url: '/contact-us',
       }}
     />
   );
