@@ -59,7 +59,7 @@ const TitleBottom = ({ className }: { className?: string }) => {
           fallback: 'See how founders like you leveled up with structure:',
         })}
       </Title>
-      <Link href="/before-and-after-results">
+      <Link href="/before-and-after">
         <Button variant="metal">
           {t('button', { fallback: 'Before & After Results' })}{' '}
           <ArrowRight color="black" />

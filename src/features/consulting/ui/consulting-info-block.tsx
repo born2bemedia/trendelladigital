@@ -95,7 +95,7 @@ const Subtitle = ({
       <Title size="3xl" as="h3">
         {value}
       </Title>
-      <Link href="/expect">
+      <Link href="/what-to-expect">
         <Button>
           {t('button')} <ArrowRight color="black" />
         </Button>

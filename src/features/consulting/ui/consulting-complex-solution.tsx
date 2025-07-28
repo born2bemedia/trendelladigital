@@ -54,7 +54,7 @@ export const ConsultingComplexSolution = ({
             {t('footer.2', { fallback: 'Let’s walk through it together.' })}
           </Text>
         </div>
-        <Link href="/contact">
+        <Link href="/contact-us">
           <Button variant="metal">
             {t('button', { fallback: 'Book a Free Call' })}
             <ArrowRight color="black" />
