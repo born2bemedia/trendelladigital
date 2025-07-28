@@ -2,8 +2,11 @@
 
 import { useMemo } from 'react';
 import { usePathname } from 'next/navigation';
+import { useLocale } from 'next-intl';
 
 export const useIsHomePage = () => {
   const pathname = usePathname();
-  return useMemo(() => pathname === '/', [pathname]);
+  const locale = useLocale();
+
+  return useMemo(() => pathname === `/${locale}`, [pathname, locale]);
 };

@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 
 import { Text } from '@/shared/ui/kit/text';
@@ -64,7 +65,12 @@ export const Footer = () => {
       <section className="flex flex-col gap-10">
         <section className="flex justify-between max-md:flex-col">
           <section className="flex w-[340px] flex-col gap-2.5 max-md:w-full">
-            <Text>Logo</Text>
+            <Image
+              src="/logo-white.svg"
+              alt="trendella-digital"
+              width={100}
+              height={30}
+            />
             <div className="flex flex-col gap-1">
               <Label>Social Media:</Label>
               <ShortSocials />
