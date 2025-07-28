@@ -1,9 +1,10 @@
 'use client';
 
 import { useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { useUserStore } from '@/core/user/model/user.store';
 
@@ -35,7 +36,8 @@ const getNavigation = (t: ReturnType<typeof useTranslations>) => [
 export const Header = () => {
   const t = useTranslations('header');
   const pathname = usePathname();
-  const isHomePage = pathname === `/`;
+  const locale = useLocale();
+  const isHomePage = pathname === `/${locale}`;
 
   const { user, setUser } = useUserStore();
 
@@ -46,8 +48,18 @@ export const Header = () => {
   }, [setUser]);
 
   return (
-    <header className="absolute top-16 z-50 flex w-full items-center justify-between px-20 max-md:top-8 max-md:px-10">
-      <Text color={isHomePage ? 'white' : 'black'}>Logo</Text>
+    <header
+      className={cn(
+        'absolute top-16 z-50 flex w-full items-center justify-between px-20 max-md:top-8 max-md:px-10',
+        isHomePage ? 'top-12' : 'top-16',
+      )}
+    >
+      <Image
+        src={isHomePage ? '/logo-white.svg' : '/logo-black.svg'}
+        alt="trendella-digital"
+        width={100}
+        height={30}
+      />
       <section className="flex items-center gap-10 max-[895px]:hidden">
         <div className="flex">
           {getNavigation(t).map(item => (

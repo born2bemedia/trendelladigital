@@ -7,6 +7,7 @@ import { Toaster } from 'sonner';
 import { cn } from '@/shared/lib/utils/styles';
 import { Footer } from '@/shared/ui/components/footer';
 import { Header } from '@/shared/ui/components/header';
+import { Preloader } from '@/shared/ui/components/preloader';
 import { TopBar } from '@/shared/ui/components/top-bar';
 
 import './globals.css';
@@ -60,6 +61,7 @@ export default async function LocaleLayout({
           {children}
           <Footer />
           <Toaster />
+          <Preloader />
         </NextIntlClientProvider>
       </body>
     </html>
