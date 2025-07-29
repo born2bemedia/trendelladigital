@@ -4,7 +4,6 @@ import sgMail from '@sendgrid/mail';
 
 import type { User } from '@/core/user/model/types';
 
-import { paymentFormBody } from '@/features/email-letters/payment-form-body';
 import { requestFormBody } from '@/features/email-letters/request-form-body';
 
 import { FROM_EMAIL, SENDGRID_API_KEY } from '@/shared/config/env';
