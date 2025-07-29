@@ -26,6 +26,8 @@ export const CookieConsent = () => {
         lsWrite('isCookiesAccepted', 'true');
         setIsVisible(false);
       }, 6000);
+    } else {
+      setIsVisible(false);
     }
   }, []);
 
