@@ -5,6 +5,7 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 import { Toaster } from 'sonner';
 
 import { cn } from '@/shared/lib/utils/styles';
+import { CookieConsent } from '@/shared/ui/components/cookie-consent';
 import { Footer } from '@/shared/ui/components/footer';
 import { Header } from '@/shared/ui/components/header';
 import { Preloader } from '@/shared/ui/components/preloader';
@@ -62,6 +63,7 @@ export default async function LocaleLayout({
           <Footer />
           <Toaster />
           <Preloader />
+          <CookieConsent />
         </NextIntlClientProvider>
       </body>
     </html>
