@@ -23,7 +23,6 @@ export async function login({
     }),
   });
   const result = await res.json();
-  console.log('result', result);
 
   if (result.token) {
     const cookieInst = await cookies();

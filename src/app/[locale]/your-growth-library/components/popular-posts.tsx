@@ -20,7 +20,7 @@ export const PopularPosts = () => {
         fallback:
           'Why people buy — and how to package what you do in a way that clicks.',
       }),
-      url: '#',
+      url: '/your-growth-library/3-offers-that-convert',
     },
     {
       title: t('1.title', {
@@ -30,7 +30,7 @@ export const PopularPosts = () => {
         fallback:
           "You don't need to post every day to get clients. Here's what to focus on instead.",
       }),
-      url: '#',
+      url: '/your-growth-library/marketing-without-a-massive-following',
     },
     {
       title: t('2.title', { fallback: 'Systems That Save Time (and Sanity)' }),
@@ -38,7 +38,7 @@ export const PopularPosts = () => {
         fallback:
           'The behind-the-scenes tools we use to help founders get hours back each week.',
       }),
-      url: '#',
+      url: '/your-growth-library/systems-that-save-time',
     },
   ];
 

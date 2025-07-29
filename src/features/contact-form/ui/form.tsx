@@ -1,17 +1,23 @@
 'use client';
 
+import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
 import { useForm } from '@/shared/lib/forms';
+import { notifyWarning } from '@/shared/lib/toast';
 import { Button } from '@/shared/ui/kit/button';
 import { Dropdown } from '@/shared/ui/kit/dropdown';
 import { Text } from '@/shared/ui/kit/text';
 import { TextField } from '@/shared/ui/kit/text-field';
 
+import { sendContactForm } from '../api/send-contact-form';
 import { contactSchema } from '../model/schema';
+import { ThankYouDialog } from './thank-you';
 
 export const ContactForm = () => {
+  const [isSuccess, setIsSuccess] = useState(false);
+
   const t = useTranslations('contactUs.sendUsMessage.form');
 
   const { Field, Subscribe, handleSubmit } = useForm({
@@ -30,8 +36,16 @@ export const ContactForm = () => {
     validators: {
       onChange: contactSchema,
     },
-    onSubmit: data => {
-      console.log(data);
+    onSubmit: async data => {
+      const { success } = await sendContactForm(data.value);
+
+      if (success) {
+        setIsSuccess(true);
+      } else {
+        notifyWarning(
+          'Something went wrong — try again or contact us directly',
+        );
+      }
     },
   });
 
@@ -44,6 +58,7 @@ export const ContactForm = () => {
       }}
       className="flex flex-col gap-6"
     >
+      <ThankYouDialog isOpen={isSuccess} setIsOpen={setIsSuccess} />
       <div className="flex w-full gap-6 max-md:flex-col">
         <div className="flex w-1/2 flex-col gap-6 max-md:w-full">
           <Field name="fullName">
