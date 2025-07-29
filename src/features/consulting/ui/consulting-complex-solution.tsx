@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
@@ -11,6 +12,7 @@ import { Title } from '@/shared/ui/kit/title';
 
 import type { ComplexSolution, SolutionType } from '../model/types';
 import st from './consulting-comples-solution.module.css';
+import { ConsultingRequestForm } from './consulting-request-form';
 
 export const ConsultingComplexSolution = ({
   type,
@@ -40,9 +42,17 @@ export const ConsultingComplexSolution = ({
         </Text>
       </section>
       <section className="flex flex-col gap-2">
-        <SolutionCard solution={solutions.cheap} type="cheap" />
-        <SolutionCard solution={solutions.moderate} type="moderate" />
-        <SolutionCard solution={solutions.expensive} type="expensive" />
+        <SolutionCard solution={solutions.cheap} type="cheap" pageType={type} />
+        <SolutionCard
+          solution={solutions.moderate}
+          type="moderate"
+          pageType={type}
+        />
+        <SolutionCard
+          solution={solutions.expensive}
+          type="expensive"
+          pageType={type}
+        />
       </section>
       <section className="flex flex-col items-center gap-6 text-center">
         <div className="flex flex-col items-center gap-2.5 text-center">
@@ -65,13 +75,17 @@ export const ConsultingComplexSolution = ({
   );
 };
 
-export const SolutionCard = ({
+const SolutionCard = ({
   solution,
   type,
+  pageType,
 }: {
   solution: ComplexSolution;
   type: SolutionType;
+  pageType: 'marketing' | 'business';
 }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const t = useTranslations('consultingComplexSolution');
 
   const solutionSt: Record<SolutionType, string> = {
@@ -120,12 +134,26 @@ export const SolutionCard = ({
               {solution.price.toLocaleString()}
             </Title>
           </div>
-          <Button>
+          <Button onClick={() => setIsOpen(true)}>
             {t('request', { fallback: 'Request' })} {solution.name}{' '}
             <ArrowRight color="black" />
           </Button>
         </div>
       </section>
+      <ConsultingRequestForm
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        type={pageType}
+        entity={{
+          name: solution.name,
+          price: solution.price,
+          id: 0,
+          slug: '',
+          description: '',
+          type: pageType,
+          fromPrice: true,
+        }}
+      />
     </section>
   );
 };
