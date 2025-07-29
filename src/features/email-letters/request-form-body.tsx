@@ -5,7 +5,7 @@ export const requestFormBody = ({ username }: { username: string }) => {
     body: `
       <div class="wrapper">
         <header class="header">
-          <img style="width: 696px; height: 90px" src="https://trendelladigital.com/images/email/header.png" alt="full-logo" class="logo" />
+          <img style="width: 696px; height: 110px" src="https://trendelladigital.com/images/email/header.png" alt="full-logo" class="logo" />
         </header>
         <div class="main">
           <p style="font-size: 24px; color: #0D0D0D;">Hi, ${username}</p>
@@ -18,7 +18,7 @@ export const requestFormBody = ({ username }: { username: string }) => {
           <p class="text" style="font-size: 18px;">Warm regards,<br /><strong style="font-weight: 700;">The Trendella Digital Team</strong></p>
         </div>
         <footer style="margin-top: 70px;">
-          <img style="width: 696px; height: 90px" src="https://trendelladigital.com/images/email/footer.png" alt="full-logo" class="logoSm" />
+          <img style="width: 696px; height: 110px" src="https://trendelladigital.com/images/email/footer.png" alt="full-logo" class="logoSm" />
         </footer>
       </div>
     `,
