@@ -3,21 +3,23 @@
 import { useTranslations } from 'next-intl';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
-import { notifySuccess } from '@/shared/lib/toast';
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
-import buyProduct from '../api/buy-product';
 import type { Product } from '../model/types';
 
-export const ProductCard = ({ fromPrice, name, price, id, slug }: Product) => {
+export const ProductCard = ({
+  fromPrice,
+  name,
+  price,
+  id,
+  slug,
+  onBuy,
+}: Product & {
+  onBuy: (product: Product) => void;
+}) => {
   const t = useTranslations('plansAndPricing.packages');
-
-  const buyHandle = (product: Product) => {
-    buyProduct(product);
-    notifySuccess(`Product ${name} added to cart`);
-  };
 
   return (
     <article className="flex w-full justify-between gap-10 rounded-lg bg-white p-6 max-md:flex-col max-md:py-4">
@@ -36,7 +38,7 @@ export const ProductCard = ({ fromPrice, name, price, id, slug }: Product) => {
       </section>
       <Button
         className="max-md:w-full max-md:justify-center"
-        onClick={() => buyHandle({ fromPrice, name, price, id, slug })}
+        onClick={() => onBuy({ fromPrice, name, price, id, slug })}
       >
         {fromPrice
           ? t('order', { fallback: 'Order' })
