@@ -25,12 +25,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function PlansAndPricing() {
-  const marketingGroups = await getGroup<'marketing'>('marketing');
-  const businessGroups = await getGroup<'business'>('business');
+export default async function PlansAndPricing({
+  params,
+}: Readonly<{
+  params: Promise<{ locale: string }>;
+}>) {
+  const { locale } = await params;
 
-  const marketingPackages = await getPackages<'marketing'>('marketing');
-  const businessPackages = await getPackages<'business'>('business');
+  const marketingGroups = await getGroup<'marketing'>('marketing', locale);
+  const businessGroups = await getGroup<'business'>('business', locale);
+
+  const marketingPackages = await getPackages<'marketing'>('marketing', locale);
+  const businessPackages = await getPackages<'business'>('business', locale);
 
   return (
     <section>

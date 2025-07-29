@@ -6,9 +6,10 @@ import type { Package } from '../model/types';
 
 export async function getPackages<T = 'marketing' | 'business'>(
   type: T,
+  locale: string,
 ): Promise<Package<T>[]> {
   const response = await fetch(
-    `${SERVER_URL}/api/packages?where[type][equals]=${type}`,
+    `${SERVER_URL}/api/packages?where[type][equals]=${type}&locale=${locale}`,
   );
 
   if (!response.ok) {
