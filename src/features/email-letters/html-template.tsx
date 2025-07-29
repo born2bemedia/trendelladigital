@@ -10,7 +10,7 @@ export const htmlTemplate = ({
       <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Marketifire</title>
+        <title>Trendella</title>
         <style>
           ${style}
         </style>
