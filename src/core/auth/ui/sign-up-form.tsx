@@ -1,7 +1,10 @@
 'use client';
 
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
+
+import { useUserStore } from '@/core/user/model/user.store';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
 import { useForm } from '@/shared/lib/forms';
@@ -16,6 +19,9 @@ import { signUpSchema } from '../model/schemas/sign-up';
 
 export const SignUpForm = () => {
   const t = useTranslations('signUp.form');
+
+  const router = useRouter();
+  const { setUser } = useUserStore();
 
   const { Field, Subscribe, handleSubmit } = useForm({
     defaultValues: {
@@ -32,7 +38,7 @@ export const SignUpForm = () => {
       onBlur: signUpSchema,
     },
     onSubmit: async data => {
-      const { success } = await signUp({
+      const { success, user } = await signUp({
         email: data.value.email,
         password: data.value.password,
         confirmPassword: data.value.confirmPassword,
@@ -46,6 +52,8 @@ export const SignUpForm = () => {
         notifySuccess(
           t('success', { fallback: 'Account created successfully' }),
         );
+        setUser(user);
+        router.push('/account');
       } else {
         notifyWarning(
           t('error', {

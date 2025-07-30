@@ -18,6 +18,6 @@ export async function signUp(
   if (!result.errors) {
     return await login({ email: userDTO.email, password: userDTO.password });
   } else {
-    return { success: false };
+    return { success: false, user: null };
   }
 }
