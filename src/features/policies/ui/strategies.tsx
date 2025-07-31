@@ -76,7 +76,7 @@ export const PolicyStrategies = memo(
         <ul
           key={`${node.type}-${type}`}
           className={cn(
-            'mt-4 ml-3.5 text-[#272727]',
+            'mt-4 ml-3.5 text-sm text-[#272727]',
             node.listType === 'bullet' ? 'list-disc' : 'list-decimal',
           )}
         >
@@ -119,8 +119,18 @@ const ListItem = ({ value }: { value?: Children2[] }) => {
       );
     }
 
+    if (item.type === 'linebreak') {
+      return <br key={`br-${i}`} />;
+    }
+
     return (
-      <span key={`list-text-${i}`} className="text-sm text-[#272727]">
+      <span
+        key={`list-text-${i}`}
+        className={cn(
+          'text-sm text-[#272727]',
+          item.format === 1 && 'font-bold',
+        )}
+      >
         {item.text}
       </span>
     );

@@ -61,6 +61,12 @@ export const Map = () => {
         t('2.list.2', {
           fallback: 'Build out lead systems and conversion pathways',
         }),
+        t('2.list.3', {
+          fallback: 'Tackle pricing, workflows, visibility — you name it',
+        }),
+        t('2.list.4', {
+          fallback: 'Refine your revenue goals with data and intention',
+        }),
       ],
       whatYouGet: t('2.whatYouGet', {
         fallback:

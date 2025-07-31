@@ -22,6 +22,7 @@ export const Consultings = () => {
         {t('title.0', {
           fallback: 'Business Consulting for Structure',
         })}
+        ,
         <br />
         {t('title.1', {
           fallback: 'Marketing Consulting for Scale',

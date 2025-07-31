@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
@@ -26,10 +27,12 @@ export const Outcomes = () => {
           </Text>
         </div>
         <div className="mt-auto">
-          <Button variant="metal">
-            {t('button', { fallback: 'Check Out Before & After' })}{' '}
-            <ArrowRight color="black" />
-          </Button>
+          <Link href="/before-and-after">
+            <Button variant="metal">
+              {t('button', { fallback: 'Check Out Before & After' })}{' '}
+              <ArrowRight color="black" />
+            </Button>
+          </Link>
         </div>
       </section>
     </section>

@@ -56,9 +56,9 @@ const BookConsultation = () => {
       <Title size="4xl" as="h3">
         {t('title', { fallback: 'Curious how it all began?' })}
       </Title>
-      <Link href="/contact-us">
+      <Link href="/our-story">
         <Button>
-          {t('button', { fallback: 'Book a Free Consultation' })}
+          {t('button', { fallback: 'Read Our Story' })}
           <ArrowRight color="black" />
         </Button>
       </Link>

@@ -2,17 +2,23 @@
 
 import { useTranslations } from 'next-intl';
 
+import { useUserStore } from '@/core/user/model/user.store';
+
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
 import { useForm } from '@/shared/lib/forms';
+import { notifySuccess, notifyWarning } from '@/shared/lib/toast';
 import { Button } from '@/shared/ui/kit/button';
 import { TextField } from '@/shared/ui/kit/text-field';
 
+import { changePassword } from '../api/change-password';
 import { changePasswordSchema } from '../model/schema';
 
 export const ChangePasswordForm = () => {
   const t = useTranslations('changePassword');
 
-  const { Field, Subscribe, handleSubmit } = useForm({
+  const { user } = useUserStore();
+
+  const { Field, Subscribe, handleSubmit, reset } = useForm({
     defaultValues: {
       oldPassword: '',
       newPassword: '',
@@ -22,7 +28,18 @@ export const ChangePasswordForm = () => {
       onChange: changePasswordSchema,
     },
     onSubmit: async data => {
-      console.log('data', data);
+      const res = await changePassword({
+        ...data.value,
+        userId: user?.id ?? -1,
+      });
+
+      if (res.message) {
+        notifySuccess(res.message);
+        reset();
+      } else {
+        console.error(res);
+        notifyWarning('Password change failed. Please try again later.');
+      }
     },
   });
 

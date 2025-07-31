@@ -1,5 +1,7 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
 import { cn } from '@/shared/lib/utils/styles';
 import { Button } from '@/shared/ui/kit/button';
@@ -15,6 +17,8 @@ export const ConsultingDetails = ({
 }: ConsultingDetailed & {
   type: 'marketing' | 'business';
 }) => {
+  const t = useTranslations('consultingDetails');
+
   return (
     <article
       className={cn(
@@ -26,21 +30,25 @@ export const ConsultingDetails = ({
         <div className="flex flex-col gap-2">
           <Title as="h3">
             {type === 'marketing'
-              ? 'Marketing Consulting'
-              : 'Business Consulting'}
+              ? t('marketingConsulting', { fallback: 'Marketing Consulting' })
+              : t('businessConsulting', { fallback: 'Business Consulting' })}
           </Title>
           <Text color="dark">{description}</Text>
         </div>
         <Button>
           {type === 'business'
-            ? 'Explore Business Consulting'
-            : 'Explore Marketing Consulting'}
+            ? t('explore', {
+                fallback: 'Explore Business Consulting',
+              })
+            : t('discover', {
+                fallback: 'Discover Marketing Consulting',
+              })}
           <ArrowRight color="black" />
         </Button>
       </section>
       <section className="mt-auto flex flex-col gap-2">
         <Text color="dark" size="lg">
-          Services include:
+          {t('include', { fallback: 'Key focus areas' })}
         </Text>
         <div className="grid grid-cols-2 gap-2 max-md:grid-cols-1">
           {includes.map(value => (

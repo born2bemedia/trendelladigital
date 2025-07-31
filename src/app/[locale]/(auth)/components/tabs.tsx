@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 
 import { logout } from '@/core/auth/api/logout';
+import { useUserStore } from '@/core/user/model/user.store';
 
 import { useTabsStore } from '@/features/order/model/tabs.store';
 
@@ -17,12 +18,14 @@ export const Tabs = () => {
 
   const t = useTranslations('auth.tabs');
   const { activeTab, setActiveTab } = useTabsStore();
+  const { setUser } = useUserStore();
 
   const logoutHandle = async () => {
     const res = await logout();
 
     if (res.success) {
       router.push('/');
+      setUser(null);
     } else {
       notifyWarning(
         t('warning', {
