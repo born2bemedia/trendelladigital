@@ -37,6 +37,11 @@ const StatisticBoard = () => {
 
   const stats = [
     {
+      title: '150+',
+      subtitle: 'personalized strategies delivered',
+      text: 'No templates. Every plan tailored, every result earned.',
+    },
+    {
       title: '87%',
       subtitle: t('statistic.0.subtitle', {
         fallback: 'of clients doubled their revenue within 6 months',
@@ -77,7 +82,7 @@ const StatisticBoard = () => {
   ];
 
   return (
-    <section className="flex gap-10 rounded-lg bg-[#F5F4FD] p-6 max-lg:flex-col-reverse max-md:p-2">
+    <section className="flex items-center gap-10 rounded-lg bg-[#F5F4FD] p-6 max-lg:flex-col-reverse max-md:items-start max-md:p-2">
       <section className="flex w-[35%] flex-col gap-6 max-lg:w-full">
         {stats.map(stat => (
           <StatItem key={stat.title} {...stat} />

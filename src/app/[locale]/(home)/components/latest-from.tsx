@@ -10,29 +10,40 @@ import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
-const getArticles = () => [
-  {
-    title: '3 Offers That Convert (Even If You’re Just Starting)',
-    description:
-      'Learn what makes an offer irresistible — and how to build yours fast.',
-    url: '/',
-  },
-  {
-    title: 'Marketing Without a Massive Following',
-    description:
-      'How to attract clients without dancing on TikTok or posting every day.',
-    url: '/',
-  },
-  {
-    title: 'Systems That Save Time (and Sanity)',
-    description:
-      'Behind-the-scenes systems that reduce decision fatigue and increase operational clarity.',
-    url: '/',
-  },
-];
-
 export const LatestFrom = () => {
   const t = useTranslations('home.latestFrom');
+  const tp = useTranslations('popularPosts');
+
+  const posts = [
+    {
+      title: tp('0.title', {
+        fallback: "3 Offers That Convert (Even If You're Just Starting)",
+      }),
+      description: tp('0.description', {
+        fallback:
+          'Why people buy — and how to package what you do in a way that clicks.',
+      }),
+      url: '/your-growth-library/3-offers-that-convert',
+    },
+    {
+      title: tp('1.title', {
+        fallback: 'Marketing Without a Massive Following',
+      }),
+      description: tp('1.description', {
+        fallback:
+          "You don't need to post every day to get clients. Here's what to focus on instead.",
+      }),
+      url: '/your-growth-library/marketing-without-a-massive-following',
+    },
+    {
+      title: tp('2.title', { fallback: 'Systems That Save Time (and Sanity)' }),
+      description: tp('2.description', {
+        fallback:
+          'The behind-the-scenes tools we use to help founders get hours back each week.',
+      }),
+      url: '/your-growth-library/systems-that-save-time',
+    },
+  ];
 
   return (
     <section className="flex gap-10 px-[60px] py-[100px] max-md:flex-col max-md:px-4 max-md:py-[60px]">
@@ -57,7 +68,7 @@ export const LatestFrom = () => {
         <BrowseArticles className="flex max-md:hidden" />
       </section>
       <section className="flex w-1/2 flex-col gap-2 max-md:w-full">
-        {getArticles().map(item => (
+        {posts.map(item => (
           <ArticleCard key={item.title} {...item} />
         ))}
       </section>

@@ -9,9 +9,9 @@ import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 const getContacts = () => [
-  { label: 'Phone Number', value: 'Phone Number' },
-  { label: 'Email', value: 'Email' },
-  { label: 'Office Address', value: 'Office Address' },
+  { label: 'Phone Number', value: '' },
+  { label: 'Email', value: '' },
+  { label: 'Office Address', value: '' },
 ];
 
 export const ConnectAndMoveForward = () => {

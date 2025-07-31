@@ -241,10 +241,6 @@ export const getOpenPositions = (
       fallback: 'Remote',
     }),
     responsibilities: [
-      t('clientSuccessLead.responsibilities.0', {
-        fallback:
-          'Managing project timelines, session schedules, and deliverables',
-      }),
       t('clientSuccessLead.responsibilities.1', {
         fallback:
           'Acting as the first point of contact for client communication',
@@ -262,6 +258,10 @@ export const getOpenPositions = (
       t('clientSuccessLead.responsibilities.5', {
         fallback:
           'Ensuring a smooth and professional experience from onboarding to offboarding',
+      }),
+      t('clientSuccessLead.responsibilities.0', {
+        fallback:
+          'Managing project timelines, session schedules, and deliverables',
       }),
     ],
   },

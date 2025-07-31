@@ -74,12 +74,14 @@ const LookingFor = ({ className }: { className: string }) => {
           fallback: 'Looking for more insights that actually move the needle?',
         })}
       </Title>
-      <Button variant="metal">
-        {t('lookingFor.button', {
-          fallback: 'Browse All Articles',
-        })}{' '}
-        <ArrowRight color="black" />
-      </Button>
+      <Link href="/your-growth-library">
+        <Button variant="metal">
+          {t('lookingFor.button', {
+            fallback: 'Browse All Articles',
+          })}{' '}
+          <ArrowRight color="black" />
+        </Button>
+      </Link>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
@@ -40,10 +41,12 @@ const HeroContent = () => {
             "You're great at what you do. Let's make sure your project reflects that.",
         })}
       </Text>
-      <Button>
-        {t('button', { fallback: 'Book a Free Consultation' })}{' '}
-        <ArrowRight color="black" />
-      </Button>
+      <Link href="/contact-us">
+        <Button>
+          {t('button', { fallback: 'Book a Free Consultation' })}{' '}
+          <ArrowRight color="black" />
+        </Button>
+      </Link>
     </div>
   );
 };

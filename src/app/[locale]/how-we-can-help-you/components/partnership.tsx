@@ -45,21 +45,21 @@ const Receives = () => {
     t('items.0', {
       fallback: 'Private 1:1 strategy sessions, customized to your goals',
     }),
-    t('items.1', {
+    t('items.4', {
       fallback:
-        'Support that evolves as your business does — responsive, adaptive, and clear',
-    }),
-    t('items.2', {
-      fallback:
-        'Strategic input paired with hands-on co-creation — from messaging to monetization',
+        'Real-time feedback and expert guidance on offers, funnels, messaging, and systems',
     }),
     t('items.3', {
       fallback:
         'A clear execution framework with weekly or biweekly momentum check-ins',
     }),
-    t('items.4', {
+    t('items.2', {
       fallback:
-        'Real-time feedback and expert guidance on offers, funnels, messaging, and systems',
+        'Strategic input paired with hands-on co-creation — from messaging to monetization',
+    }),
+    t('items.1', {
+      fallback:
+        'Support that evolves as your business does — responsive, adaptive, and clear',
     }),
   ];
 
