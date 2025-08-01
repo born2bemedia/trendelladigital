@@ -1,32 +1,32 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useRouter } from 'next/navigation';
+import { useForm } from '@tanstack/react-form';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
-import { useForm } from '@/shared/lib/forms';
 import { notifySuccess, notifyWarning } from '@/shared/lib/toast';
 import { Button } from '@/shared/ui/kit/button';
 import { TextField } from '@/shared/ui/kit/text-field';
 
-import { sendForgotRequest } from '../api/send-forgot-request';
-import { resetPasswordSchema } from '../model/schema';
-import { ChangePasswordForm } from './change-password-form';
+import { changePassword } from '../api/change-password';
+import { changePasswordSchema } from '../model/schema';
 
-export const ResetPasswordForm = ({ token }: { token?: string }) => {
-  const t = useTranslations('resetPassword.form');
+export const ChangePasswordForm = ({ token }: { token: string }) => {
+  const router = useRouter();
 
   const { Field, Subscribe, handleSubmit } = useForm({
     defaultValues: {
-      email: '',
+      password: '',
     },
     validators: {
-      onChange: resetPasswordSchema,
+      onChange: changePasswordSchema,
     },
     onSubmit: async data => {
-      const res = await sendForgotRequest(data.value.email);
+      const res = await changePassword(token, data.value.password);
 
-      if (res.message === 'Success') {
-        notifySuccess('Password reset link sent');
+      if (res.token) {
+        notifySuccess('Password changed successfully');
+        router.push('/login');
       } else {
         notifyWarning(
           `${res.errors.map((e: { message: string }) => e.message).join(' ')}`,
@@ -34,10 +34,6 @@ export const ResetPasswordForm = ({ token }: { token?: string }) => {
       }
     },
   });
-
-  if (token) {
-    return <ChangePasswordForm token={token} />;
-  }
 
   return (
     <form
@@ -48,12 +44,12 @@ export const ResetPasswordForm = ({ token }: { token?: string }) => {
       }}
       className="flex w-1/2 flex-col gap-6 rounded-lg bg-[#F5F4FD] p-6 max-md:w-full"
     >
-      <Field name="email">
+      <Field name="password">
         {field => (
           <TextField
             name={field.name}
-            label="Email"
-            placeholder="Email"
+            label="New Password"
+            placeholder="New Password"
             value={String(field.state.value)}
             onBlur={field.handleBlur}
             onChange={e => field.handleChange(e.target.value)}
@@ -71,14 +67,10 @@ export const ResetPasswordForm = ({ token }: { token?: string }) => {
             fullWidth
           >
             {isSubmitting ? (
-              t('2', {
-                fallback: 'Loading...',
-              })
+              'Loading...'
             ) : (
               <>
-                {t('1', {
-                  fallback: 'Reset Your Password',
-                })}
+                Change Password
                 <ArrowRight color="black" />
               </>
             )}
