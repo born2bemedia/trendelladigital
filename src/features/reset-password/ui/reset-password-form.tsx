@@ -4,9 +4,11 @@ import { useTranslations } from 'next-intl';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
 import { useForm } from '@/shared/lib/forms';
+import { notifySuccess, notifyWarning } from '@/shared/lib/toast';
 import { Button } from '@/shared/ui/kit/button';
 import { TextField } from '@/shared/ui/kit/text-field';
 
+import { sendForgotRequest } from '../api/send-forgot-request';
 import { resetPasswordSchema } from '../model/schema';
 
 export const ResetPasswordForm = () => {
@@ -19,8 +21,16 @@ export const ResetPasswordForm = () => {
     validators: {
       onChange: resetPasswordSchema,
     },
-    onSubmit: data => {
-      console.log(data);
+    onSubmit: async data => {
+      const res = await sendForgotRequest(data.value.email);
+
+      if (res.message === 'Success') {
+        notifySuccess('Password reset link sent');
+      } else {
+        notifyWarning(
+          `${res.errors.map((e: { message: string }) => e.message).join(' ')}`,
+        );
+      }
     },
   });
 
@@ -37,12 +47,8 @@ export const ResetPasswordForm = () => {
         {field => (
           <TextField
             name={field.name}
-            label={t('0', {
-              fallback: 'Username or email',
-            })}
-            placeholder={t('0', {
-              fallback: 'Username or email',
-            })}
+            label="Email"
+            placeholder="Email"
             value={String(field.state.value)}
             onBlur={field.handleBlur}
             onChange={e => field.handleChange(e.target.value)}
