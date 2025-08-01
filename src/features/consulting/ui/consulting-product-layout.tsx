@@ -15,7 +15,7 @@ export const ConsultingProductLayout = ({
   type,
 }: {
   children: ReactNode;
-  type: 'business' | 'marketing' | 'sales';
+  type: 'business' | 'marketing';
 }) => {
   return (
     <section
@@ -24,12 +24,12 @@ export const ConsultingProductLayout = ({
         type === 'marketing' ? 'bg-[#F6F3F3]' : 'bg-[#F5F4FD]',
       )}
     >
-      <SideTitle className="hidden max-md:flex" />
+      <SideTitle className="hidden max-md:flex" type={type} />
       <section className="flex w-[70%] flex-col gap-4 max-md:w-full">
         {children}
       </section>
       <section className="sticky top-20 flex h-fit flex-col gap-4 max-md:hidden">
-        <SideTitle />
+        <SideTitle type={type} />
         <SideFooter />
       </section>
       <SideFooter className="hidden max-md:flex" />
@@ -37,7 +37,13 @@ export const ConsultingProductLayout = ({
   );
 };
 
-const SideTitle = ({ className }: { className?: string }) => {
+const SideTitle = ({
+  className,
+  type,
+}: {
+  className?: string;
+  type: 'business' | 'marketing';
+}) => {
   const t = useTranslations('consultingProduct');
 
   return (
@@ -47,8 +53,12 @@ const SideTitle = ({ className }: { className?: string }) => {
         className,
       )}
     >
-      <Title color="black">{t('title')}</Title>
-      <Text color="black">{t('description')}</Text>
+      <Title color="black">
+        {type === 'business' ? t('title') : t('titleMarketing')}
+      </Title>
+      <Text color="black">
+        {type === 'business' ? t('description') : t('descriptionMark')}
+      </Text>
     </div>
   );
 };

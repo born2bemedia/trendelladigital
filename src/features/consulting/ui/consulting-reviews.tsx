@@ -15,6 +15,7 @@ import 'swiper/css/pagination';
 
 export const ConsultingReviews = ({
   items,
+  type = 'business',
 }: {
   items: {
     name: string;
@@ -23,13 +24,16 @@ export const ConsultingReviews = ({
     position: string;
     review: string;
   }[];
+  type?: 'business' | 'marketing';
 }) => {
   const t = useTranslations('consultingReviews');
 
   return (
     <section className="flex flex-col gap-10 py-[80px]">
       <Title color="white" className="text-center">
-        {t('title', { fallback: 'What Our Clients Say' })}
+        {type === 'business'
+          ? t('title', { fallback: 'What Our Clients Say' })
+          : t('titleMarketing', { fallback: 'What Our Clients Say' })}
       </Title>
       <div className="flex flex-col gap-10 max-md:gap-4">
         <Slider items={items.slice(0, 3)} />
