@@ -17,11 +17,17 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ResetPasswordPage() {
+export default async function ResetPasswordPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ token?: string }>;
+}) {
+  const { token } = await searchParams;
+
   return (
     <>
       <Greeting />
-      <ResetPasswordForm />
+      <ResetPasswordForm token={token} />
     </>
   );
 }
