@@ -39,6 +39,12 @@ const BrowseTopic = () => {
 
   const topics = [
     {
+      title: t('2.title', { fallback: 'Business & Offers' }),
+      description: t('2.description', {
+        fallback: 'Turn ideas into income with the right structure.',
+      }),
+    },
+    {
       title: t('0.title', { fallback: 'Funnels & Marketing' }),
       description: t('0.description', {
         fallback: 'Build systems that attract, nurture, and convert.',
@@ -48,12 +54,6 @@ const BrowseTopic = () => {
       title: t('1.title', { fallback: 'Mindset & Growth Habits' }),
       description: t('1.description', {
         fallback: 'Lead with clarity — and stay focused as you scale.',
-      }),
-    },
-    {
-      title: t('2.title', { fallback: 'Business & Offers' }),
-      description: t('2.description', {
-        fallback: 'Turn ideas into income with the right structure.',
       }),
     },
     {

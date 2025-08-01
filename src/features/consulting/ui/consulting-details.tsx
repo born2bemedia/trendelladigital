@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
@@ -35,20 +36,28 @@ export const ConsultingDetails = ({
           </Title>
           <Text color="dark">{description}</Text>
         </div>
-        <Button>
-          {type === 'business'
-            ? t('explore', {
-                fallback: 'Explore Business Consulting',
-              })
-            : t('discover', {
-                fallback: 'Discover Marketing Consulting',
-              })}
-          <ArrowRight color="black" />
-        </Button>
+        <Link
+          href={
+            type === 'business'
+              ? '/business-consulting'
+              : '/marketing-consulting'
+          }
+        >
+          <Button>
+            {type === 'business'
+              ? t('explore', {
+                  fallback: 'Explore Business Consulting',
+                })
+              : t('discover', {
+                  fallback: 'Discover Marketing Consulting',
+                })}
+            <ArrowRight color="black" />
+          </Button>
+        </Link>
       </section>
       <section className="mt-auto flex flex-col gap-2">
         <Text color="dark" size="lg">
-          {t('include', { fallback: 'Key focus areas' })}
+          {t('include', { fallback: 'Key focus areas' })}:
         </Text>
         <div className="grid grid-cols-2 gap-2 max-md:grid-cols-1">
           {includes.map(value => (
