@@ -14,7 +14,7 @@ export const Info = () => {
         fallback: 'Structure That Works Harder Than You Do',
       })}
       subtitle={t('subtitle', {
-        fallback: 'Wondering what comes',
+        fallback: 'Wondering what comes next after this foundation?',
       })}
       description={
         <>
