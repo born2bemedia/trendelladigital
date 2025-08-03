@@ -9,7 +9,7 @@ export const Hero = () => {
   const t = useTranslations('whatToExpect.hero');
 
   return (
-    <section className="mx-4 mt-4 bg-white px-[60px] py-[100px] max-md:px-4">
+    <section className="mx-4 mt-2.5 bg-white px-[60px] py-[100px] max-md:px-4">
       <div className="flex justify-between gap-4 p-4 max-md:flex-col max-md:p-0">
         <span className="w-1/2 max-md:w-full">
           <Title as="h1" size="4xl" color="dark">

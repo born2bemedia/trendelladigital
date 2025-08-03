@@ -84,5 +84,5 @@ export const Reviews = () => {
     },
   ];
 
-  return <ConsultingReviews items={items} />;
+  return <ConsultingReviews items={items} type="marketing" />;
 };

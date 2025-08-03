@@ -14,8 +14,6 @@ export const ProgressYouCan = () => {
       <section className="flex flex-col gap-10">
         <Title>{t('title', { fallback: 'Progress You Can Measure' })}</Title>
         <Text color="dark">
-          {t('title', { fallback: 'Progress You Can Measure' })}
-          <br />
           {t('desc.0', {
             fallback:
               'We’re not about vanity metrics. But we are about meaningful progress.',

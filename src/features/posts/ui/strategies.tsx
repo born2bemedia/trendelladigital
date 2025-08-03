@@ -120,7 +120,13 @@ const ListItem = ({ value }: { value?: Children2[] }) => {
     }
 
     return (
-      <span key={`list-text-${i}`} className="text-sm text-[#272727]">
+      <span
+        key={`list-text-${i}`}
+        className={cn(
+          'text-sm text-[#272727]',
+          item.format === 1 && 'font-bold',
+        )}
+      >
         {item.text}
       </span>
     );

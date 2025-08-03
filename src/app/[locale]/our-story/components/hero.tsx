@@ -10,7 +10,7 @@ export const Hero = () => {
   const t = useTranslations('ourStory.hero');
 
   return (
-    <section className="mx-4 flex flex-col gap-[100px] bg-white p-[76px] pt-[106px] max-md:px-4 max-md:pt-[90px] max-md:pb-4">
+    <section className="mx-4 mt-2.5 flex flex-col gap-[100px] bg-white p-[76px] pt-[106px] max-md:px-4 max-md:pt-[90px] max-md:pb-4">
       <section className="flex gap-4 max-md:flex-col">
         <div className="w-1/2 max-md:w-full">
           <Title as="h1">

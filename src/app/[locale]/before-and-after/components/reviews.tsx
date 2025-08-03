@@ -210,9 +210,9 @@ const Card = ({
   return (
     <li className="flex flex-col gap-4 rounded-lg bg-gradient-to-r from-[rgba(49,49,49,0.05)] to-[rgba(151,151,151,0.05)] px-10 py-6 max-md:px-4">
       <section className="flex items-center gap-10 max-md:flex-col max-md:items-start max-md:gap-6">
-        <Excerpt label={t('before', { fallback: 'Before:' })} value={before} />
+        <Excerpt label={t('before', { fallback: 'Before' })} value={before} />
         <NextIcon />
-        <Excerpt label={t('after', { fallback: 'After:' })} value={after} />
+        <Excerpt label={t('after', { fallback: 'After' })} value={after} />
       </section>
       <section className="flex flex-col gap-1">
         <section className="flex gap-1 max-md:flex-col">
@@ -228,7 +228,7 @@ const Card = ({
             <section className="flex flex-col gap-8">
               <div className="flex flex-col">
                 <Text color="ghost">
-                  {t('client', { fallback: 'Client:' })}:
+                  {t('client', { fallback: 'Client:' })}
                 </Text>
                 <Text color="dark" size="base">
                   {client.info}
@@ -236,7 +236,7 @@ const Card = ({
               </div>
               <div className="flex flex-col">
                 <Text color="ghost">
-                  {t('challenge', { fallback: 'Challenge:' })}:
+                  {t('challenge', { fallback: 'Challenge:' })}
                 </Text>
                 <Text color="dark" size="base">
                   {challenge}
@@ -246,7 +246,7 @@ const Card = ({
           </Layout>
           <Layout className="flex w-1/2 flex-col gap-2 max-md:w-full">
             <Text color="ghost">
-              {t('whatWeDid', { fallback: 'What we did:' })}:
+              {t('whatWeDid', { fallback: 'What we did:' })}
             </Text>
             <section className="flex gap-2 max-md:flex-col">
               {whatWeDid.map(item => (

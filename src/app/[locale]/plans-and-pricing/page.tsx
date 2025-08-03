@@ -43,7 +43,7 @@ export default async function PlansAndPricing({
       <Hero />
       <PackageList
         type="business"
-        values={businessPackages}
+        values={businessPackages.reverse()}
         images={[
           '/images/pricing/bis-pckg-1.jpg',
           '/images/pricing/bis-pckg-2.jpg',
@@ -51,15 +51,15 @@ export default async function PlansAndPricing({
       />
       <PackageList
         type="marketing"
-        values={marketingPackages}
+        values={marketingPackages.reverse()}
         images={[
           '/images/pricing/mrk-pckg-1.jpg',
           '/images/pricing/mrk-pckg-2.jpg',
         ]}
         reverseImg
       />
-      <GroupList type="business" groups={businessGroups} />
-      <GroupList type="marketing" groups={marketingGroups} />
+      <GroupList type="business" groups={businessGroups.reverse()} />
+      <GroupList type="marketing" groups={marketingGroups.reverse()} />
       <RequestQuote />
     </section>
   );
