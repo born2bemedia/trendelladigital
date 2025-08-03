@@ -20,7 +20,7 @@ export const ImgHero = ({
   button?: { label: string; url: string };
 }) => {
   return (
-    <section className="mx-4 mt-4 flex bg-white px-[60px] pt-[106px] pb-[60px] max-md:px-4 max-md:pt-[90px] max-md:pb-4">
+    <section className="mx-4 mt-2.5 flex bg-white px-[60px] pt-[106px] pb-[60px] max-md:px-4 max-md:pt-[90px] max-md:pb-4">
       <section className="relative flex h-[366px] w-full max-md:h-[600px]">
         <Image
           className="rounded-sm object-cover object-center"

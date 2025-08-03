@@ -9,7 +9,7 @@ export const Hero = () => {
   const t = useTranslations('beforeAndAfter.hero');
 
   return (
-    <section className="mx-4 mt-4 flex gap-4 bg-white px-[60px] pt-[106px] pb-[100px] max-md:flex-col max-md:px-4 max-md:pt-[90px]">
+    <section className="mx-4 mt-2.5 flex gap-4 bg-white px-[60px] pt-[106px] pb-[100px] max-md:flex-col max-md:px-4 max-md:pt-[90px]">
       <Title as="h1" size="4xl" className="w-1/2 max-md:w-full">
         {t('title', {
           fallback: 'From “I Hope” to “I Know.” From “Someday” to “Now.”',

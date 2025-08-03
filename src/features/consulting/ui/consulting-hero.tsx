@@ -27,7 +27,7 @@ export const ConsultingHero = ({
   return (
     <section
       className={cn(
-        'mx-4 mt-4 flex px-[60px] pt-[106px] pb-[60px] max-md:px-4 max-md:pt-[90px] max-md:pb-4',
+        'mx-4 mt-2.5 flex px-[60px] pt-[106px] pb-[60px] max-md:px-4 max-md:pt-[90px] max-md:pb-4',
         type === 'marketing' ? 'bg-[#F6F3F3]' : 'bg-[#F5F4FD]',
       )}
     >

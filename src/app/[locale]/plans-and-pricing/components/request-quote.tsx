@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
@@ -18,10 +19,12 @@ export const RequestQuote = () => {
           fallback: 'Let’s clarify your next best move together!',
         })}
       </Title>
-      <Button variant="metal">
-        {t('button', { fallback: 'Request a Custom Quote' })}{' '}
-        <ArrowRight color="black" />
-      </Button>
+      <Link href="/contact-us">
+        <Button variant="metal">
+          {t('button', { fallback: 'Request a Custom Quote' })}{' '}
+          <ArrowRight color="black" />
+        </Button>
+      </Link>
     </section>
   );
 };

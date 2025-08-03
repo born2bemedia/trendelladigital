@@ -9,7 +9,7 @@ export const Hero = () => {
   const t = useTranslations('careers.hero');
 
   return (
-    <section className="mx-4 mt-4 bg-white px-[60px] pt-[110px] pb-[100px] max-md:px-4">
+    <section className="mx-4 mt-2.5 bg-white px-[60px] pt-[110px] pb-[100px] max-md:px-4">
       <section className="flex items-start justify-between gap-4 p-4 max-md:flex-col max-md:p-0">
         <Title as="h1" size="4xl" className="w-1/2 max-md:w-full">
           {t('title', { fallback: 'Build Better With Us' })}

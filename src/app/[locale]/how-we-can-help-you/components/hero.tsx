@@ -11,7 +11,7 @@ import { Title } from '@/shared/ui/kit/title';
 
 export const Hero = () => {
   return (
-    <section className="mx-4 mt-4 bg-white px-[60px] pt-[98px] pb-[60px] max-md:px-4 max-md:pb-4">
+    <section className="mx-4 mt-2.5 bg-white px-[60px] pt-[98px] pb-[60px] max-md:px-4 max-md:pb-4">
       <section className="relative flex h-[366px] w-full max-md:h-[600px]">
         <Image
           className="object-cover object-top"
