@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-import { Hero, PopularPosts, Topics } from './components';
+import { Hero, PopularPosts } from './components';
 
 export const metadata: Metadata = {
   title: 'Business & Marketing Insights That Actually Help | Trendella Blog',
@@ -24,7 +24,6 @@ export default function YourGrowthLibrary() {
   return (
     <main>
       <Hero />
-      <Topics />
       <PopularPosts />
     </main>
   );
