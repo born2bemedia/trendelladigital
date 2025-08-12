@@ -44,7 +44,7 @@ export const ComplexSolution = () => {
               fallback: 'Email access for 7 days post-session',
             }),
           ],
-          price: Number(t('cheap.price', { fallback: '950' })),
+          price: 5600,
         },
         moderate: {
           name: t('moderate.name', { fallback: 'Growth Engine' }),
@@ -79,7 +79,7 @@ export const ComplexSolution = () => {
               fallback: '90-day funnel content & campaign roadmap',
             }),
           ],
-          price: Number(t('moderate.price', { fallback: '2400' })),
+          price: 10010,
         },
         expensive: {
           name: t('expensive.name', {
@@ -122,7 +122,7 @@ export const ComplexSolution = () => {
               fallback: 'Performance dashboards & testing frameworks',
             }),
           ],
-          price: Number(t('expensive.price', { fallback: '5200' })),
+          price: 16450,
         },
       }}
     />
