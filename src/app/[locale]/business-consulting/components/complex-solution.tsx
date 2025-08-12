@@ -42,7 +42,7 @@ export const ComplexSolution = () => {
               fallback: 'Private feedback channel (Slack/email)',
             }),
           ],
-          price: Number(t('cheap.price', { fallback: '950' })),
+          price: 5950,
         },
         moderate: {
           name: t('moderate.name', { fallback: 'Growth Partner' }),
@@ -77,7 +77,7 @@ export const ComplexSolution = () => {
               fallback: 'Email + Slack access for support between sessions',
             }),
           ],
-          price: Number(t('moderate.price', { fallback: '2400' })),
+          price: 11340,
         },
         expensive: {
           name: t('expensive.name', { fallback: 'Founder Lab (Full Build)' }),
@@ -120,7 +120,7 @@ export const ComplexSolution = () => {
               fallback: 'Full KPI dashboard + review cadence',
             }),
           ],
-          price: Number(t('expensive.price', { fallback: '5200' })),
+          price: 20510,
         },
       }}
     />
