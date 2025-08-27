@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import ReCaptcha from 'react-google-recaptcha';
 import { useTranslations } from 'next-intl';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
@@ -17,6 +18,7 @@ import { ThankYouDialog } from './thank-you';
 
 export const ContactForm = () => {
   const [isSuccess, setIsSuccess] = useState(false);
+  const [isReCaptchaVerified, setIsReCaptchaVerified] = useState(false);
 
   const t = useTranslations('contactUs.sendUsMessage.form');
 
@@ -48,6 +50,9 @@ export const ContactForm = () => {
       }
     },
   });
+
+  const captchaChangeHandle = (token: string | null) =>
+    setIsReCaptchaVerified(!!token);
 
   return (
     <form
@@ -191,7 +196,7 @@ export const ContactForm = () => {
               {([canSubmit, isSubmitting]) => (
                 <Button
                   type="submit"
-                  disabled={!canSubmit}
+                  disabled={!canSubmit || !isReCaptchaVerified}
                   className="justify-center"
                   fullWidth
                 >
@@ -320,14 +325,18 @@ export const ContactForm = () => {
               </div>
             )}
           </Field>
-          <div className="hidden max-md:flex">
+          <div className="hidden flex-col gap-6 max-md:flex">
+            <ReCaptcha
+              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? ''}
+              onChange={captchaChangeHandle}
+            />
             <Subscribe
               selector={state => [state.canSubmit, state.isSubmitting]}
             >
               {([canSubmit, isSubmitting]) => (
                 <Button
                   type="submit"
-                  disabled={!canSubmit}
+                  disabled={!canSubmit || !isReCaptchaVerified}
                   className="justify-center"
                   fullWidth
                 >
@@ -347,6 +356,11 @@ export const ContactForm = () => {
               )}
             </Subscribe>
           </div>
+          <ReCaptcha
+            className="max-md:hidden"
+            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? ''}
+            onChange={captchaChangeHandle}
+          />
         </div>
       </div>
     </form>
