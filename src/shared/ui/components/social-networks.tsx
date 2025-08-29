@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
 import { useIsHomePage } from '@/shared/lib/hooks/use-is-home';
 import { cn } from '@/shared/lib/utils/styles';
@@ -21,30 +23,36 @@ export const SocialNetworks = ({
 
   return (
     <div className={cn('flex items-center gap-5', className)}>
-      <Text
-        size={text.size}
-        color={text.color ?? (isHomePage ? 'black' : 'white')}
-        className="flex items-center"
-      >
-        Instagram{' '}
-        <ArrowRight color={text.color ?? (isHomePage ? 'black' : 'white')} />
-      </Text>
-      <Text
-        size={text.size}
-        color={text.color ?? (isHomePage ? 'black' : 'white')}
-        className="flex items-center"
-      >
-        Twitter{' '}
-        <ArrowRight color={text.color ?? (isHomePage ? 'black' : 'white')} />
-      </Text>
-      <Text
-        size={text.size}
-        color={text.color ?? (isHomePage ? 'black' : 'white')}
-        className="flex items-center"
-      >
-        Facebook{' '}
-        <ArrowRight color={text.color ?? (isHomePage ? 'black' : 'white')} />
-      </Text>
+      <Link href="https://www.instagram.com/trendellagroup/">
+        <Text
+          size={text.size}
+          color={text.color ?? (isHomePage ? 'black' : 'white')}
+          className="flex items-center"
+        >
+          Instagram{' '}
+          <ArrowRight color={text.color ?? (isHomePage ? 'black' : 'white')} />
+        </Text>
+      </Link>
+      <Link href="https://x.com/trendellagroup">
+        <Text
+          size={text.size}
+          color={text.color ?? (isHomePage ? 'black' : 'white')}
+          className="flex items-center"
+        >
+          Twitter{' '}
+          <ArrowRight color={text.color ?? (isHomePage ? 'black' : 'white')} />
+        </Text>
+      </Link>
+      <Link href="https://www.facebook.com/trendelladigital/">
+        <Text
+          size={text.size}
+          color={text.color ?? (isHomePage ? 'black' : 'white')}
+          className="flex items-center"
+        >
+          Facebook{' '}
+          <ArrowRight color={text.color ?? (isHomePage ? 'black' : 'white')} />
+        </Text>
+      </Link>
     </div>
   );
 };

@@ -7,9 +7,9 @@ import { InstagramIcon } from '@/shared/icons/socials/instagram';
 import { XIcon } from '@/shared/icons/socials/x';
 
 const socials = [
-  { icon: XIcon, href: 'https://x.com/' },
-  { icon: FacebookIcon, href: 'https://www.facebook.com/' },
-  { icon: InstagramIcon, href: 'https://www.instagram.com/' },
+  { icon: XIcon, href: 'https://x.com/trendellagroup' },
+  { icon: FacebookIcon, href: 'https://www.facebook.com/trendelladigital' },
+  { icon: InstagramIcon, href: 'https://www.instagram.com/trendellagroup' },
 ];
 
 export const ShortSocials = () => (
