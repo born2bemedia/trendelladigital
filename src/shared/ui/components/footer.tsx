@@ -29,22 +29,22 @@ const getPolicies = () => [
 const getFooterInfo = () => [
   {
     label: 'Email:',
-    value: 'example@trendella.com',
-    href: 'mailto:example@trendella.com',
+    value: 'info@trendella.com',
+    href: 'mailto:info@trendella.com',
   },
-  {
-    label: 'Phone:',
-    value: '+1 000 00 00',
-    href: 'tel:+10000000',
-  },
-  {
-    label: 'Registered Address:',
-    value: 'Registered Address',
-  },
-  {
-    label: 'Office Address:',
-    value: 'Office Address',
-  },
+  // {
+  //   label: 'Phone:',
+  //   value: '+1 000 00 00',
+  //   href: 'tel:+10000000',
+  // },
+  // {
+  //   label: 'Registered Address:',
+  //   value: 'Registered Address',
+  // },
+  // {
+  //   label: 'Office Address:',
+  //   value: 'Office Address',
+  // },
 ];
 
 const getNavigation = () => [
