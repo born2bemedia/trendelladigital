@@ -15,7 +15,7 @@ export const Info = () => {
 
   return (
     <section className="mx-4 flex flex-col gap-2 bg-white px-[60px] pt-[80px] pb-[60px] max-md:px-4 max-md:pb-4">
-      <Layout>
+      {/* <Layout>
         <section className="flex w-1/2 flex-col justify-between max-md:w-full max-md:gap-6">
           <Title size="4xl" weight={400}>
             {t('title', { fallback: 'Where We Work' })}
@@ -39,7 +39,7 @@ export const Info = () => {
           height={197}
           unoptimized
         />
-      </Layout>
+      </Layout> */}
       <Layout reverse>
         <section className="flex w-1/2 flex-col justify-between max-md:w-full max-md:gap-6">
           <Title size="4xl" weight={400}>
@@ -48,12 +48,15 @@ export const Info = () => {
           <div className="flex gap-2 max-md:flex-col">
             <Element
               label={t('elements2.0', { fallback: 'Email' })}
-              value={{ label: 'Email' }}
+              value={{
+                label: 'info@trendelladigital.com',
+                url: 'mailto:info@trendelladigital.com',
+              }}
             />
-            <Element
+            {/* <Element
               label={t('elements2.1', { fallback: 'Phone' })}
               value={{ label: 'Phone' }}
-            />
+            /> */}
           </div>
         </section>
         <Image

@@ -108,11 +108,11 @@ export const BurgerMenu = () => {
                       info@trendelladigital.com
                     </Text>
                   </Link>
-                  <Link href="#">
+                  {/* <Link href="#">
                     <Text size="base" color="dark">
                       Phone number
                     </Text>
-                  </Link>
+                  </Link> */}
                 </div>
                 <SocialNetworks
                   className="justify-between gap-0"

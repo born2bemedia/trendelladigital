@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 
 import {
-  ConnectAndMoveForward,
   Consultings,
   Hero,
   HowItHappens,
@@ -42,7 +41,7 @@ export default function Home() {
       <HowItHappens />
       <JoinTrendella />
       <LatestFrom />
-      <ConnectAndMoveForward />
+      {/* <ConnectAndMoveForward /> */}
     </main>
   );
 }
