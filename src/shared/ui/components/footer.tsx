@@ -8,6 +8,27 @@ import { Text } from '@/shared/ui/kit/text';
 
 import { Link as NavLink } from '@/i18n/navigation';
 
+const getNavigation = (t: ReturnType<typeof useTranslations>) => [
+  { label: t('ourStory', { fallback: 'Our Story' }), href: '/our-story' },
+  {
+    label: t('yourGrowthLibrary', { fallback: 'Your Growth Library' }),
+    href: '/your-growth-library',
+  },
+  { label: t('cart', { fallback: 'Cart' }), href: '/cart' },
+  {
+    label: t('howWeCanHelpYou', { fallback: 'How We Can Help You' }),
+    href: '/how-we-can-help-you',
+  },
+  { label: t('contactUs', { fallback: 'Contact Us' }), href: '/contact-us' },
+  { label: t('login', { fallback: 'Login' }), href: '/login' },
+  {
+    label: t('whatToExpect', { fallback: 'What to Expect' }),
+    href: '/what-to-expect',
+  },
+  { label: t('careers', { fallback: 'Careers' }), href: '/careers' },
+  { label: t('signUp', { fallback: 'Sign Up' }), href: '/sign-up' },
+];
+
 const getPolicies = (t: ReturnType<typeof useTranslations>) => [
   {
     label: t('refundPolicy', { fallback: 'Refund Policy' }),
@@ -34,7 +55,8 @@ const getFooterInfo = (t: ReturnType<typeof useTranslations>) => [
     href: 'mailto:info@signalor.pro',
   },
   // {
-  //   label: 'Phone:',
+  //   key: 'phone',
+  //   fallback: 'Phone:',
   //   value: '+1 000 00 00',
   //   href: 'tel:+10000000',
   // },
@@ -54,29 +76,11 @@ const getFooterInfo = (t: ReturnType<typeof useTranslations>) => [
   },
 ];
 
-const getNavigation = (t: ReturnType<typeof useTranslations>) => [
-  { label: t('ourStory', { fallback: 'Our Story' }), href: '/our-story' },
-  {
-    label: t('yourGrowthLibrary', { fallback: 'Your Growth Library' }),
-    href: '/your-growth-library',
-  },
-  { label: t('cart', { fallback: 'Cart' }), href: '/cart' },
-  {
-    label: t('howWeCanHelpYou', { fallback: 'How We Can Help You' }),
-    href: '/how-we-can-help-you',
-  },
-  { label: t('contactUs', { fallback: 'Contact Us' }), href: '/contact-us' },
-  { label: t('login', { fallback: 'Login' }), href: '/login' },
-  {
-    label: t('whatToExpect', { fallback: 'What to Expect' }),
-    href: '/what-to-expect',
-  },
-  { label: t('careers', { fallback: 'Careers' }), href: '/careers' },
-  { label: t('signUp', { fallback: 'Sign Up' }), href: '/sign-up' },
-];
-
 export const Footer = () => {
   const t = useTranslations('footer');
+  const navigationLinks = getNavigation(t);
+  const policies = getPolicies(t);
+  const footerInfo = getFooterInfo(t);
 
   return (
     <footer className="flex flex-col gap-20 p-10 max-md:px-4 max-md:py-10">
@@ -85,16 +89,13 @@ export const Footer = () => {
           <section className="flex w-[340px] flex-col gap-2.5 max-md:w-full">
             <Image src="/logo-white.svg" alt="logo" width={271} height={60} />
             {/* <div className="flex flex-col gap-1">
-            <Image src="/logo-white.svg" alt="logo" width={271} height={60} />
-            {/* <div className="flex flex-col gap-1">
               <Label>Social Media:</Label>
               <ShortSocials />
-            </div> */}
             </div> */}
           </section>
           <section className="flex w-[900px] flex-col max-md:w-full">
             <div className="grid grid-cols-3 gap-0 max-md:grid-cols-1">
-              {getNavigation(t).map(item => (
+              {navigationLinks.map(item => (
                 <NavLink
                   key={item.href}
                   href={item.href}
@@ -102,13 +103,12 @@ export const Footer = () => {
                 >
                   <Text size="base">{item.label}</Text>
                 </NavLink>
-                </NavLink>
               ))}
             </div>
           </section>
         </section>
         <div className="flex gap-20 max-md:grid max-md:grid-cols-2 max-md:gap-4">
-          {getFooterInfo(t).map(item => (
+          {footerInfo.map(item => (
             <div key={item.label} className="flex w-max flex-col gap-1">
               <Label>{item.label}</Label>
               {item.href ? (
@@ -128,14 +128,13 @@ export const Footer = () => {
           {t('allRightsReserved', { fallback: 'All Rights Reserved' })}
         </Text>
         <nav className="flex items-center gap-4 max-md:grid max-md:grid-cols-2 max-md:items-start">
-          {getPolicies(t).map(item => (
+          {policies.map(item => (
             <NavLink
-              key={item.label}
+              key={item.href}
               href={item.href}
               className="transition duration-300 ease-in-out hover:opacity-70"
             >
               <Text color="gray">{item.label}</Text>
-            </NavLink>
             </NavLink>
           ))}
         </nav>
