@@ -5,6 +5,8 @@ import Link from 'next/link';
 
 import { Text } from '@/shared/ui/kit/text';
 
+import { Link as NavLink } from '@/i18n/navigation';
+
 const getPolicies = () => [
   {
     label: 'Refund Policy',
@@ -78,13 +80,13 @@ export const Footer = () => {
           <section className="flex w-[900px] flex-col max-md:w-full">
             <div className="grid grid-cols-3 gap-0 max-md:grid-cols-1">
               {getNavigation().map(item => (
-                <Link
+                <NavLink
                   key={item.href}
                   href={item.href}
                   className="border-b-[0.5px] border-white px-3 py-4"
                 >
                   <Text size="base">{item.label}</Text>
-                </Link>
+                </NavLink>
               ))}
             </div>
           </section>
@@ -111,13 +113,13 @@ export const Footer = () => {
         </Text> */}
         <nav className="flex items-center gap-4 max-md:grid max-md:grid-cols-2 max-md:items-start">
           {getPolicies().map(item => (
-            <Link
+            <NavLink
               key={item.label}
               href={item.href}
               className="transition duration-300 ease-in-out hover:opacity-70"
             >
               <Text color="gray">{item.label}</Text>
-            </Link>
+            </NavLink>
           ))}
         </nav>
       </section>
