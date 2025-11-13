@@ -22,7 +22,7 @@ export const LangSwitcher = () => {
   const router = useRouter();
   const pathname = usePathname();
 
-  const isHomePage = pathname === '/';
+  const isHomePage = pathname === '/' || pathname === `/${locale}`;
 
   const switchLanguage = useCallback(
     (value: string) => {

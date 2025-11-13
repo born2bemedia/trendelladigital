@@ -8,17 +8,17 @@ import { PackageList } from '@/features/packages/ui/list';
 import { Hero, RequestQuote } from './components';
 
 export const metadata: Metadata = {
-  title: 'Consulting Packages & Pricing | Trendella Digital',
+  title: 'Consulting Packages & Pricing | Signalor',
   description:
     'Explore transparent pricing for business and marketing consulting services — designed to meet you where you are.',
   openGraph: {
-    title: 'Consulting Packages & Pricing | Trendella Digital',
+    title: 'Consulting Packages & Pricing | Signalor',
     description:
       'Explore transparent pricing for business and marketing consulting services — designed to meet you where you are.',
     images: ['https://trendelladigital.com/meta.jpg'],
   },
   twitter: {
-    title: 'Consulting Packages & Pricing | Trendella Digital',
+    title: 'Consulting Packages & Pricing | Signalor',
     description:
       'Explore transparent pricing for business and marketing consulting services — designed to meet you where you are.',
     images: ['https://trendelladigital.com/meta.jpg'],

@@ -29,8 +29,8 @@ const getPolicies = () => [
 const getFooterInfo = () => [
   {
     label: 'Email:',
-    value: 'info@trendella.com',
-    href: 'mailto:info@trendella.com',
+    value: 'info@signalor.pro',
+    href: 'mailto:info@signalor.pro',
   },
   // {
   //   label: 'Phone:',
@@ -65,12 +65,7 @@ export const Footer = () => {
       <section className="flex flex-col gap-10">
         <section className="flex justify-between max-md:flex-col">
           <section className="flex w-[340px] flex-col gap-2.5 max-md:w-full">
-            <Image
-              src="/logo-white.svg"
-              alt="trendella-digital"
-              width={100}
-              height={30}
-            />
+            <Image src="/logo-white.svg" alt="logo" width={271} height={60} />
             <div className="flex flex-col gap-1">
               <Label>Social Media:</Label>
               <ShortSocials />
@@ -106,10 +101,10 @@ export const Footer = () => {
         </div>
       </section>
       <section className="flex items-center justify-between gap-2 border-t-[0.2px] border-white/50 px-10 py-2 max-md:flex-col-reverse max-md:items-start max-md:px-0">
-        <Text color="gray">
+        {/* <Text color="gray">
           © {new Date().getFullYear()} Trendella International OÜ All Rights
           Reserved.
-        </Text>
+        </Text> */}
         <nav className="flex items-center gap-4 max-md:grid max-md:grid-cols-2 max-md:items-start">
           {getPolicies().map(item => (
             <Link
