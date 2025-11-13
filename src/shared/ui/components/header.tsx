@@ -2,7 +2,6 @@
 
 import { useEffect } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 
@@ -13,6 +12,7 @@ import { cn } from '@/shared/lib/utils/styles';
 import { Text } from '@/shared/ui/kit/text';
 
 import { BurgerMenu } from './burger-menu';
+import { Link as NavLink } from '@/i18n/navigation';
 
 const getNavigation = (t: ReturnType<typeof useTranslations>) => [
   {
@@ -54,14 +54,14 @@ export const Header = () => {
         isHomePage ? 'top-12' : 'top-16',
       )}
     >
-      <Link href="/">
+      <NavLink href="/">
         <Image
           src={isHomePage ? '/logo-white.svg' : '/logo-black.svg'}
           alt="trendella-digital"
           width={100}
           height={30}
         />
-      </Link>
+      </NavLink>
       <section className="flex items-center gap-10 max-[895px]:hidden">
         <div className="flex">
           {getNavigation(t).map(item => (
@@ -112,7 +112,7 @@ const NavItem = ({
   href: string;
   isHomePage: boolean;
 }) => (
-  <Link
+  <NavLink
     href={href}
     className={cn(
       'z-50 border-b-[0.5px] pt-3.5 pr-4 pb-1 pl-2 transition duration-300 ease-in-out hover:opacity-70',
@@ -122,5 +122,5 @@ const NavItem = ({
     <Text size="xs" color={isHomePage ? 'white' : 'black'}>
       {label}
     </Text>
-  </Link>
+  </NavLink>
 );

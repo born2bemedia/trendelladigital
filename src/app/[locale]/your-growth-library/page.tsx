@@ -3,17 +3,17 @@ import type { Metadata } from 'next';
 import { Hero, PopularPosts } from './components';
 
 export const metadata: Metadata = {
-  title: 'Business & Marketing Insights That Actually Help | Trendella Blog',
+  title: 'Business & Marketing Insights That Actually Help | Signalor Blog',
   description:
     'Browse our library of no-fluff, actionable articles on business structure, marketing systems, messaging, and more.',
   openGraph: {
-    title: 'Business & Marketing Insights That Actually Help | Trendella Blog',
+    title: 'Business & Marketing Insights That Actually Help | Signalor Blog',
     description:
       'Browse our library of no-fluff, actionable articles on business structure, marketing systems, messaging, and more.',
     images: ['https://trendelladigital.com/meta.jpg'],
   },
   twitter: {
-    title: 'Business & Marketing Insights That Actually Help | Trendella Blog',
+    title: 'Business & Marketing Insights That Actually Help | Signalor Blog',
     description:
       'Browse our library of no-fluff, actionable articles on business structure, marketing systems, messaging, and more.',
     images: ['https://trendelladigital.com/meta.jpg'],

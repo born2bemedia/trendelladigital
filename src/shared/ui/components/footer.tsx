@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 import { Text } from '@/shared/ui/kit/text';
 
-import { ShortSocials } from './short-socials';
+import { Link as NavLink } from '@/i18n/navigation';
 
 const getPolicies = () => [
   {
@@ -29,22 +29,28 @@ const getPolicies = () => [
 const getFooterInfo = () => [
   {
     label: 'Email:',
-    value: 'info@trendella.com',
-    href: 'mailto:info@trendella.com',
+    value: 'info@signalor.pro',
+    href: 'mailto:info@signalor.pro',
   },
   // {
   //   label: 'Phone:',
   //   value: '+1 000 00 00',
   //   href: 'tel:+10000000',
   // },
-  // {
-  //   label: 'Registered Address:',
-  //   value: 'Registered Address',
-  // },
-  // {
-  //   label: 'Office Address:',
-  //   value: 'Office Address',
-  // },
+  {
+    label: 'Registered number:',
+    value: 'J2025081585000',
+  },
+  {
+    label: 'Registered address:',
+    value:
+      '255 Mihai Bravu Road., Basement, Module S 209, District 3, Bucharest, Romania',
+  },
+  {
+    label: 'Office Address:',
+    value:
+      'Ara Business Center, Strada Parintele Galeriu 6C, Bucharest 030167, Romania',
+  },
 ];
 
 const getNavigation = () => [
@@ -65,27 +71,22 @@ export const Footer = () => {
       <section className="flex flex-col gap-10">
         <section className="flex justify-between max-md:flex-col">
           <section className="flex w-[340px] flex-col gap-2.5 max-md:w-full">
-            <Image
-              src="/logo-white.svg"
-              alt="trendella-digital"
-              width={100}
-              height={30}
-            />
-            <div className="flex flex-col gap-1">
+            <Image src="/logo-white.svg" alt="logo" width={271} height={60} />
+            {/* <div className="flex flex-col gap-1">
               <Label>Social Media:</Label>
               <ShortSocials />
-            </div>
+            </div> */}
           </section>
           <section className="flex w-[900px] flex-col max-md:w-full">
             <div className="grid grid-cols-3 gap-0 max-md:grid-cols-1">
               {getNavigation().map(item => (
-                <Link
+                <NavLink
                   key={item.href}
                   href={item.href}
                   className="border-b-[0.5px] border-white px-3 py-4"
                 >
                   <Text size="base">{item.label}</Text>
-                </Link>
+                </NavLink>
               ))}
             </div>
           </section>
@@ -106,19 +107,19 @@ export const Footer = () => {
         </div>
       </section>
       <section className="flex items-center justify-between gap-2 border-t-[0.2px] border-white/50 px-10 py-2 max-md:flex-col-reverse max-md:items-start max-md:px-0">
-        <Text color="gray">
+        {/* <Text color="gray">
           © {new Date().getFullYear()} Trendella International OÜ All Rights
           Reserved.
-        </Text>
+        </Text> */}
         <nav className="flex items-center gap-4 max-md:grid max-md:grid-cols-2 max-md:items-start">
           {getPolicies().map(item => (
-            <Link
+            <NavLink
               key={item.label}
               href={item.href}
               className="transition duration-300 ease-in-out hover:opacity-70"
             >
               <Text color="gray">{item.label}</Text>
-            </Link>
+            </NavLink>
           ))}
         </nav>
       </section>

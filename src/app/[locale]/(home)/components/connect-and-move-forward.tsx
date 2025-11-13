@@ -9,9 +9,9 @@ import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 const getContacts = () => [
-  { label: 'Phone Number', value: '' },
-  { label: 'Email', value: '' },
-  { label: 'Office Address', value: '' },
+  // { label: 'Phone Number', value: '' },
+  { label: 'Email', value: 'info@signalor.pro' },
+  // { label: 'Office Address', value: '' },
 ];
 
 export const ConnectAndMoveForward = () => {

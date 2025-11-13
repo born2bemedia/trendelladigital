@@ -18,7 +18,7 @@ import { useIsHomePage } from '@/shared/lib/hooks/use-is-home';
 import { cn } from '@/shared/lib/utils/styles';
 
 import { Text } from '../kit/text';
-import { SocialNetworks } from './social-networks';
+import { Link as NavLink } from '@/i18n/navigation';
 
 export const BurgerMenu = () => {
   const [open, setOpen] = useState(false);
@@ -114,13 +114,13 @@ export const BurgerMenu = () => {
                     </Text>
                   </Link> */}
                 </div>
-                <SocialNetworks
+                {/* <SocialNetworks
                   className="justify-between gap-0"
                   text={{
                     color: 'black',
                     size: 'base',
                   }}
-                />
+                /> */}
               </footer>
             </section>
           </Description>
@@ -131,9 +131,9 @@ export const BurgerMenu = () => {
 };
 
 const MenuLink = ({ href, label }: { label: string; href: string }) => (
-  <Link href={href} className="border-b border-white pt-[18px] pl-2">
+  <NavLink href={href} className="border-b border-white pt-[18px] pl-2">
     <Text size="lg" color="white">
       {label}
     </Text>
-  </Link>
+  </NavLink>
 );

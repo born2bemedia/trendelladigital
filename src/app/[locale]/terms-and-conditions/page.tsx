@@ -4,18 +4,18 @@ import { getTermsAndConditions } from '@/features/policies/api/get-terms-and-con
 import { PolicyDisplay } from '@/features/policies/ui/policy';
 
 export const metadata: Metadata = {
-  title: 'Terms & Conditions | Trendella Digital',
+  title: 'Terms & Conditions | Signalor',
   description:
     'Read our terms of service outlining how we work, what you can expect, and how your data and engagement are handled.',
   robots: 'noindex',
   openGraph: {
-    title: 'Terms & Conditions | Trendella Digital',
+    title: 'Terms & Conditions | Signalor',
     description:
       'Read our terms of service outlining how we work, what you can expect, and how your data and engagement are handled.',
     images: ['https://trendelladigital.com/meta.jpg'],
   },
   twitter: {
-    title: 'Terms & Conditions | Trendella Digital',
+    title: 'Terms & Conditions | Signalor',
     description:
       'Read our terms of service outlining how we work, what you can expect, and how your data and engagement are handled.',
     images: ['https://trendelladigital.com/meta.jpg'],

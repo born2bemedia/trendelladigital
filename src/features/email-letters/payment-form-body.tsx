@@ -12,8 +12,8 @@ export const paymentFormBody = ({ username }: { username: string }) => {
           <p class="text">Thanks again for your order. To get started, we just need to confirm your payment. Below you’ll find the details to complete your bank transfer.</p>
           <p class="text">Please include your order number as the payment reference to help us match your payment quickly. Once the transfer is received and verified, we’ll notify you and begin preparing your service setup and schedule.</p>
           <p class="text">If anything in this process is unclear — or if you’d prefer to speak with someone — just reply to this email. We’re happy to walk you through it.</p>
-          <p class="text">Your growth journey with Trendella Digital is just beginning, and we’re here to make every step as smooth and intentional as possible.</p>
-          <p class="text" style="font-size: 18px;">Best,<br /><strong style="font-weight: 700;">Trendella Digital Operations</strong></p>
+          <p class="text">Your growth journey with Signalor is just beginning, and we’re here to make every step as smooth and intentional as possible.</p>
+          <p class="text" style="font-size: 18px;">Best,<br /><strong style="font-weight: 700;">Signalor Operations</strong></p>
         </div>
         <footer style="margin-top: 70px;">
           <img style="width: 696px; height: 110px" src="https://trendelladigital.com/images/email/footer.png" alt="full-logo" class="logoSm" />
