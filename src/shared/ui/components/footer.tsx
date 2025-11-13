@@ -2,70 +2,86 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { Text } from '@/shared/ui/kit/text';
 
 import { Link as NavLink } from '@/i18n/navigation';
 
-const getPolicies = () => [
+const getNavigation = (t: ReturnType<typeof useTranslations>) => [
+  { label: t('ourStory', { fallback: 'Our Story' }), href: '/our-story' },
   {
-    label: 'Refund Policy',
+    label: t('yourGrowthLibrary', { fallback: 'Your Growth Library' }),
+    href: '/your-growth-library',
+  },
+  { label: t('cart', { fallback: 'Cart' }), href: '/cart' },
+  {
+    label: t('howWeCanHelpYou', { fallback: 'How We Can Help You' }),
+    href: '/how-we-can-help-you',
+  },
+  { label: t('contactUs', { fallback: 'Contact Us' }), href: '/contact-us' },
+  { label: t('login', { fallback: 'Login' }), href: '/login' },
+  {
+    label: t('whatToExpect', { fallback: 'What to Expect' }),
+    href: '/what-to-expect',
+  },
+  { label: t('careers', { fallback: 'Careers' }), href: '/careers' },
+  { label: t('signUp', { fallback: 'Sign Up' }), href: '/sign-up' },
+];
+
+const getPolicies = (t: ReturnType<typeof useTranslations>) => [
+  {
+    label: t('refundPolicy', { fallback: 'Refund Policy' }),
     href: '/refund-policy',
   },
   {
-    label: 'Cookie Policy',
+    label: t('cookiePolicy', { fallback: 'Cookie Policy' }),
     href: '/cookie-policy',
   },
   {
-    label: 'Privacy Policy',
+    label: t('privacyPolicy', { fallback: 'Privacy Policy' }),
     href: '/privacy-policy',
   },
   {
-    label: 'Terms and Conditions',
+    label: t('termsAndConditions', { fallback: 'Terms and Conditions' }),
     href: '/terms-and-conditions',
   },
 ];
 
-const getFooterInfo = () => [
+const getFooterInfo = (t: ReturnType<typeof useTranslations>) => [
   {
-    label: 'Email:',
+    label: t('email', { fallback: 'Email:' }),
     value: 'info@signalor.pro',
     href: 'mailto:info@signalor.pro',
   },
   // {
-  //   label: 'Phone:',
+  //   key: 'phone',
+  //   fallback: 'Phone:',
   //   value: '+1 000 00 00',
   //   href: 'tel:+10000000',
   // },
   {
-    label: 'Registered number:',
+    label: t('registeredNumber', { fallback: 'Registered number:' }),
     value: 'J2025081585000',
   },
   {
-    label: 'Registered address:',
+    label: t('registeredAddress', { fallback: 'Registered address:' }),
     value:
       '255 Mihai Bravu Road., Basement, Module S 209, District 3, Bucharest, Romania',
   },
   {
-    label: 'Office Address:',
+    label: t('officeAddress', { fallback: 'Office Address:' }),
     value:
       'Ara Business Center, Strada Parintele Galeriu 6C, Bucharest 030167, Romania',
   },
 ];
 
-const getNavigation = () => [
-  { label: 'Our Story', href: '/our-story' },
-  { label: 'Your Growth Library', href: '/your-growth-library' },
-  { label: 'Cart', href: '/cart' },
-  { label: 'How We Can Help You', href: '/how-we-can-help-you' },
-  { label: 'Contact Us', href: '/contact-us' },
-  { label: 'Login', href: '/login' },
-  { label: 'What to Expect', href: '/what-to-expect' },
-  { label: 'Careers', href: '/careers' },
-  { label: 'Sign Up', href: '/sign-up' },
-];
-
 export const Footer = () => {
+  const t = useTranslations('footer');
+  const navigationLinks = getNavigation(t);
+  const policies = getPolicies(t);
+  const footerInfo = getFooterInfo(t);
+
   return (
     <footer className="flex flex-col gap-20 p-10 max-md:px-4 max-md:py-10">
       <section className="flex flex-col gap-10">
@@ -79,7 +95,7 @@ export const Footer = () => {
           </section>
           <section className="flex w-[900px] flex-col max-md:w-full">
             <div className="grid grid-cols-3 gap-0 max-md:grid-cols-1">
-              {getNavigation().map(item => (
+              {navigationLinks.map(item => (
                 <NavLink
                   key={item.href}
                   href={item.href}
@@ -92,7 +108,7 @@ export const Footer = () => {
           </section>
         </section>
         <div className="flex gap-20 max-md:grid max-md:grid-cols-2 max-md:gap-4">
-          {getFooterInfo().map(item => (
+          {footerInfo.map(item => (
             <div key={item.label} className="flex w-max flex-col gap-1">
               <Label>{item.label}</Label>
               {item.href ? (
@@ -107,14 +123,14 @@ export const Footer = () => {
         </div>
       </section>
       <section className="flex items-center justify-between gap-2 border-t-[0.2px] border-white/50 px-10 py-2 max-md:flex-col-reverse max-md:items-start max-md:px-0">
-        {/* <Text color="gray">
-          © {new Date().getFullYear()} Trendella International OÜ All Rights
-          Reserved.
-        </Text> */}
+        <Text color="gray">
+          © {new Date().getFullYear()} Signalor S.R.L.{' '}
+          {t('allRightsReserved', { fallback: 'All Rights Reserved' })}
+        </Text>
         <nav className="flex items-center gap-4 max-md:grid max-md:grid-cols-2 max-md:items-start">
-          {getPolicies().map(item => (
+          {policies.map(item => (
             <NavLink
-              key={item.label}
+              key={item.href}
               href={item.href}
               className="transition duration-300 ease-in-out hover:opacity-70"
             >
