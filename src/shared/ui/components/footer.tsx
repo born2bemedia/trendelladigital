@@ -85,8 +85,11 @@ export const Footer = () => {
           <section className="flex w-[340px] flex-col gap-2.5 max-md:w-full">
             <Image src="/logo-white.svg" alt="logo" width={271} height={60} />
             {/* <div className="flex flex-col gap-1">
+            <Image src="/logo-white.svg" alt="logo" width={271} height={60} />
+            {/* <div className="flex flex-col gap-1">
               <Label>Social Media:</Label>
               <ShortSocials />
+            </div> */}
             </div> */}
           </section>
           <section className="flex w-[900px] flex-col max-md:w-full">
@@ -98,6 +101,7 @@ export const Footer = () => {
                   className="border-b-[0.5px] border-white px-3 py-4"
                 >
                   <Text size="base">{item.label}</Text>
+                </NavLink>
                 </NavLink>
               ))}
             </div>
@@ -131,6 +135,7 @@ export const Footer = () => {
               className="transition duration-300 ease-in-out hover:opacity-70"
             >
               <Text color="gray">{item.label}</Text>
+            </NavLink>
             </NavLink>
           ))}
         </nav>
