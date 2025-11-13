@@ -5,8 +5,6 @@ import Link from 'next/link';
 
 import { Text } from '@/shared/ui/kit/text';
 
-import { ShortSocials } from './short-socials';
-
 const getPolicies = () => [
   {
     label: 'Refund Policy',
@@ -37,14 +35,20 @@ const getFooterInfo = () => [
   //   value: '+1 000 00 00',
   //   href: 'tel:+10000000',
   // },
-  // {
-  //   label: 'Registered Address:',
-  //   value: 'Registered Address',
-  // },
-  // {
-  //   label: 'Office Address:',
-  //   value: 'Office Address',
-  // },
+  {
+    label: 'Registered number:',
+    value: 'J2025081585000',
+  },
+  {
+    label: 'Registered address:',
+    value:
+      '255 Mihai Bravu Road., Basement, Module S 209, District 3, Bucharest, Romania',
+  },
+  {
+    label: 'Office Address:',
+    value:
+      'Ara Business Center, Strada Parintele Galeriu 6C, Bucharest 030167, Romania',
+  },
 ];
 
 const getNavigation = () => [
@@ -66,10 +70,10 @@ export const Footer = () => {
         <section className="flex justify-between max-md:flex-col">
           <section className="flex w-[340px] flex-col gap-2.5 max-md:w-full">
             <Image src="/logo-white.svg" alt="logo" width={271} height={60} />
-            <div className="flex flex-col gap-1">
+            {/* <div className="flex flex-col gap-1">
               <Label>Social Media:</Label>
               <ShortSocials />
-            </div>
+            </div> */}
           </section>
           <section className="flex w-[900px] flex-col max-md:w-full">
             <div className="grid grid-cols-3 gap-0 max-md:grid-cols-1">

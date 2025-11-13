@@ -7,7 +7,6 @@ import { cn } from '@/shared/lib/utils/styles';
 import { Text } from '@/shared/ui/kit/text';
 
 import { LangSwitcher } from './lang-switcher';
-import { SocialNetworks } from './social-networks';
 
 export const TopBar = () => {
   const isHomePage = useIsHomePage();
@@ -27,7 +26,7 @@ export const TopBar = () => {
         </Link>
       </div>
       <section className="flex items-center gap-[60px]">
-        <SocialNetworks />
+        {/* <SocialNetworks /> */}
         <LangSwitcher />
       </section>
     </section>

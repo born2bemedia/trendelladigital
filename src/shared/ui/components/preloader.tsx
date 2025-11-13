@@ -22,9 +22,9 @@ export const Preloader = () => {
       setIsLoading(false);
       setTimeout(() => {
         setIsVisible(false);
-        setTimeout(() => setIsHidden(true), 500);
-      }, 1000);
-    }, 1000);
+        setTimeout(() => setIsHidden(true), 1000);
+      }, 2000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, [pathname]);
@@ -34,7 +34,7 @@ export const Preloader = () => {
   return (
     <div
       className={cn(
-        'fixed inset-0 z-[99999] flex items-center justify-center bg-white transition-all duration-500 ease-in-out',
+        'fixed inset-0 z-[99999] flex items-center justify-center bg-black transition-all duration-500 ease-in-out',
         isLoading ? 'visible opacity-100' : 'invisible opacity-0',
         !isVisible && 'translate-y-full',
       )}
@@ -43,7 +43,7 @@ export const Preloader = () => {
         src="/preloader.gif"
         alt="preloader"
         width={200}
-        height={200}
+        height={130}
         className={cn(
           'transition-all duration-500 ease-in-out',
           isLoading ? 'scale-100' : 'scale-150 opacity-0',
