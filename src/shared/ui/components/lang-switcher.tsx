@@ -15,7 +15,6 @@ import { Text } from '@/shared/ui/kit/text';
 
 export const LangSwitcher = () => {
   const [open, setOpen] = useState(false);
-
   const t = useTranslations('langSwitcher');
   const locale = useLocale();
 
