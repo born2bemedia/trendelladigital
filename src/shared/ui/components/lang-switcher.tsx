@@ -38,11 +38,12 @@ export const LangSwitcher = () => {
     { value: 'en', label: t('en', { fallback: 'English' }) },
     { value: 'de', label: t('de', { fallback: 'German' }) },
     { value: 'it', label: t('it', { fallback: 'Italian' }) },
+    { value: 'ro', label: t('ro', { fallback: 'Romanian' }) },
   ];
 
   return (
     <Root open={open} onOpenChange={setOpen}>
-      <DropdownMenuTrigger className="cursor-pointer outline-0">
+      <DropdownMenuTrigger className="cursor-pointer capitalize outline-0">
         <Text
           size="xs"
           color={isHomePage ? 'black' : 'white'}
@@ -55,7 +56,7 @@ export const LangSwitcher = () => {
       <DropdownMenuPortal>
         <DropdownMenuContent
           sideOffset={10}
-          className="z-[900] flex w-[200px] animate-[slideDownAndFade_400ms_cubic-bezier(0.16,1,0.3,1)] flex-col gap-2 bg-white px-5 py-2.5 data-[side=bottom]:animate-[slideUpAndFade_400ms_cubic-bezier(0.16,1,0.3,1)] data-[side=left]:animate-[slideRightAndFade_400ms_cubic-bezier(0.16,1,0.3,1)] data-[side=right]:animate-[slideLeftAndFade_400ms_cubic-bezier(0.16,1,0.3,1)] data-[side=top]:animate-[slideDownAndFade_400ms_cubic-bezier(0.16,1,0.3,1)]"
+          className="z-[900] flex w-[200px] animate-[slideDownAndFade_400ms_cubic-bezier(0.16,1,0.3,1)] flex-col gap-2 bg-white px-5 py-2.5 capitalize data-[side=bottom]:animate-[slideUpAndFade_400ms_cubic-bezier(0.16,1,0.3,1)] data-[side=left]:animate-[slideRightAndFade_400ms_cubic-bezier(0.16,1,0.3,1)] data-[side=right]:animate-[slideLeftAndFade_400ms_cubic-bezier(0.16,1,0.3,1)] data-[side=top]:animate-[slideDownAndFade_400ms_cubic-bezier(0.16,1,0.3,1)]"
         >
           {languages.map(option => (
             <DropdownMenuItem
