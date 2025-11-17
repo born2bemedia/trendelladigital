@@ -72,7 +72,7 @@ const Receives = () => {
         {items.map(item => (
           <div
             key={item}
-            className="border-t-[3px] border-[rgba(151,151,151,0.27)] pt-2.5"
+            className="flex-1 border-t-[3px] border-[rgba(151,151,151,0.27)] pt-2.5"
           >
             <Text color="dark" size="base">
               {item}

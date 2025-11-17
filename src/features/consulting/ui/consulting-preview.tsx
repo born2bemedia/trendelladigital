@@ -1,7 +1,6 @@
 'use client';
 
 import type { ReactNode } from 'react';
-import Link from 'next/link';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
 import { cn } from '@/shared/lib/utils/styles';
@@ -10,6 +9,7 @@ import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 import type { Consulting } from '../model/types';
+import { Link } from '@/i18n/navigation';
 
 export const ConsultingPreview = ({
   type,

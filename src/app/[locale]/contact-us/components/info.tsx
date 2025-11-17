@@ -15,7 +15,7 @@ export const Info = () => {
 
   return (
     <section className="mx-4 flex flex-col gap-2 bg-white px-[60px] pt-[80px] pb-[60px] max-md:px-4 max-md:pb-4">
-      {/* <Layout>
+      <Layout>
         <section className="flex w-1/2 flex-col justify-between max-md:w-full max-md:gap-6">
           <Title size="4xl" weight={400}>
             {t('title', { fallback: 'Where We Work' })}
@@ -23,11 +23,17 @@ export const Info = () => {
           <div className="flex gap-2 max-md:flex-col">
             <Element
               label={t('elements.0', { fallback: 'Main Office' })}
-              value={{ label: 'Main Office' }}
+              value={{
+                label:
+                  'Ara Business Center, Strada Parintele Galeriu 6C, Bucharest 030167, Romania',
+              }}
             />
             <Element
               label={t('elements.1', { fallback: 'Registered HQ' })}
-              value={{ label: 'Registered HQ' }}
+              value={{
+                label:
+                  '255 Mihai Bravu Road., Basement, Module S 209, District 3, Bucharest, Romania',
+              }}
             />
           </div>
         </section>
@@ -39,7 +45,7 @@ export const Info = () => {
           height={197}
           unoptimized
         />
-      </Layout> */}
+      </Layout>
       <Layout reverse>
         <section className="flex w-1/2 flex-col justify-between max-md:w-full max-md:gap-6">
           <Title size="4xl" weight={400}>

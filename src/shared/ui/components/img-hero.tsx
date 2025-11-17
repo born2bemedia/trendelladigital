@@ -16,7 +16,7 @@ export const ImgHero = ({
 }: {
   img: { alt: string; url: string };
   title: string;
-  description: string | string[];
+  description: string;
   button?: { label: string; url: string };
 }) => {
   return (

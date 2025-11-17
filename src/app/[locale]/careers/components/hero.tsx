@@ -25,6 +25,7 @@ export const Hero = () => {
               'At Trendella Digital, we’re building a lean, brilliant, and thoughtful team that does work that matters — with clarity, ownership, and a shared commitment to helping real people create sustainable, purpose-driven businesses.',
           })}
           <br />
+          <br />
           {t('description.2', {
             fallback: 'We don’t believe in “just doing the job.”',
           })}

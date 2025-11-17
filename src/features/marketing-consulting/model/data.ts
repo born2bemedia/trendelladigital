@@ -45,9 +45,9 @@ export const getMarketingConsulting = (
 export const getMarketingConsultingDetailed = (
   t: ReturnType<typeof useTranslations>,
 ) => ({
-  description: t('description', {
+  description: `${t('description', {
     fallback: 'Marketing systems that build demand, and deliver results',
-  }),
+  })}.`,
   includes: [
     t('includes.0', {
       fallback:
