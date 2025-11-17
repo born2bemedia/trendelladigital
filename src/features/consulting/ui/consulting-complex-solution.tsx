@@ -130,7 +130,7 @@ const SolutionCard = ({
           <div className="flex flex-col">
             <Text color="ghost">{t('price', { fallback: 'Price:' })}</Text>
             <Title as="h4" color="black" size="4xl">
-              {t('from', { fallback: 'from' })} $
+              {t('from', { fallback: 'from' })} €
               {solution.price.toLocaleString()}
             </Title>
           </div>

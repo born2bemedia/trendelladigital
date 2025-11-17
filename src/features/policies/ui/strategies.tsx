@@ -37,7 +37,7 @@ export const PolicyStrategies = memo(
                 return <br key={`br-${i}`} />;
               }
 
-              if (item.type === 'link') {
+              if (item.type === 'link' || item.type === 'autolink') {
                 return (
                   <a
                     key={`link-${i}`}
@@ -99,7 +99,7 @@ const ListItem = ({ value }: { value?: Children2[] }) => {
   if (!value) return null;
 
   return value.map((item, i) => {
-    if (item.type === 'link') {
+    if (item.type === 'link' || item.type === 'autolink') {
       return (
         <a
           key={`link-${i}`}
@@ -110,7 +110,7 @@ const ListItem = ({ value }: { value?: Children2[] }) => {
           {item.children?.map((child, j) => (
             <span
               key={`link-text-${j}`}
-              className="text-sm font-bold text-[#272727] underline decoration-solid underline-offset-auto"
+              className="text-sm text-[#272727] underline decoration-solid underline-offset-auto"
             >
               {child.text}
             </span>
