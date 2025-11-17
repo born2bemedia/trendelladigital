@@ -49,8 +49,8 @@ export const Info = () => {
             <Element
               label={t('elements2.0', { fallback: 'Email' })}
               value={{
-                label: 'info@trendelladigital.com',
-                url: 'mailto:info@trendelladigital.com',
+                label: 'info@signalor.pro',
+                url: 'mailto:info@signalor.pro',
               }}
             />
             {/* <Element
