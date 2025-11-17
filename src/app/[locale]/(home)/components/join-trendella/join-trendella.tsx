@@ -95,7 +95,7 @@ export const JoinTrendella = () => {
             {t('desc.1', {
               fallback:
                 "We're looking for marketers, strategists, and operators who:",
-            })}
+            })}{' '}
             <span className="font-bold">
               {t('desc.2', {
                 fallback: 'marketers, strategists, and operators',

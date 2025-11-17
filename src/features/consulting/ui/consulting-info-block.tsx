@@ -67,7 +67,6 @@ export const ConsultingInfoBlock = ({
         <Text color="dark">
           {list.description} <br />
           <br />
-          <br />
           {t('walkAway')}
         </Text>
         <ul className="flex flex-col gap-1">

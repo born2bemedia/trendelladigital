@@ -104,7 +104,7 @@ const ReviewCard = ({
   return (
     <section className="flex h-full gap-10">
       <Image
-        className="rounded-lg max-md:hidden"
+        className="rounded-lg object-cover max-md:hidden"
         src={imgUrl}
         alt={name}
         width={252}

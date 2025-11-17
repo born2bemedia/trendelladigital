@@ -22,6 +22,7 @@ export const Scale = () => {
               'We don’t believe success means building the biggest, loudest brand in the room.',
           })}
           <br />
+          <br />
           {t('description.1', {
             fallback:
               'We believe it means building a business that aligns with your life, values, and your unique concept of freedom.',

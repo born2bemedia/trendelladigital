@@ -14,13 +14,13 @@ export const Hero = () => {
         url: '/images/contact-us/hero.jpg',
       }}
       title={t('title', { fallback: 'Contact Us' })}
-      description={[
-        t('description.0', { fallback: 'We’d love to hear from you.' }),
-        t('description.1', {
+      description={`${t('description.0', { fallback: 'We’d love to hear from you.' })} ${t(
+        'description.1',
+        {
           fallback:
             'Fill out the form and we’ll be in touch to explore how we can help.',
-        }),
-      ]}
+        },
+      )}`}
     />
   );
 };

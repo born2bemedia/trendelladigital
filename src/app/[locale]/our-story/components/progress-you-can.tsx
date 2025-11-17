@@ -44,10 +44,10 @@ const StatisticBoard = () => {
       subtitle: t('statistic.0.subtitle', {
         fallback: 'of clients doubled their revenue within 6 months',
       }),
-      text: t('statistic.0.text', {
+      text: `${t('statistic.0.text', {
         fallback:
           'From freelancers to solo founders — clarity and structure pay off',
-      }),
+      })}.`,
     },
     {
       title: '200+',
