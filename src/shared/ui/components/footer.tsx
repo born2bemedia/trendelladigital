@@ -107,13 +107,16 @@ export const Footer = () => {
             </div>
           </section>
         </section>
-        <div className="flex gap-20 max-md:grid max-md:grid-cols-2 max-md:gap-4">
+        <div className="flex gap-20 max-md:grid max-md:grid-cols-1 max-md:gap-4">
           {footerInfo.map(item => (
-            <div key={item.label} className="flex w-max flex-col gap-1">
+            <div
+              key={item.label}
+              className="flex w-max flex-col gap-1 max-md:w-full"
+            >
               <Label>{item.label}</Label>
               {item.href ? (
-                <Link href={item.href}>
-                  <Text>{item.value}</Text>
+                <Link href={item.href} className="max-md:break-all">
+                  <Text className="max-md:break-all">{item.value}</Text>
                 </Link>
               ) : (
                 <Text size="base">{item.value}</Text>

@@ -58,10 +58,10 @@ export const StrategyImpact = () => {
   return (
     <section className="mx-4 flex gap-10 bg-white px-[60px] py-[100px] max-md:flex-col-reverse max-md:gap-10 max-md:px-4 max-md:py-[60px]">
       <section className="flex w-1/2 flex-col gap-2 max-md:w-full">
-        <Text color="black">
+        <Title size="4xl" weight={500} color="black">
           {t('text.0', { fallback: 'We Partner With Clients' })} <br />
           {t('text.1', { fallback: 'Across Multiple Inflection Points' })}
-        </Text>
+        </Title>
         {getItems(ti).map(item => (
           <Card key={item.title} {...item} />
         ))}
