@@ -19,9 +19,9 @@ export const TopBar = () => {
       )}
     >
       <div className="flex items-center gap-[60px]">
-        <Link href="mailto:info@signalor.pro">
+        <Link href="mailto:info@idelaria.com">
           <Text size="xs" color={isHomePage ? 'black' : 'white'}>
-            info@signalor.pro
+            info@idelaria.com
           </Text>
         </Link>
       </div>

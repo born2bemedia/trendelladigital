@@ -4,18 +4,18 @@ import Image from 'next/image';
 import { OrderList } from '@/features/cart/ui/order-list';
 
 export const metadata: Metadata = {
-  title: 'Your Consulting Services Cart | Signalor',
+  title: 'Your Consulting Services Cart | Idelaria',
   description:
     'Review selected consulting services and proceed to secure checkout — your next move starts here.',
   robots: 'noindex',
   openGraph: {
-    title: 'Your Consulting Services Cart | Signalor',
+    title: 'Your Consulting Services Cart | Idelaria',
     description:
       'Review selected consulting services and proceed to secure checkout — your next move starts here.',
     images: ['https://trendelladigital.com/meta.jpg'],
   },
   twitter: {
-    title: 'Your Consulting Services Cart | Signalor',
+    title: 'Your Consulting Services Cart | Idelaria',
     description:
       'Review selected consulting services and proceed to secure checkout — your next move starts here.',
     images: ['https://trendelladigital.com/meta.jpg'],

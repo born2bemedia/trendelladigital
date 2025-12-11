@@ -10,7 +10,7 @@ import { Title } from '@/shared/ui/kit/title';
 
 const getContacts = () => [
   // { label: 'Phone Number', value: '' },
-  { label: 'Email', value: 'info@signalor.pro' },
+  { label: 'Email', value: 'info@idelaria.com' },
   // { label: 'Office Address', value: '' },
 ];
 

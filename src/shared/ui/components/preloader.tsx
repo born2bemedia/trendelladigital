@@ -1,8 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import Lottie from 'lottie-react';
 
 import { cn } from '@/shared/lib/utils/styles';
 
@@ -12,6 +12,15 @@ export const Preloader = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isVisible, setIsVisible] = useState(true);
   const [isHidden, setIsHidden] = useState(false);
+  const [animationData, setAnimationData] = useState<object | null>(null);
+
+  useEffect(() => {
+    // Load the Lottie animation JSON
+    fetch('/preloader.json')
+      .then((res) => res.json())
+      .then((data) => setAnimationData(data))
+      .catch((err) => console.error('Failed to load preloader animation:', err));
+  }, []);
 
   useEffect(() => {
     setIsLoading(true);
@@ -29,28 +38,29 @@ export const Preloader = () => {
     return () => clearTimeout(timer);
   }, [pathname]);
 
-  if (isHidden) return null;
+  if (isHidden || !animationData) return null;
 
   return (
     <div
       className={cn(
-        'fixed inset-0 z-[99999] flex items-center justify-center bg-black transition-all duration-500 ease-in-out',
+        'fixed inset-0 z-[99999] flex items-center justify-center bg-white transition-all duration-500 ease-in-out',
         isLoading ? 'visible opacity-100' : 'invisible opacity-0',
         !isVisible && 'translate-y-full',
       )}
     >
-      <Image
-        src="/preloader.gif"
-        alt="preloader"
-        width={200}
-        height={130}
+      <div
         className={cn(
           'transition-all duration-500 ease-in-out',
           isLoading ? 'scale-100' : 'scale-150 opacity-0',
           !isVisible && '-translate-y-full',
         )}
-        unoptimized
-      />
+      >
+        <Lottie
+          animationData={animationData}
+          loop={true}
+          style={{ width: 200, height: 130 }}
+        />
+      </div>
     </div>
   );
 };

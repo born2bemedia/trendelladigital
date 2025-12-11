@@ -5,14 +5,14 @@ import { getUserOrders } from '@/features/order/api/get-user-orders';
 import { AccountContainer } from './components';
 
 export const metadata: Metadata = {
-  title: 'Account | Signalor',
+  title: 'Account | Idelaria',
   robots: 'noindex',
   openGraph: {
-    title: 'Account | Signalor',
+    title: 'Account | Idelaria',
     images: ['https://trendelladigital.com/meta.jpg'],
   },
   twitter: {
-    title: 'Account | Signalor',
+    title: 'Account | Idelaria',
     images: ['https://trendelladigital.com/meta.jpg'],
   },
 };

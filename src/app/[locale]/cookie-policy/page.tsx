@@ -4,18 +4,18 @@ import { getCookiePolicy } from '@/features/policies/api/get-cookie-policy';
 import { PolicyDisplay } from '@/features/policies/ui/policy';
 
 export const metadata: Metadata = {
-  title: 'Cookie Policy | Signalor',
+  title: 'Cookie Policy | Idelaria',
   description:
     'Understand how we use cookies to enhance your browsing experience and support site performance.',
   robots: 'noindex',
   openGraph: {
-    title: 'Cookie Policy | Signalor',
+    title: 'Cookie Policy | Idelaria',
     description:
       'Understand how we use cookies to enhance your browsing experience and support site performance.',
     images: ['https://trendelladigital.com/meta.jpg'],
   },
   twitter: {
-    title: 'Cookie Policy | Signalor',
+    title: 'Cookie Policy | Idelaria',
     description:
       'Understand how we use cookies to enhance your browsing experience and support site performance.',
     images: ['https://trendelladigital.com/meta.jpg'],
