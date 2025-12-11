@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: 'Real Client Transformations | Before & After Results',
     description:
       'From “I hope” to “I know” — see how founders transformed their offers, systems, and revenue with Idelaria’s guidance.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
   twitter: {
     title: 'Real Client Transformations | Before & After Results',
     description:
       'From “I hope” to “I know” — see how founders transformed their offers, systems, and revenue with Idelaria’s guidance.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
 };
 

@@ -12,13 +12,13 @@ export const metadata: Metadata = {
     title: 'Checkout | Confirm Your Idelaria Order',
     description:
       'Review your order details, complete payment, and get ready to build your business with clarity and structure.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
   twitter: {
     title: 'Checkout | Confirm Your Idelaria Order',
     description:
       'Review your order details, complete payment, and get ready to build your business with clarity and structure.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
 };
 

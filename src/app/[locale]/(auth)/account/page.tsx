@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   robots: 'noindex',
   openGraph: {
     title: 'Account | Idelaria',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
   twitter: {
     title: 'Account | Idelaria',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
 };
 

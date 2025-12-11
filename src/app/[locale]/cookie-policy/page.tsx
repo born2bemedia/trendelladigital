@@ -12,13 +12,13 @@ export const metadata: Metadata = {
     title: 'Cookie Policy | Idelaria',
     description:
       'Understand how we use cookies to enhance your browsing experience and support site performance.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
   twitter: {
     title: 'Cookie Policy | Idelaria',
     description:
       'Understand how we use cookies to enhance your browsing experience and support site performance.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
 };
 

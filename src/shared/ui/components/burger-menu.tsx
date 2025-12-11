@@ -103,9 +103,9 @@ export const BurgerMenu = () => {
               </div>
               <footer className="mt-auto flex flex-col gap-6 bg-white px-5 py-2">
                 <div className="flex flex-col gap-2">
-                  <Link href="mailto:info@trendelladigital.com">
+                  <Link href="mailto:info@idelaria.com">
                     <Text size="base" color="dark">
-                      info@trendelladigital.com
+                      info@idelaria.com
                     </Text>
                   </Link>
                   {/* <Link href="#">

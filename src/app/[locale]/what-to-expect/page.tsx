@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: 'What It’s Like to Work With Idelaria',
     description:
       'See how our 5-phase consulting process turns uncertainty into structured growth — with real partnership at every step.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
   twitter: {
     title: 'What It’s Like to Work With Idelaria',
     description:
       'See how our 5-phase consulting process turns uncertainty into structured growth — with real partnership at every step.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
 };
 

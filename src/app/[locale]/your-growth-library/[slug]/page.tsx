@@ -18,7 +18,7 @@ export async function generateMetadata({
     openGraph: {
       title: postsMeta[awaitedParams.slug].title,
       description: postsMeta[awaitedParams.slug].description,
-      images: 'https://trendelladigital.com/meta.jpg',
+      images: 'https://idelaria.com/meta.jpg',
     },
   };
 }

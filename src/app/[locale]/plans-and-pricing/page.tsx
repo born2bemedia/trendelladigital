@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     title: 'Consulting Packages & Pricing | Idelaria',
     description:
       'Explore transparent pricing for business and marketing consulting services — designed to meet you where you are.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
   twitter: {
     title: 'Consulting Packages & Pricing | Idelaria',
     description:
       'Explore transparent pricing for business and marketing consulting services — designed to meet you where you are.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
 };
 
