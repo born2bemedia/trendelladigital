@@ -13,13 +13,13 @@ export const metadata: Metadata = {
     title: 'Log In to Your Idelaria Account',
     description:
       'Access your dashboard, manage services, and keep building your business with focus and intention.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
   twitter: {
     title: 'Log In to Your Idelaria Account',
     description:
       'Access your dashboard, manage services, and keep building your business with focus and intention.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
 };
 

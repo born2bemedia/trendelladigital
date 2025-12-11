@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: 'Join the Idelaria Team | Purposeful Remote Work',
     description:
       'We’re hiring marketers, strategists, and operators who care about clarity, ownership, and real impact. See open roles and apply today.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
   twitter: {
     title: 'Join the Idelaria Team | Purposeful Remote Work',
     description:
       'We’re hiring marketers, strategists, and operators who care about clarity, ownership, and real impact. See open roles and apply today.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
 };
 

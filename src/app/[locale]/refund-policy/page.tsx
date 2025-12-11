@@ -12,13 +12,13 @@ export const metadata: Metadata = {
     title: 'Refund Policy | Idelaria',
     description:
       'Read our refund policy to understand how requests and cancellations are handled with transparency.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
   twitter: {
     title: 'Refund Policy | Idelaria',
     description:
       'Read our refund policy to understand how requests and cancellations are handled with transparency.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
 };
 

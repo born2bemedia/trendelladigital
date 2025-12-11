@@ -49,7 +49,7 @@ export const EditUserForm = ({ onSuccess }: { onSuccess?: () => void }) => {
         notifyWarning(
           t('error', {
             fallback:
-              'Something went wrong — please refresh and try again, or email us directly at info@trendelladigital.com.',
+              'Something went wrong — please refresh and try again, or email us directly at info@idelaria.com.',
           }),
         );
       }

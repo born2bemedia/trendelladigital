@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     title: 'Marketing Consulting That Converts | Position, Scale, Grow',
     description:
       'Market with confidence. Our consulting helps you craft messaging, funnels, and systems that attract the right clients — without burnout.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
   twitter: {
     title: 'Marketing Consulting That Converts | Position, Scale, Grow',
     description:
       'Market with confidence. Our consulting helps you craft messaging, funnels, and systems that attract the right clients — without burnout.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
 };
 

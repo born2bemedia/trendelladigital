@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: 'Business & Marketing Insights That Actually Help | Idelaria Blog',
     description:
       'Browse our library of no-fluff, actionable articles on business structure, marketing systems, messaging, and more.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
   twitter: {
     title: 'Business & Marketing Insights That Actually Help | Idelaria Blog',
     description:
       'Browse our library of no-fluff, actionable articles on business structure, marketing systems, messaging, and more.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
 };
 

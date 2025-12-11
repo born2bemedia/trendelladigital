@@ -12,13 +12,13 @@ export const metadata: Metadata = {
     title: 'Privacy Policy | Idelaria',
     description:
       'Learn how we collect, use, and protect your data when you use our services or interact with our site.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
   twitter: {
     title: 'Privacy Policy | Idelaria',
     description:
       'Learn how we collect, use, and protect your data when you use our services or interact with our site.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
 };
 

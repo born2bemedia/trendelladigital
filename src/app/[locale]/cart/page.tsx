@@ -12,13 +12,13 @@ export const metadata: Metadata = {
     title: 'Your Consulting Services Cart | Idelaria',
     description:
       'Review selected consulting services and proceed to secure checkout — your next move starts here.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
   twitter: {
     title: 'Your Consulting Services Cart | Idelaria',
     description:
       'Review selected consulting services and proceed to secure checkout — your next move starts here.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
 };
 

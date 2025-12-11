@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: 'The Story Behind Idelaria | From Challenge to Clarity',
     description:
       'Discover how Idelaria began — and why our consulting approach is rooted in real-world growth, not recycled advice.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
   twitter: {
     title: 'The Story Behind Idelaria | From Challenge to Clarity',
     description:
       'Discover how Idelaria began — and why our consulting approach is rooted in real-world growth, not recycled advice.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
 };
 

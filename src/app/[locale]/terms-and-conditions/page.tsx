@@ -12,13 +12,13 @@ export const metadata: Metadata = {
     title: 'Terms & Conditions | Idelaria',
     description:
       'Read our terms of service outlining how we work, what you can expect, and how your data and engagement are handled.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
   twitter: {
     title: 'Terms & Conditions | Idelaria',
     description:
       'Read our terms of service outlining how we work, what you can expect, and how your data and engagement are handled.',
-    images: ['https://trendelladigital.com/meta.jpg'],
+    images: ['https://idelaria.com/meta.jpg'],
   },
 };
 
