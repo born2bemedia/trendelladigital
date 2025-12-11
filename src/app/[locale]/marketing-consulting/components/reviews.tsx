@@ -17,7 +17,7 @@ export const Reviews = () => {
       }),
       description: t('0.description', {
         fallback:
-          'Trendella Digital helped me clarify my message, streamline my funnel, and finally connect with the clients I actually wanted.',
+          'Idelaria helped me clarify my message, streamline my funnel, and finally connect with the clients I actually wanted.',
       }),
     },
     {
@@ -75,7 +75,7 @@ export const Reviews = () => {
       position: t('5.position', { fallback: 'Personal Brand Strategist' }),
       review: t('5.review', {
         fallback:
-          'Before Trendella Digital, I was posting constantly with zero traction.',
+          'Before Idelaria, I was posting constantly with zero traction.',
       }),
       description: t('5.description', {
         fallback:

@@ -31,7 +31,7 @@ export const Scale = () => {
           <br />
           {t('description.2', {
             fallback:
-              'At Trendella Digital, growth isn’t about shouting louder.',
+              'At Idelaria, growth isn’t about shouting louder.',
           })}{' '}
           <br />
           <br />

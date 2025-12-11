@@ -18,7 +18,7 @@ export const Reviews = () => {
       }),
       description: t('0.description', {
         fallback:
-          "Working with Trendella Digital gave me the structure, clarity, and momentum I didn't know I was missing.",
+          "Working with Idelaria gave me the structure, clarity, and momentum I didn't know I was missing.",
       }),
     },
     {
@@ -67,7 +67,7 @@ export const Reviews = () => {
       }),
       description: t('4.description', {
         fallback:
-          'Trendella Digital helped me turn what I do into a real business model, with offers, pricing, and systems that finally make sense.',
+          'Idelaria helped me turn what I do into a real business model, with offers, pricing, and systems that finally make sense.',
       }),
     },
     {

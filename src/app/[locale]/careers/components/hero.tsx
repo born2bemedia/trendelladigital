@@ -22,7 +22,7 @@ export const Hero = () => {
           <br />
           {t('description.1', {
             fallback:
-              'At Trendella Digital, we’re building a lean, brilliant, and thoughtful team that does work that matters — with clarity, ownership, and a shared commitment to helping real people create sustainable, purpose-driven businesses.',
+              'At Idelaria, we’re building a lean, brilliant, and thoughtful team that does work that matters — with clarity, ownership, and a shared commitment to helping real people create sustainable, purpose-driven businesses.',
           })}
           <br />
           <br />

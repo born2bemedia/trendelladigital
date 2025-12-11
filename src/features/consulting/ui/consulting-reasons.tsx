@@ -26,7 +26,7 @@ export const ConsultingReasons = ({
       </ul>
       <section className="flex flex-col">
         <Title color="white">
-          {t('title', { fallback: 'Why Trendella Digital?' })}
+          {t('title', { fallback: 'Why Idelaria?' })}
         </Title>
         <TitleBottom className="mt-auto flex max-md:hidden" />
       </section>

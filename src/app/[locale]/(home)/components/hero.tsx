@@ -23,7 +23,7 @@ export const Hero = () => {
             <Text>
               {t('description', {
                 fallback:
-                  "You've spent years building skills, now let's turn them into something you love waking up for. Trendella Digital will craft a plan for you.",
+                  "You've spent years building skills, now let's turn them into something you love waking up for. Idelaria will craft a plan for you.",
               })}
             </Text>
           </section>
