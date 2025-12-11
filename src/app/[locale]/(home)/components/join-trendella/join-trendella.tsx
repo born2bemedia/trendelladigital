@@ -83,7 +83,7 @@ export const JoinTrendella = () => {
           <Title color="white">
             {t('title', {
               fallback:
-                'Join the Trendella Digital Team That Builds What Matters',
+                'Join the Idelaria Team That Builds What Matters',
             })}
           </Title>
           <Text>

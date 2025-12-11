@@ -33,7 +33,7 @@ export const Hero = () => {
             <br />
             {t('description.2', {
               fallback:
-                'The more we tested, built, and refined, the more we realized the value of what we were creating — not just for us, but for others navigating the same complexity. That’s when Trendella Digital was born: not as a pivot, but as a deliberate response to a need we deeply understood. We didn’t follow someone else’s model. We created one — and now, we help others do the same.',
+                'The more we tested, built, and refined, the more we realized the value of what we were creating — not just for us, but for others navigating the same complexity. That’s when Idelaria was born: not as a pivot, but as a deliberate response to a need we deeply understood. We didn’t follow someone else’s model. We created one — and now, we help others do the same.',
             })}
           </Text>
         </div>
@@ -78,7 +78,7 @@ const InfoBlock = () => {
             <br />
             {t('infoBlock.description.1', {
               fallback:
-                'It worked for us. Then it worked for others. And eventually, it became Trendella Digital.',
+                'It worked for us. Then it worked for others. And eventually, it became Idelaria.',
             })}{' '}
             <br />
             <br />

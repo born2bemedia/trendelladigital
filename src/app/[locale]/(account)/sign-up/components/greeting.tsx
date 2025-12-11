@@ -17,7 +17,7 @@ export const Greeting = () => {
       </Title>
       <Text color="dark">
         {t('description.0', {
-          fallback: 'Join Trendella Digital  to unlock your dashboard, ',
+          fallback: 'Join Idelaria  to unlock your dashboard, ',
         })}{' '}
         <br />
         {t('description.1', {

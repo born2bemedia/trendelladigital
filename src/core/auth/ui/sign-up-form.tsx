@@ -315,7 +315,7 @@ export const SignUpForm = () => {
             label={
               <>
                 {t('fields.isAgree.label.0', {
-                  fallback: 'I’m over 18 and agree to Trendella Digital’s',
+                  fallback: 'I’m over 18 and agree to Idelaria’s',
                 })}{' '}
                 <Link href="/terms-of-service" className="underline">
                   {t('fields.isAgree.label.1', {
