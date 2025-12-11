@@ -3,19 +3,19 @@ import type { Metadata } from 'next';
 import { BringVision, Hero, ProgressYouCan, Scale } from './components';
 
 export const metadata: Metadata = {
-  title: 'The Story Behind Signalor | From Challenge to Clarity',
+  title: 'The Story Behind Idelaria | From Challenge to Clarity',
   description:
-    'Discover how Signalor began — and why our consulting approach is rooted in real-world growth, not recycled advice.',
+    'Discover how Idelaria began — and why our consulting approach is rooted in real-world growth, not recycled advice.',
   openGraph: {
-    title: 'The Story Behind Signalor | From Challenge to Clarity',
+    title: 'The Story Behind Idelaria | From Challenge to Clarity',
     description:
-      'Discover how Signalor began — and why our consulting approach is rooted in real-world growth, not recycled advice.',
+      'Discover how Idelaria began — and why our consulting approach is rooted in real-world growth, not recycled advice.',
     images: ['https://trendelladigital.com/meta.jpg'],
   },
   twitter: {
-    title: 'The Story Behind Signalor | From Challenge to Clarity',
+    title: 'The Story Behind Idelaria | From Challenge to Clarity',
     description:
-      'Discover how Signalor began — and why our consulting approach is rooted in real-world growth, not recycled advice.',
+      'Discover how Idelaria began — and why our consulting approach is rooted in real-world growth, not recycled advice.',
     images: ['https://trendelladigital.com/meta.jpg'],
   },
 };

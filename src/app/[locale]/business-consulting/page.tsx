@@ -13,17 +13,17 @@ import {
 } from './components';
 
 export const metadata: Metadata = {
-  title: 'Business Consulting for Solo Founders & Experts | Signalor',
+  title: 'Business Consulting for Solo Founders & Experts | Idelaria',
   description:
     'Build a business that works for you — with custom strategy, structure, and systems that turn ideas into sustainable growth.',
   openGraph: {
-    title: 'Business Consulting for Solo Founders & Experts | Signalor',
+    title: 'Business Consulting for Solo Founders & Experts | Idelaria',
     description:
       'Build a business that works for you — with custom strategy, structure, and systems that turn ideas into sustainable growth.',
     images: ['https://trendelladigital.com/meta.jpg'],
   },
   twitter: {
-    title: 'Business Consulting for Solo Founders & Experts | Signalor',
+    title: 'Business Consulting for Solo Founders & Experts | Idelaria',
     description:
       'Build a business that works for you — with custom strategy, structure, and systems that turn ideas into sustainable growth.',
     images: ['https://trendelladigital.com/meta.jpg'],

@@ -11,17 +11,17 @@ import {
 } from './components';
 
 export const metadata: Metadata = {
-  title: 'Business & Marketing Consulting That Gets Results | Signalor',
+  title: 'Business & Marketing Consulting That Gets Results | Idelaria',
   description:
     'Turn your expertise into a high-performing business. Book your free strategy call and build with clarity, structure, and strategy that works.',
   openGraph: {
-    title: 'Business & Marketing Consulting That Gets Results | Signalor',
+    title: 'Business & Marketing Consulting That Gets Results | Idelaria',
     description:
       'Turn your expertise into a high-performing business. Book your free strategy call and build with clarity, structure, and strategy that works.',
     images: ['https://trendelladigital.com/meta.jpg'],
   },
   twitter: {
-    title: 'Business & Marketing Consulting That Gets Results | Signalor',
+    title: 'Business & Marketing Consulting That Gets Results | Idelaria',
     description:
       'Turn your expertise into a high-performing business. Book your free strategy call and build with clarity, structure, and strategy that works.',
     images: ['https://trendelladigital.com/meta.jpg'],

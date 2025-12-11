@@ -5,14 +5,14 @@ import { ResetPasswordForm } from '@/features/reset-password/ui/reset-password-f
 import { Greeting } from './components';
 
 export const metadata: Metadata = {
-  title: 'Reset Your Signalor Password',
+  title: 'Reset Your Idelaria Password',
   robots: 'noindex',
   openGraph: {
-    title: 'Reset Your Signalor Password',
+    title: 'Reset Your Idelaria Password',
     images: ['https://trendelladigital.com/meta.jpg'],
   },
   twitter: {
-    title: 'Create Your Signalor Account',
+    title: 'Create Your Idelaria Account',
     images: ['https://trendelladigital.com/meta.jpg'],
   },
 };
