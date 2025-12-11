@@ -1,8 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Lottie from 'lottie-react';
 import { usePathname } from 'next/navigation';
+import Lottie from 'lottie-react';
 
 import { cn } from '@/shared/lib/utils/styles';
 

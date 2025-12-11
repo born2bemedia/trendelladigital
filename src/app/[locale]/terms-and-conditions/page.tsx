@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-//import { notFound } from 'next/navigation';
 
 import { getTermsAndConditions } from '@/features/policies/api/get-terms-and-conditions';
 import { PolicyDisplay } from '@/features/policies/ui/policy';
