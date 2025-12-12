@@ -15,7 +15,8 @@ export const Info = () => {
 
   return (
     <section className="mx-4 flex flex-col gap-2 bg-white px-[60px] pt-[80px] pb-[60px] max-md:px-4 max-md:pb-4">
-      <Layout>
+      {/** INFO BLOCK 1 
+       * <Layout>
         <section className="flex w-1/2 flex-col justify-between max-md:w-full max-md:gap-6">
           <Title size="4xl" weight={400}>
             {t('title', { fallback: 'Where We Work' })}
@@ -46,6 +47,7 @@ export const Info = () => {
           unoptimized
         />
       </Layout>
+      */}
       <Layout reverse>
         <section className="flex w-1/2 flex-col justify-between max-md:w-full max-md:gap-6">
           <Title size="4xl" weight={400}>
