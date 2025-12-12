@@ -127,7 +127,7 @@ export const Footer = () => {
       </section>
       <section className="flex items-center justify-between gap-2 border-t-[0.2px] border-white/50 px-10 py-2 max-md:flex-col-reverse max-md:items-start max-md:px-0">
         <Text color="gray">
-          © {new Date().getFullYear()} Idelaria S.R.L.{' '}
+          © {new Date().getFullYear()}{' '}
           {t('allRightsReserved', { fallback: 'All Rights Reserved' })}
         </Text>
         <nav className="flex items-center gap-4 max-md:grid max-md:grid-cols-2 max-md:items-start">
