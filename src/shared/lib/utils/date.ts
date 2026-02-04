@@ -2,7 +2,7 @@ import { format as fd, isValid, parseISO } from 'date-fns';
 
 export const formatDate = (
   value: string | Date,
-  format: string = 'yyyy-MM-dd',
+  format: string = 'dd.MM.yyyy',
 ): string => {
   const date = typeof value === 'string' ? parseISO(value) : value;
 
