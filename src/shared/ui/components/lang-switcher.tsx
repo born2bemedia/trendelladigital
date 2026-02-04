@@ -37,7 +37,7 @@ export const LangSwitcher = () => {
     { value: 'en', label: t('en', { fallback: 'English' }) },
     { value: 'de', label: t('de', { fallback: 'German' }) },
     { value: 'it', label: t('it', { fallback: 'Italian' }) },
-    { value: 'ro', label: t('ro', { fallback: 'Romanian' }) },
+    { value: 'el', label: t('el', { fallback: 'Greek' }) },
   ];
 
   return (

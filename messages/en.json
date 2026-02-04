@@ -1321,7 +1321,8 @@
     "de": "German",
     "en": "English",
     "it": "Italian",
-    "ro": "Romanian"
+    "ro": "Romanian",
+    "el": "Greek"
   },
   "login": {
     "form": {

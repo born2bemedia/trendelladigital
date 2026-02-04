@@ -143,7 +143,7 @@ export const Reviews = () => {
         fallback: 'I have time to think again — not just react.',
       }),
     },
-    {
+    /*{
       before: t('4.before', {
         fallback: 'I kept comparing myself to everyone else.',
       }),
@@ -175,7 +175,7 @@ export const Reviews = () => {
         fallback:
           'Clients now say, ‘I want to work with you, not just any social media manager.’ That’s everything.',
       }),
-    },
+    },*/
   ];
 
   return (

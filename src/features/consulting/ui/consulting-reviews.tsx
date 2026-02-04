@@ -36,8 +36,8 @@ export const ConsultingReviews = ({
           : t('titleMarketing', { fallback: 'What Our Clients Say' })}
       </Title>
       <div className="flex flex-col gap-10 max-md:gap-4">
-        <Slider items={items.slice(0, 3)} />
-        <Slider items={items.slice(3, 6)} />
+        <Slider items={items} />
+        {/**<Slider items={items.slice(3, 6)} /> */}
       </div>
     </section>
   );
