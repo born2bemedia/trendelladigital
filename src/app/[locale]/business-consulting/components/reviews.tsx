@@ -21,7 +21,7 @@ export const Reviews = () => {
           "Working with Idelaria gave me the structure, clarity, and momentum I didn't know I was missing.",
       }),
     },
-    {
+    /*{
       imgUrl: '/images/business-consulting/reviews/m-dean.png',
       name: t('1.name', { fallback: 'Marcus Dean' }),
       position: t('1.position', { fallback: 'Consultant & Strategist' }),
@@ -45,7 +45,7 @@ export const Reviews = () => {
         fallback:
           'Everything now runs smoother — and I finally have time to lead, not just react.',
       }),
-    },
+    },*/
     {
       imgUrl: '/images/business-consulting/reviews/r-mehta.png',
       name: t('3.name', { fallback: 'Ravi Mehta' }),

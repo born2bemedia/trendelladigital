@@ -20,7 +20,7 @@ export const Reviews = () => {
           'Idelaria helped me clarify my message, streamline my funnel, and finally connect with the clients I actually wanted.',
       }),
     },
-    {
+    /*{
       imgUrl: '/images/marketing-consulting/reviews/e-navarro.png',
       name: t('1.name', { fallback: 'Eli Navarro' }),
       position: t('1.position', { fallback: 'Creative Copywriter' }),
@@ -31,7 +31,7 @@ export const Reviews = () => {
         fallback:
           'My audience used to scroll past. Now they stop, read, and convert. The difference in clarity and confidence is unreal.',
       }),
-    },
+    },*/
     {
       imgUrl: '/images/marketing-consulting/reviews/d-hale.png',
       name: t('2.name', { fallback: 'Devon Hale' }),
@@ -57,7 +57,7 @@ export const Reviews = () => {
           'Their team brought structure to my chaos and turned sporadic content into consistent growth.',
       }),
     },
-    {
+    /*{
       imgUrl: '/images/marketing-consulting/reviews/n-park.png',
       name: t('4.name', { fallback: 'Nina Park' }),
       position: t('4.position', { fallback: 'Co-Founder' }),
@@ -68,7 +68,7 @@ export const Reviews = () => {
         fallback:
           "From funnel design to campaign rollout, everything we do now has purpose. We're seeing better engagement and qualified leads every week.",
       }),
-    },
+    },*/
     {
       imgUrl: '/images/marketing-consulting/reviews/s-kim.png',
       name: t('5.name', { fallback: 'Sasha Kim' }),
