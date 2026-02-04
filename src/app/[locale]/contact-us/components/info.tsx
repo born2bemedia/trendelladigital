@@ -15,8 +15,7 @@ export const Info = () => {
 
   return (
     <section className="mx-4 flex flex-col gap-2 bg-white px-[60px] pt-[80px] pb-[60px] max-md:px-4 max-md:pb-4">
-      {/** INFO BLOCK 1 
-       * <Layout>
+      <Layout>
         <section className="flex w-1/2 flex-col justify-between max-md:w-full max-md:gap-6">
           <Title size="4xl" weight={400}>
             {t('title', { fallback: 'Where We Work' })}
@@ -26,14 +25,14 @@ export const Info = () => {
               label={t('elements.0', { fallback: 'Main Office' })}
               value={{
                 label:
-                  'Ara Business Center, Strada Parintele Galeriu 6C, Bucharest 030167, Romania',
+                  '4th floor, Office No. 402, Athalassas Avenue 91, 2024 Nicosia, Cyprus',
               }}
             />
             <Element
               label={t('elements.1', { fallback: 'Registered HQ' })}
               value={{
                 label:
-                  '255 Mihai Bravu Road., Basement, Module S 209, District 3, Bucharest, Romania',
+                  'Tzon Kennenty, 49, Emerald Building, 4th floor, Flat/Office 4, 3106, Limassol, Cyprus',
               }}
             />
           </div>
@@ -47,7 +46,7 @@ export const Info = () => {
           unoptimized
         />
       </Layout>
-      */}
+      
       <Layout reverse>
         <section className="flex w-1/2 flex-col justify-between max-md:w-full max-md:gap-6">
           <Title size="4xl" weight={400}>

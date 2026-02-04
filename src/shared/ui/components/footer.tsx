@@ -60,20 +60,20 @@ const getFooterInfo = (t: ReturnType<typeof useTranslations>) => [
   //   value: '+1 000 00 00',
   //   href: 'tel:+10000000',
   // },
-  /*{
+  {
     label: t('registeredNumber', { fallback: 'Registered number:' }),
-    value: 'J2025081585000',
+    value: 'HE 486408',
   },
   {
     label: t('registeredAddress', { fallback: 'Registered address:' }),
     value:
-      '255 Mihai Bravu Road., Basement, Module S 209, District 3, Bucharest, Romania',
+      'Tzon Kennenty, 49, Emerald Building, 4th floor, Flat/Office 4, 3106, Limassol, Cyprus',
   },
   {
     label: t('officeAddress', { fallback: 'Office Address:' }),
     value:
-      'Ara Business Center, Strada Parintele Galeriu 6C, Bucharest 030167, Romania',
-  },*/
+      '4th floor, Office No. 402, Athalassas Avenue 91, 2024 Nicosia, Cyprus',
+  },
 ];
 
 export const Footer = () => {
@@ -113,7 +113,7 @@ export const Footer = () => {
               key={item.label}
               className="flex w-max flex-col gap-1 max-md:w-full"
             >
-              <Label>{item.label}</Label>
+              <Label className="whitespace-nowrap">{item.label}</Label>
               {item.href ? (
                 <Link href={item.href} className="max-md:break-all">
                   <Text className="max-md:break-all">{item.value}</Text>
@@ -146,8 +146,8 @@ export const Footer = () => {
   );
 };
 
-const Label = ({ children }: { children: React.ReactNode }) => (
-  <Text color="gray" size="xs">
+const Label = ({ children, className }: { children: React.ReactNode, className?: string }) => (
+  <Text color="gray" size="xs" className={className}  >
     {children}
   </Text>
 );
