@@ -54,7 +54,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <GoogleAnalytics gaId="G-B2ZZ1FQF7K" />
+      <GoogleAnalytics gaId="G-TT6EGF1T5W" />
       <body className={cn(suisseIntl.className, 'antialiased')}>
         <NextIntlClientProvider>
           <TopBar />
