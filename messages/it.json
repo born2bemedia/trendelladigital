@@ -1469,6 +1469,11 @@
     }
   },
   "plansAndPricing": {
+    "price": {
+      "button": "Aprire il catalogo dei servizi (PDF)",
+      "description": "Accedere a un catalogo strutturato in formato PDF che elenca tutti i servizi di consulenza, i formati di coinvolgimento e le opzioni di ambito disponibili in business e marketing.",
+      "title": "Panoramica completa dei servizi di Idelaria"
+    },
     "groups": {
       "businessTitle": "Prezzi della consulenza aziendale",
       "marketingTitle": "Consulenza di marketing Prezzi"

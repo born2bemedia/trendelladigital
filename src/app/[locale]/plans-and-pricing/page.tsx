@@ -5,7 +5,7 @@ import { GroupList } from '@/features/groups/ui/list';
 import { getPackages } from '@/features/packages/api/get-packages';
 import { PackageList } from '@/features/packages/ui/list';
 
-import { Hero, RequestQuote } from './components';
+import { Hero, Price, RequestQuote } from './components';
 
 export const metadata: Metadata = {
   title: 'Consulting Packages & Pricing | Idelaria',
@@ -60,6 +60,7 @@ export default async function PlansAndPricing({
       />
       <GroupList type="business" groups={businessGroups.reverse()} />
       <GroupList type="marketing" groups={marketingGroups.reverse()} />
+      <Price />
       <RequestQuote />
     </section>
   );
