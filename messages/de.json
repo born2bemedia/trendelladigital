@@ -1466,6 +1466,11 @@
     }
   },
   "plansAndPricing": {
+    "price": {
+      "button": "Dienstleistungskatalog öffnen (PDF)",
+      "description": "Zugang zu einem strukturierten PDF-Katalog, der alle Beratungsdienste, Engagement-Formate und Umfangsoptionen enthält, die für Unternehmens- und Marketingberatung verfügbar sind.",
+      "title": "Vollständige Übersicht der Idelaria-Dienstleistungen"
+    },
     "groups": {
       "businessTitle": "Business Consulting Preisgestaltung",
       "marketingTitle": "Marketingberatung Preisgestaltung"

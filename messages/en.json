@@ -1451,6 +1451,11 @@
     }
   },
   "plansAndPricing": {
+    "price": {
+      "button": "Open Service Catalogue (PDF)",
+      "description": "Access a structured PDF catalogue outlining all consulting services, engagement formats, and scope options available across business and marketing.",
+      "title": "Complete Overview of Idelaria Services"
+    },
     "groups": {
       "businessTitle": "Business Consulting Pricing",
       "marketingTitle": "Marketing Consulting Pricing"
