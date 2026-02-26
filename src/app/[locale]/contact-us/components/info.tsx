@@ -60,10 +60,10 @@ export const Info = () => {
                 url: 'mailto:info@idelaria.com',
               }}
             />
-            {/* <Element
+            <Element
               label={t('elements2.1', { fallback: 'Phone' })}
-              value={{ label: 'Phone' }}
-            /> */}
+              value={{ label: '+35724242785', url: 'tel:+35724242785' }}
+            /> 
           </div>
         </section>
         <Image

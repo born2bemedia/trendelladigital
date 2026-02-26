@@ -24,6 +24,11 @@ export const TopBar = () => {
             info@idelaria.com
           </Text>
         </Link>
+        <Link href="tel:+35724242785">
+          <Text size="xs" color={isHomePage ? 'black' : 'white'}>
+          +35724242785
+          </Text>
+        </Link>
       </div>
       <section className="flex items-center gap-[60px]">
         {/* <SocialNetworks /> */}
