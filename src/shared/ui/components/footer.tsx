@@ -1,83 +1,83 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import Image from "next/image";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
 
-import { Text } from '@/shared/ui/kit/text';
+import { Text } from "@/shared/ui/kit/text";
 
-import { Link as NavLink } from '@/i18n/navigation';
+import { Link as NavLink } from "@/i18n/navigation";
 
 const getNavigation = (t: ReturnType<typeof useTranslations>) => [
-  { label: t('ourStory', { fallback: 'Our Story' }), href: '/our-story' },
+  { label: t("ourStory", { fallback: "Our Story" }), href: "/our-story" },
   {
-    label: t('yourGrowthLibrary', { fallback: 'Your Growth Library' }),
-    href: '/your-growth-library',
+    label: t("yourGrowthLibrary", { fallback: "Your Growth Library" }),
+    href: "/your-growth-library",
   },
-  { label: t('cart', { fallback: 'Cart' }), href: '/cart' },
+  { label: t("cart", { fallback: "Cart" }), href: "/cart" },
   {
-    label: t('howWeCanHelpYou', { fallback: 'How We Can Help You' }),
-    href: '/how-we-can-help-you',
+    label: t("howWeCanHelpYou", { fallback: "How We Can Help You" }),
+    href: "/how-we-can-help-you",
   },
-  { label: t('contactUs', { fallback: 'Contact Us' }), href: '/contact-us' },
-  { label: t('login', { fallback: 'Login' }), href: '/login' },
+  { label: t("contactUs", { fallback: "Contact Us" }), href: "/contact-us" },
+  { label: t("login", { fallback: "Login" }), href: "/login" },
   {
-    label: t('whatToExpect', { fallback: 'What to Expect' }),
-    href: '/what-to-expect',
+    label: t("whatToExpect", { fallback: "What to Expect" }),
+    href: "/what-to-expect",
   },
-  { label: t('careers', { fallback: 'Careers' }), href: '/careers' },
-  { label: t('signUp', { fallback: 'Sign Up' }), href: '/sign-up' },
+  { label: t("careers", { fallback: "Careers" }), href: "/careers" },
+  { label: t("signUp", { fallback: "Sign Up" }), href: "/sign-up" },
 ];
 
 const getPolicies = (t: ReturnType<typeof useTranslations>) => [
   {
-    label: t('refundPolicy', { fallback: 'Refund Policy' }),
-    href: '/refund-policy',
+    label: t("refundPolicy", { fallback: "Refund Policy" }),
+    href: "/refund-policy",
   },
   {
-    label: t('cookiePolicy', { fallback: 'Cookie Policy' }),
-    href: '/cookie-policy',
+    label: t("cookiePolicy", { fallback: "Cookie Policy" }),
+    href: "/cookie-policy",
   },
   {
-    label: t('privacyPolicy', { fallback: 'Privacy Policy' }),
-    href: '/privacy-policy',
+    label: t("privacyPolicy", { fallback: "Privacy Policy" }),
+    href: "/privacy-policy",
   },
   {
-    label: t('termsAndConditions', { fallback: 'Terms and Conditions' }),
-    href: '/terms-and-conditions',
+    label: t("termsAndConditions", { fallback: "Terms and Conditions" }),
+    href: "/terms-and-conditions",
   },
 ];
 
 const getFooterInfo = (t: ReturnType<typeof useTranslations>) => [
   {
-    label: t('email', { fallback: 'Email:' }),
-    value: 'info@idelaria.com',
-    href: 'mailto:info@idelaria.com',
-  },
-  // {
-  //   key: 'phone',
-  //   fallback: 'Phone:',
-  //   value: '+1 000 00 00',
-  //   href: 'tel:+10000000',
-  // },
-  {
-    label: t('registeredNumber', { fallback: 'Registered number:' }),
-    value: 'HE 486408',
+    label: t("email", { fallback: "Email:" }),
+    value: "info@idelaria.com",
+    href: "mailto:info@idelaria.com",
   },
   {
-    label: t('registeredAddress', { fallback: 'Registered address:' }),
+    key: "phone",
+    label: t("phone", { fallback: "Phone:" }),
+    value: "+35724242785",
+    href: "tel:+35724242785",
+  },
+  {
+    label: t("registeredNumber", { fallback: "Registered number:" }),
+    value: "HE 486408",
+  },
+  {
+    label: t("registeredAddress", { fallback: "Registered address:" }),
     value:
-      'Tzon Kennenty, 49, Emerald Building, 4th floor, Flat/Office 4, 3106, Limassol, Cyprus',
+      "Tzon Kennenty, 49, Emerald Building, 4th floor, Flat/Office 4, 3106, Limassol, Cyprus",
   },
   {
-    label: t('officeAddress', { fallback: 'Office Address:' }),
+    label: t("officeAddress", { fallback: "Office Address:" }),
     value:
-      '4th floor, Office No. 402, Athalassas Avenue 91, 2024 Nicosia, Cyprus',
+      "4th floor, Office No. 402, Athalassas Avenue 91, 2024 Nicosia, Cyprus",
   },
 ];
 
 export const Footer = () => {
-  const t = useTranslations('footer');
+  const t = useTranslations("footer");
   const navigationLinks = getNavigation(t);
   const policies = getPolicies(t);
   const footerInfo = getFooterInfo(t);
@@ -95,7 +95,7 @@ export const Footer = () => {
           </section>
           <section className="flex w-[900px] flex-col max-md:w-full">
             <div className="grid grid-cols-3 gap-0 max-md:grid-cols-1">
-              {navigationLinks.map(item => (
+              {navigationLinks.map((item) => (
                 <NavLink
                   key={item.href}
                   href={item.href}
@@ -108,7 +108,7 @@ export const Footer = () => {
           </section>
         </section>
         <div className="flex gap-20 max-md:grid max-md:grid-cols-1 max-md:gap-4">
-          {footerInfo.map(item => (
+          {footerInfo.map((item) => (
             <div
               key={item.label}
               className="flex w-max flex-col gap-1 max-md:w-full"
@@ -127,11 +127,11 @@ export const Footer = () => {
       </section>
       <section className="flex items-center justify-between gap-2 border-t-[0.2px] border-white/50 px-10 py-2 max-md:flex-col-reverse max-md:items-start max-md:px-0">
         <Text color="gray">
-          © {new Date().getFullYear()}{' '}
-          {t('allRightsReserved', { fallback: 'All Rights Reserved' })}
+          © {new Date().getFullYear()}{" "}
+          {t("allRightsReserved", { fallback: "All Rights Reserved" })}
         </Text>
         <nav className="flex items-center gap-4 max-md:grid max-md:grid-cols-2 max-md:items-start">
-          {policies.map(item => (
+          {policies.map((item) => (
             <NavLink
               key={item.href}
               href={item.href}
@@ -146,8 +146,14 @@ export const Footer = () => {
   );
 };
 
-const Label = ({ children, className }: { children: React.ReactNode, className?: string }) => (
-  <Text color="gray" size="xs" className={className}  >
+const Label = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => (
+  <Text color="gray" size="xs" className={className}>
     {children}
   </Text>
 );
