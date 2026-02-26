@@ -6,7 +6,9 @@ import { useTranslations } from "next-intl";
 
 import { Text } from "@/shared/ui/kit/text";
 
+import { ShortSocials } from "./short-socials";
 import { Link as NavLink } from "@/i18n/navigation";
+
 
 const getNavigation = (t: ReturnType<typeof useTranslations>) => [
   { label: t("ourStory", { fallback: "Our Story" }), href: "/our-story" },
@@ -87,11 +89,11 @@ export const Footer = () => {
       <section className="flex flex-col gap-10">
         <section className="flex justify-between max-md:flex-col">
           <section className="flex w-[340px] flex-col gap-2.5 max-md:w-full">
-            <Image src="/logo-white.svg" alt="logo" width={271} height={60} />
-            {/* <div className="flex flex-col gap-1">
+            <Image src="/logo-white.svg" alt="logo" width={271} height={60} className="h-auto ml-[-25px]" />
+            <div className="flex flex-col gap-1">
               <Label>Social Media:</Label>
               <ShortSocials />
-            </div> */}
+            </div> 
           </section>
           <section className="flex w-[900px] flex-col max-md:w-full">
             <div className="grid grid-cols-3 gap-0 max-md:grid-cols-1">

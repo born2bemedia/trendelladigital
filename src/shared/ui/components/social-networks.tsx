@@ -23,33 +23,23 @@ export const SocialNetworks = ({
 
   return (
     <div className={cn('flex items-center gap-5', className)}>
-      <Link href="https://www.instagram.com/trendellagroup/">
+      <Link href="https://www.linkedin.com/company/idelaria ">
         <Text
           size={text.size}
           color={text.color ?? (isHomePage ? 'black' : 'white')}
           className="flex items-center"
         >
-          Instagram{' '}
+          Linkedin{' '}
           <ArrowRight color={text.color ?? (isHomePage ? 'black' : 'white')} />
         </Text>
       </Link>
-      <Link href="https://x.com/trendellagroup">
+      <Link href="https://x.com/idelariacom">
         <Text
           size={text.size}
           color={text.color ?? (isHomePage ? 'black' : 'white')}
           className="flex items-center"
         >
           Twitter{' '}
-          <ArrowRight color={text.color ?? (isHomePage ? 'black' : 'white')} />
-        </Text>
-      </Link>
-      <Link href="https://www.facebook.com/trendelladigital/">
-        <Text
-          size={text.size}
-          color={text.color ?? (isHomePage ? 'black' : 'white')}
-          className="flex items-center"
-        >
-          Facebook{' '}
           <ArrowRight color={text.color ?? (isHomePage ? 'black' : 'white')} />
         </Text>
       </Link>

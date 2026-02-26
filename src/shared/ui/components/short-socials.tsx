@@ -1,15 +1,13 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
+import Link from "next/link";
 
-import { FacebookIcon } from '@/shared/icons/socials/facebook';
-import { InstagramIcon } from '@/shared/icons/socials/instagram';
-import { XIcon } from '@/shared/icons/socials/x';
+import { LinkedinIcon } from "@/shared/icons/socials/linkedin";
+import { XIcon } from "@/shared/icons/socials/x";
 
 const socials = [
-  { icon: XIcon, href: 'https://x.com/trendellagroup' },
-  { icon: FacebookIcon, href: 'https://www.facebook.com/trendelladigital' },
-  { icon: InstagramIcon, href: 'https://www.instagram.com/trendellagroup' },
+  { icon: LinkedinIcon, href: "https://www.linkedin.com/company/idelaria " },
+  { icon: XIcon, href: "https://x.com/idelariacom" },
 ];
 
 export const ShortSocials = () => (
