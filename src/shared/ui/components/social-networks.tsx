@@ -43,6 +43,16 @@ export const SocialNetworks = ({
           <ArrowRight color={text.color ?? (isHomePage ? 'black' : 'white')} />
         </Text>
       </Link>
+      <Link href="https://www.facebook.com/idelariacom">
+        <Text
+          size={text.size}
+          color={text.color ?? (isHomePage ? 'black' : 'white')}
+          className="flex items-center"
+        >
+          Facebook{' '}
+          <ArrowRight color={text.color ?? (isHomePage ? 'black' : 'white')} />
+        </Text>
+      </Link>
     </div>
   );
 };
