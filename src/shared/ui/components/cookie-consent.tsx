@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
@@ -13,6 +14,7 @@ import { Title } from '@/shared/ui/kit/title';
 
 export const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(true);
+  const pathname = usePathname();
 
   const t = useTranslations('cookieConsent');
 
@@ -30,6 +32,10 @@ export const CookieConsent = () => {
       setIsVisible(false);
     }
   }, []);
+
+  if (pathname.endsWith('/checkout')) {
+    return null;
+  }
 
   return (
     <div
