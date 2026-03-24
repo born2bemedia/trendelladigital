@@ -64,6 +64,7 @@ export const CheckoutForm = ({ user }: { user?: User }) => {
     },
     validators: {
       onBlur: checkoutSchema,
+      onChange: checkoutSchema,
     },
     onSubmit: async data => {
       const res = await sendOrder({
