@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
-import { useForm } from '@tanstack/react-form';
 
 import type { User } from '@/core/user/model/types';
 
@@ -15,6 +14,7 @@ import type { CartItem } from '@/features/cart/model/types';
 import { ArrowRight } from '@/shared/icons/fill/arrow-right';
 import { CloseIcon } from '@/shared/icons/fill/close';
 import { allowedCountries } from '@/shared/lib/countries';
+import { useForm } from '@/shared/lib/forms';
 import { notifySuccess, notifyWarning } from '@/shared/lib/toast';
 import { lsWrite } from '@/shared/lib/utils/browser';
 import { Autocomplete } from '@/shared/ui/kit/autocomplete';
@@ -63,8 +63,15 @@ export const CheckoutForm = ({ user }: { user?: User }) => {
       isAgreeWithPrivacy: false,
     },
     validators: {
-      onBlur: checkoutSchema,
       onChange: checkoutSchema,
+    },
+    onSubmitInvalid: ({ formApi }) => {
+      console.warn('Checkout submit blocked by validation', formApi.state);
+      notifyWarning(
+        t('error', {
+          fallback: 'Please fill in all required fields and accept the policies.',
+        }),
+      );
     },
     onSubmit: async data => {
       const res = await sendOrder({
@@ -98,13 +105,17 @@ export const CheckoutForm = ({ user }: { user?: User }) => {
     },
   });
 
+  const submitCheckout = () => {
+    handleSubmit().catch(console.error);
+  };
+
   return (
     <form
       className="flex gap-6 max-lg:flex-col"
       onSubmit={e => {
         e.preventDefault();
         e.stopPropagation();
-        handleSubmit().catch(console.error);
+        submitCheckout();
       }}
     >
       <section className="flex w-full flex-col gap-10 rounded-lg bg-[rgba(225,223,246,0.20)] p-6">
@@ -389,12 +400,15 @@ export const CheckoutForm = ({ user }: { user?: User }) => {
           </Field>
           <div className="flex flex-col gap-2">
             <Subscribe
-              selector={state => [state.canSubmit, state.isSubmitting]}
+              selector={state => [state.isSubmitting]}
             >
-              {([canSubmit, isSubmitting]) => (
+              {([isSubmitting]) => (
                 <Button
                   type="submit"
-                  disabled={!canSubmit}
+                  onClick={e => {
+                    e.preventDefault();
+                    submitCheckout();
+                  }}
                   className="justify-center"
                   fullWidth
                 >
@@ -454,7 +468,7 @@ const CardItem = ({
         <Text size="base" color="black">
           {name} x {quantity}
         </Text>
-        <button onClick={onDelete} className="cursor-pointer">
+        <button type="button" onClick={onDelete} className="cursor-pointer">
           <CloseIcon />
         </button>
       </div>

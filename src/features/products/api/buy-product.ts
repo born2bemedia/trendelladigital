@@ -6,7 +6,8 @@ type CartItem = Product & { quantity: number };
 
 export default function buyProduct(product: Product) {
   const cartData = lsRead('cart');
-  const cart: CartItem[] = cartData ? JSON.parse(cartData) : [];
+  const parsed = cartData ? JSON.parse(cartData) : [];
+  const cart: CartItem[] = Array.isArray(parsed) ? parsed : [];
 
   const existingItemIndex = cart.findIndex(item => item.id === product.id);
 
