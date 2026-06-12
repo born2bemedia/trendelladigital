@@ -32,7 +32,7 @@ export const Info = () => {
               label={t('elements.1', { fallback: 'Registered HQ' })}
               value={{
                 label:
-                  'Tzon Kennenty, 49, Emerald Building, 4th floor, Flat/Office 4, 3106, Limassol, Cyprus',
+                  'Lemesou, 72, Asteroid Business Center, 9th floor, Flat/Office 9, Strovolos, 2014, Nicosia, Cyprus',
               }}
             />
           </div>
